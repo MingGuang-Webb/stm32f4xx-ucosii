@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-06-12 14:46:27
- * @LastEditTime: 2020-06-12 14:57:12
- * @LastEditors: your name
+ * @LastEditTime: 2020-06-12 15:26:31
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \stm32f4xx-ucosii\bsp\ring_buffer.c
  */ 
@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "ucos_ii.h"
+#include "lib_mem.h"
 
 //判断x是否是2的次方
 #define is_power_of_2(x) ((x) != 0 && (((x) & ((x)-1)) == 0))
@@ -21,6 +21,7 @@
 //初始化缓冲区
 ring_buffer_s *__ring_buffer_init(uint8_t *buffer, uint32_t size)
 {
+    INT8U err;
     ring_buffer_s *rb = NULL;
     if (!is_power_of_2(size))
     {
@@ -31,12 +32,12 @@ ring_buffer_s *__ring_buffer_init(uint8_t *buffer, uint32_t size)
     {
         return rb;
     }
-    memset(rb, 0, sizeof(ring_buffer_s));
+    Mem_Set(rb, 0, sizeof(ring_buffer_s));
     rb->buffer = buffer;
     rb->size = size;
     rb->in = 0;
     rb->out = 0;
-    //rb->lock = NULL;
+    rb->lock = OSMutexCreate(0,&err);  //创建互斥信号量
     return rb;
 }
 
@@ -48,7 +49,7 @@ ring_buffer_s *ring_uint8_init(uint32_t size)
     {
         return NULL;
     }
-    memset(buffer, 0, size);
+    Mem_Set(buffer, 0, size);
     return __ring_buffer_init(buffer, size);
 }
 
@@ -80,9 +81,9 @@ uint32_t ring_buffer_get(ring_buffer_s *rb, uint8_t *buffer, uint32_t len)
     len = rb_min(len, rb->in - rb->out);
     /* first get the data from fifo->out until the end of the buffer */
     l = rb_min(len, rb->size - (rb->out & (rb->size - 1)));
-    memcpy(buffer, rb->buffer + (rb->out & (rb->size - 1)), l);
+    Mem_Copy(buffer, rb->buffer + (rb->out & (rb->size - 1)), l);
     /* then get the rest (if any) from the beginning of the buffer */
-    memcpy(buffer + l, rb->buffer, len - l);
+    Mem_Copy(buffer + l, rb->buffer, len - l);
     rb->out += len; //每次累加，到达最大值后溢出，自动转为0
     return len;
 }
@@ -94,9 +95,9 @@ uint32_t ring_buffer_put(ring_buffer_s *rb, uint8_t *buffer, uint32_t len)
     len = rb_min(len, rb->size - rb->in + rb->out);
     /* first put the data starting from fifo->in to buffer end */
     l = rb_min(len, rb->size - (rb->in & (rb->size - 1)));
-    memcpy(rb->buffer + (rb->in & (rb->size - 1)), buffer, l);
+    Mem_Copy(rb->buffer + (rb->in & (rb->size - 1)), buffer, l);
     /* then put the rest (if any) at the beginning of the buffer */
-    memcpy(rb->buffer, buffer + l, len - l);
+    Mem_Copy(rb->buffer, buffer + l, len - l);
     rb->in += len; //每次累加，到达最大值后溢出，自动转为0
     return len;
 }
