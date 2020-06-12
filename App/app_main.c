@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-07 11:16:22
- * @LastEditTime: 2020-06-07 12:10:41
+ * @LastEditTime: 2020-06-12 14:30:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \stm32f767-uscoii\App\app_main.c
@@ -45,7 +45,7 @@ void create_app_task(void)
 
 void led_blink_task(void *arg)
 {
-    while (1)
+    for (;;)
     {
         /* code */
         HAL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);
@@ -55,7 +55,7 @@ void led_blink_task(void *arg)
 
 void uart_task(void *arg)
 {
-    while (1)
+    for (;;)
     {
         HAL_GPIO_TogglePin(LED2_GPIO_Port,LED2_Pin);
         /* code */
