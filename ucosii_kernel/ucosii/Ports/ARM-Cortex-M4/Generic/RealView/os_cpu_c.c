@@ -52,7 +52,7 @@
 #include  <ucos_ii.h>
 #include "includes.h"
 #include  <lib_def.h>
-#include "debug.h"
+#include "os_debug.h"
 
 
 /*

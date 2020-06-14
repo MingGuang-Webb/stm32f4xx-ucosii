@@ -37,8 +37,7 @@
 
 #ifndef  APP_CFG_MODULE_PRESENT
 #define  APP_CFG_MODULE_PRESENT
-#include "debug.h"
-
+#include "os_debug.h"
 
 /*
 *********************************************************************************************************
