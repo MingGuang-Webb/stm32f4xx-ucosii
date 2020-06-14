@@ -32,6 +32,7 @@
 //Dependencies
 #include <stdio.h>
 #include "os_port.h"
+#include "os_debug.h"
 
 //Trace level definitions
 #define TRACE_LEVEL_OFF      0

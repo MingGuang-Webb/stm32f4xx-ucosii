@@ -28,7 +28,7 @@
 
 //Dependencies
 #include "debug.h"
-
+#include "os_debug.h"
 
 /**
  * @brief Display the contents of an array
@@ -60,5 +60,43 @@ void debugDisplayArray(FILE *stream,
       {
          TRACE_PRINTF("\r\n");
       }
+   }
+}
+
+#define ITM_PORT 0
+#if defined (ITM_PORT) && (ITM_PORT == 1)
+#define ITM_Port8(n)    (*((volatile unsigned char *)(0xE0000000+4*n)))  
+#define ITM_Port16(n)   (*((volatile unsigned short*)(0xE0000000+4*n)))  
+#define ITM_Port32(n)   (*((volatile unsigned long *)(0xE0000000+4*n)))  
+#define DEMCR           (*((volatile unsigned long *)(0xE000EDFC)))  
+#define TRCENA          0x01000000
+#endif
+
+int_t fputc(int_t c, FILE *stream)
+{
+   //Standard output or error output?
+   if(stream == stdout || stream == stderr)
+   {
+      //Character to be written
+      uint8_t ch = c;
+
+      //Transmit data
+#if defined (ITM_PORT) && (ITM_PORT == 1)
+        if (DEMCR & TRCENA) {
+        while (ITM_Port32(0) == 0);
+        ITM_Port8(0) = ch;
+        }
+        HAL_UART_Transmit(&UART_Handle, &ch, 1, HAL_MAX_DELAY);
+#else
+      rt_hw_console_output((char *)&ch);
+#endif
+      //On success, the character written is returned
+      return c;
+   }
+   //Unknown output?
+   else
+   {
+      //If a writing error occurs, EOF is returned
+      return EOF;
    }
 }

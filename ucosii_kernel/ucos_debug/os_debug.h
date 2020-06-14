@@ -10,6 +10,7 @@
 #define OS_DEBUG_H
 
 #define RTT_DEBUG
+void rt_hw_console_output(const char *str);
 void ucos_kprintf(const char *fmt, ...);
 #endif
 
