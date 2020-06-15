@@ -736,13 +736,8 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>CycloneTCP/tcp</GroupName>
+          <GroupName>CycloneTCP-Kernel</GroupName>
           <Files>
-            <File>
-              <FileName>lan8720_driver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneTCP\drivers\phy\lan8720_driver.c</FilePath>
-            </File>
             <File>
               <FileName>dhcp_client.c</FileName>
               <FileType>1</FileType>
@@ -1028,15 +1023,10 @@
               <FileType>1</FileType>
               <FilePath>..\CycloneTCP\llmnr\llmnr_responder.c</FilePath>
             </File>
-            <File>
-              <FileName>stm32f4xx_eth_driver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneTCP\drivers\mac\stm32f4xx_eth_driver.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>CycloneTCP/cfg</GroupName>
+          <GroupName>CycloneTCP-Config</GroupName>
           <Files>
             <File>
               <FileName>crypto_config.h</FileName>
@@ -1061,7 +1051,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>CycloneTCP/common</GroupName>
+          <GroupName>CycloneTCP-Common</GroupName>
           <Files>
             <File>
               <FileName>os_port_ucos2.c</FileName>
@@ -1091,7 +1081,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>CycloneTCP/ssl</GroupName>
+          <GroupName>CycloneTCP-SSL</GroupName>
           <Files>
             <File>
               <FileName>dtls_misc.c</FileName>
@@ -1276,7 +1266,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>CycloneTCP/crypto</GroupName>
+          <GroupName>CycloneTCP-Crypto</GroupName>
           <Files>
             <File>
               <FileName>blake2b.c</FileName>
@@ -1642,6 +1632,21 @@
               <FileName>curve25519.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CycloneSSL\cyclone_crypto\ecc\curve25519.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>CycloneTCP/Driver</GroupName>
+          <Files>
+            <File>
+              <FileName>stm32f4xx_eth_driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CycloneTCP\drivers\mac\stm32f4xx_eth_driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>lan8720_driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CycloneTCP\drivers\phy\lan8720_driver.c</FilePath>
             </File>
           </Files>
         </Group>

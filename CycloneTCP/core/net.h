@@ -149,7 +149,7 @@ struct _NetInterface;
 
 //OS resources are statically allocated at compile time
 #ifndef NET_STATIC_OS_RESOURCES
-   #define NET_STATIC_OS_RESOURCES DISABLED
+   #define NET_STATIC_OS_RESOURCES ENABLED
 #elif (NET_STATIC_OS_RESOURCES != ENABLED && NET_STATIC_OS_RESOURCES != DISABLED)
    #error NET_STATIC_OS_RESOURCES parameter is not valid
 #endif

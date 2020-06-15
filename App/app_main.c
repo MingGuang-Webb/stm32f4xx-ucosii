@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-07 11:16:22
- * @LastEditTime: 2020-06-12 18:48:05
+ * @LastEditTime: 2020-06-15 11:46:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \stm32f767-uscoii\App\app_main.c
@@ -14,13 +14,13 @@
 #include "drivers/phy/lan8720_driver.h"
 #include "dhcp/dhcp_client.h"
 #include "ipv6/slaac.h"
-//#include "mqtt/mqtt_client.h"
+#include "mqtt/mqtt_client.h"
 #include "rng/yarrow.h"
 #include "debug.h"
 
 //Ethernet interface configuration
 #define APP_IF_NAME "eth0"
-#define APP_HOST_NAME "mqtt-client-ninebot"
+#define APP_HOST_NAME "mqtt-client-ali"
 #define APP_MAC_ADDR "00-AB-CD-EF-07-67"
 
 #define APP_USE_DHCP_CLIENT ENABLED
@@ -225,14 +225,14 @@ void tcp_task(void *arg)
    TRACE_INFO("***********************************\r\n");
    TRACE_INFO("Copyright: 2010-2019 Oryx Embedded SARL\r\n");
    TRACE_INFO("Compiled: %s %s\r\n", __DATE__, __TIME__);
-   TRACE_INFO("Target: STM32F767\r\n");
+   TRACE_INFO("Target: STM32F407ZG\r\n");
    TRACE_INFO("\r\n");
 
    //Initialize RNG
    RNG_Handle.Instance = RNG;
 
    //Generate a random seed
-   for(i = 0; i < 32; i += 4)
+   for (i = 0; i < 32; i += 4)
    {
       //Get 32-bit random value
       HAL_RNG_GenerateRandomNumber(&RNG_Handle, &value);
@@ -247,7 +247,7 @@ void tcp_task(void *arg)
    //PRNG initialization
    error = yarrowInit(&yarrowContext);
    //Any error to report?
-   if(error)
+   if (error)
    {
       //Debug message
       TRACE_ERROR("Failed to initialize PRNG!\r\n");
@@ -256,7 +256,7 @@ void tcp_task(void *arg)
    //Properly seed the PRNG
    error = yarrowSeed(&yarrowContext, seed, sizeof(seed));
    //Any error to report?
-   if(error)
+   if (error)
    {
       //Debug message
       TRACE_ERROR("Failed to seed PRNG!\r\n");
@@ -265,8 +265,9 @@ void tcp_task(void *arg)
    //TCP/IP stack initialization
    error = netInit();
    //Any error to report?
-   if(error)
+   if (error)
    {
+      ucos_kprintf("tcp/ip init error:%d\r\n", error);
       //Debug message
       TRACE_ERROR("Failed to initialize TCP/IP stack!\r\n");
    }
@@ -288,7 +289,7 @@ void tcp_task(void *arg)
    //Initialize network interface
    error = netConfigInterface(interface);
    //Any error to report?
-   if(error)
+   if (error)
    {
       //Debug message
       TRACE_ERROR("Failed to configure interface %s!\r\n", interface->name);
@@ -306,7 +307,7 @@ void tcp_task(void *arg)
    //DHCP client initialization
    error = dhcpClientInit(&dhcpClientContext, &dhcpClientSettings);
    //Failed to initialize DHCP client?
-   if(error)
+   if (error)
    {
       //Debug message
       TRACE_ERROR("Failed to initialize DHCP client!\r\n");
@@ -315,14 +316,14 @@ void tcp_task(void *arg)
    //Start DHCP client
    error = dhcpClientStart(&dhcpClientContext);
    //Failed to start DHCP client?
-   if(error)
+   if (error)
    {
       //Debug message
       TRACE_ERROR("Failed to start DHCP client!\r\n");
    }
    else
    {
-       TRACE_PRINTF("dhcp ipaddr:%d,%d\r\n",dhcpClientContext.serverIpAddr,dhcpClientContext.requestedIpAddr);
+      TRACE_PRINTF("dhcp ipaddr:%d,%d\r\n", dhcpClientContext.serverIpAddr, dhcpClientContext.requestedIpAddr);
    }
 #else
    //Set IPv4 host address
@@ -355,7 +356,7 @@ void tcp_task(void *arg)
    //SLAAC initialization
    error = slaacInit(&slaacContext, &slaacSettings);
    //Failed to initialize SLAAC?
-   if(error)
+   if (error)
    {
       //Debug message
       TRACE_ERROR("Failed to initialize SLAAC!\r\n");
@@ -364,7 +365,7 @@ void tcp_task(void *arg)
    //Start IPv6 address autoconfiguration process
    error = slaacStart(&slaacContext);
    //Failed to start SLAAC process?
-   if(error)
+   if (error)
    {
       //Debug message
       TRACE_ERROR("Failed to start SLAAC!\r\n");
@@ -393,10 +394,10 @@ void tcp_task(void *arg)
    ipv6SetDnsServer(interface, 1, &ipv6Addr);
 #endif
 #endif
-    for (;;)
-    {
-        ucos_kprintf("tcp task run:%d.\r\n",OSTimeGet());
-        OSTimeDlyHMSM(0,0,5,500);
-    }
+   for (;;)
+   {
+      ucos_kprintf("tcp task run:%d.\r\n", OSTimeGet());
+      OSTimeDlyHMSM(0, 0, 5, 500);
+   }
 }
 

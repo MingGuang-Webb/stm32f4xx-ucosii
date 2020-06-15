@@ -256,7 +256,6 @@ bool_t osCreateEvent(OsEvent *event)
 
    //Create an event flag group
    event->p = OSFlagCreate(0, &err);
-
    //Check whether the event flag group was successfully created
    if(event->p != NULL && err == OS_ERR_NONE)
       return TRUE;
@@ -502,7 +501,6 @@ bool_t osCreateMutex(OsMutex *mutex)
 
    //Create an event object
    status = osCreateEvent((OsEvent *) mutex);
-
    //Check whether the event object was successfully created
    if(status)
    {

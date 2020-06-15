@@ -54,7 +54,6 @@
 "stm32f407-ucosii\app_hooks.o"
 "stm32f407-ucosii\app_main.o"
 "stm32f407-ucosii\ring_buffer.o"
-"stm32f407-ucosii\lan8720_driver.o"
 "stm32f407-ucosii\dhcp_client.o"
 "stm32f407-ucosii\dhcp_common.o"
 "stm32f407-ucosii\dhcp_debug.o"
@@ -112,7 +111,6 @@
 "stm32f407-ucosii\llmnr_client.o"
 "stm32f407-ucosii\llmnr_common.o"
 "stm32f407-ucosii\llmnr_responder.o"
-"stm32f407-ucosii\stm32f4xx_eth_driver.o"
 "stm32f407-ucosii\os_port_ucos2.o"
 "stm32f407-ucosii\str.o"
 "stm32f407-ucosii\date_time.o"
@@ -227,6 +225,8 @@
 "stm32f407-ucosii\ecdh.o"
 "stm32f407-ucosii\x25519.o"
 "stm32f407-ucosii\curve25519.o"
+"stm32f407-ucosii\stm32f4xx_eth_driver.o"
+"stm32f407-ucosii\lan8720_driver.o"
 --library_type=microlib --strict --scatter "stm32f407-ucosii\stm32f407-ucosii.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

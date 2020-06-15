@@ -74,11 +74,12 @@ void debugDisplayArray(FILE *stream,
 
 int_t fputc(int_t c, FILE *stream)
 {
+    uint8_t ch[2] = {"\0"};
    //Standard output or error output?
    if(stream == stdout || stream == stderr)
    {
       //Character to be written
-      uint8_t ch = c;
+       ch[0] = c;
 
       //Transmit data
 #if defined (ITM_PORT) && (ITM_PORT == 1)
@@ -88,7 +89,7 @@ int_t fputc(int_t c, FILE *stream)
         }
         HAL_UART_Transmit(&UART_Handle, &ch, 1, HAL_MAX_DELAY);
 #else
-      rt_hw_console_output((char *)&ch);
+      rt_hw_console_output((char *)ch);
 #endif
       //On success, the character written is returned
       return c;
