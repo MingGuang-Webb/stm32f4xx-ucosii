@@ -43,6 +43,8 @@ stm32f407-ucosii\os_cpu_c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_f
 stm32f407-ucosii\os_cpu_c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 stm32f407-ucosii\os_cpu_c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 stm32f407-ucosii\os_cpu_c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h
+stm32f407-ucosii\os_cpu_c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
+stm32f407-ucosii\os_cpu_c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
 stm32f407-ucosii\os_cpu_c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 stm32f407-ucosii\os_cpu_c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 stm32f407-ucosii\os_cpu_c.o: ..\ucosii_kernel\ucos_lib\lib_def.h

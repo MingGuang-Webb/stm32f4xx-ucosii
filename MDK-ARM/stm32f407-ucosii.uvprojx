@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx,GPL_LICENSE_TERMS_ACCEPTED</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\ucosii_kernel\ucos_cfg;..\ucosii_kernel\ucos_cpu;..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView;..\ucosii_kernel\ucos_debug;..\ucosii_kernel\ucos_debug\RTT;..\ucosii_kernel\ucos_lib;..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView;..\ucosii_kernel\ucosii\Source;..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView;..\App;..\bsp;..\CycloneTCP\core;..\CycloneTCP\dhcp;..\CycloneTCP\dns;..\CycloneTCP\drivers\phy;..\CycloneTCP\ipv4;..\CycloneTCP\ipv6;..\CycloneTCP\mqtt;..\CycloneTCP\icecast;..\CycloneTCP;..\CycloneCFG;..\CycloneTCP\common;..\CycloneSSL\cyclone_ssl;..\CycloneSSL\cyclone_crypto;..\CycloneSSL\cyclone_crypto\core;..\CycloneSSL\cyclone_crypto\hash;..\CycloneTCP\netbios;..\CycloneSSL\cyclone_crypto\encoding;..\CycloneSSL\cyclone_crypto\aead;..\CycloneSSL\cyclone_crypto\cipher;..\CycloneSSL\cyclone_crypto\cipher_mode;..\CycloneSSL\cyclone_crypto\ecc;..\CycloneSSL\cyclone_crypto\encoding;..\CycloneSSL\cyclone_crypto\hardware;..\CycloneSSL\cyclone_crypto\kdf;..\CycloneSSL\cyclone_crypto\mac;..\CycloneSSL\cyclone_crypto\mpi;..\CycloneSSL\cyclone_crypto\pkc;..\CycloneSSL\cyclone_crypto\pkix;..\CycloneSSL\cyclone_crypto\rng;..\CycloneSSL\cyclone_crypto\xof</IncludePath>
+              <IncludePath>../Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy; ../Drivers/CMSIS/Device/ST/STM32F4xx/Include; ../Drivers/CMSIS/Include; ..\ucosii_kernel\ucos_cfg; ..\ucosii_kernel\ucos_cpu; ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView; ..\ucosii_kernel\ucos_debug; ..\ucosii_kernel\ucos_debug\RTT; ..\ucosii_kernel\ucos_lib; ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView; ..\ucosii_kernel\ucosii\Source; ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView; ..\App; ..\bsp; ..\CycloneTCP\core; ..\CycloneTCP\dhcp; ..\CycloneTCP\dns; ..\CycloneTCP\drivers\phy; ..\CycloneTCP\ipv4; ..\CycloneTCP\ipv6; ..\CycloneTCP\mqtt; ..\CycloneTCP\icecast; ..\CycloneTCP; ..\CycloneCFG; ..\CycloneTCP\common; ..\CycloneSSL\cyclone_ssl; ..\CycloneSSL\cyclone_crypto; ..\CycloneSSL\cyclone_crypto\core; ..\CycloneSSL\cyclone_crypto\hash; ..\CycloneTCP\netbios; ..\CycloneSSL\cyclone_crypto\encoding; ..\CycloneSSL\cyclone_crypto\aead; ..\CycloneSSL\cyclone_crypto\cipher; ..\CycloneSSL\cyclone_crypto\cipher_mode; ..\CycloneSSL\cyclone_crypto\ecc; ..\CycloneSSL\cyclone_crypto\encoding; ..\CycloneSSL\cyclone_crypto\hardware; ..\CycloneSSL\cyclone_crypto\kdf; ..\CycloneSSL\cyclone_crypto\mac; ..\CycloneSSL\cyclone_crypto\mpi; ..\CycloneSSL\cyclone_crypto\pkc; ..\CycloneSSL\cyclone_crypto\pkix; ..\CycloneSSL\cyclone_crypto\rng; ..\CycloneSSL\cyclone_crypto\xof</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -391,6 +391,36 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Application</GroupName>
+          <Files>
+            <File>
+              <FileName>app_main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\app_main.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_mqtt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\app_mqtt.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_ntp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\app_ntp.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\app_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>infra_sha256.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\infra_sha256.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>Application/User</GroupName>
           <Files>
             <File>
@@ -412,6 +442,11 @@
               <FileName>rng.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/rng.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/rtc.c</FilePath>
             </File>
             <File>
               <FileName>spi.c</FileName>
@@ -517,6 +552,16 @@
               <FileName>stm32f4xx_hal_rng.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_rtc_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_hal_spi.c</FileName>
@@ -716,17 +761,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Application</GroupName>
-          <Files>
-            <File>
-              <FileName>app_main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\App\app_main.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Bsp</GroupName>
+          <GroupName>Application/Bsp</GroupName>
           <Files>
             <File>
               <FileName>ring_buffer.c</FileName>

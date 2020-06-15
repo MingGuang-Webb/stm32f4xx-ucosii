@@ -1,44 +1,7 @@
 Dependencies for Project 'stm32f407-ucosii', Target 'stm32f407-ucosii': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
-F (startup_stm32f407xx.s)(0x5EE7077C)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 530" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o stm32f407-ucosii\startup_stm32f407xx.o --depend stm32f407-ucosii\startup_stm32f407xx.d)
-F (../Src/main.c)(0x5EE4FE2D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\main.o --omf_browse stm32f407-ucosii\main.crf --depend stm32f407-ucosii\main.d)
-I (../Inc/main.h)(0x5EE4FE2D)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5EE2F061)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x5EE2EF93)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5EE2EF93)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5EE2EF93)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
-I (../Inc/eth.h)(0x5EE4FE2B)
-I (../Inc/rng.h)(0x5EE4FE2C)
-I (../Inc/spi.h)(0x5EE4FE2C)
-I (../Inc/usart.h)(0x5EE4FE2C)
-I (../Inc/gpio.h)(0x5EE4FE2B)
+F (startup_stm32f407xx.s)(0x5EE73041)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 530" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o stm32f407-ucosii\startup_stm32f407xx.o --depend stm32f407-ucosii\startup_stm32f407xx.d)
+F (..\App\app_main.c)(0x5EE73082)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\app_main.o --omf_browse stm32f407-ucosii\app_main.crf --depend stm32f407-ucosii\app_main.d)
 I (..\App\app_main.h)(0x5EDC5D46)
 I (..\ucosii_kernel\ucosii\Source\ucos_ii.h)(0x5EE37835)
 I (..\ucosii_kernel\ucos_cfg\app_cfg.h)(0x5EE62114)
@@ -48,11 +11,10 @@ I (..\ucosii_kernel\ucos_cpu\cpu_def.h)(0x577640A7)
 I (..\ucosii_kernel\ucos_cfg\cpu_cfg.h)(0x5EE2F48B)
 I (..\ucosii_kernel\ucos_cfg\os_cfg.h)(0x5EE6EAAC)
 I (..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h)(0x5EE2F699)
-F (../Src/gpio.c)(0x5EE4FE2B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\gpio.o --omf_browse stm32f407-ucosii\gpio.crf --depend stm32f407-ucosii\gpio.d)
-I (../Inc/gpio.h)(0x5EE4FE2B)
-I (../Inc/main.h)(0x5EE4FE2D)
+I (../Inc/gpio.h)(0x5EE72D1D)
+I (../Inc/main.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -80,13 +42,272 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
-F (../Src/eth.c)(0x5EE4FE2B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\eth.o --omf_browse stm32f407-ucosii\eth.crf --depend stm32f407-ucosii\eth.d)
-I (../Inc/eth.h)(0x5EE4FE2B)
-I (../Inc/main.h)(0x5EE4FE2D)
+I (..\CycloneTCP\core/net.h)(0x5EE7065A)
+I (..\CycloneCFG\net_config.h)(0x5EE6D748)
+I (..\CycloneTCP\core/net_legacy.h)(0x5EE50125)
+I (..\CycloneTCP\core/net_mem.h)(0x5EE50125)
+I (..\CycloneTCP\common\os_port.h)(0x5EC8F8C8)
+I (..\CycloneCFG\os_port_config.h)(0x5EE60FB3)
+I (..\CycloneTCP\common\compiler_port.h)(0x5EC8F8C8)
+I (E:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5E53505C)
+I (..\CycloneTCP\common\os_port_ucos2.h)(0x5EC8F8C8)
+I (..\CycloneTCP\common\error.h)(0x5EC8F8C8)
+I (..\CycloneTCP\core/nic.h)(0x5EE50125)
+I (..\CycloneTCP\core/ethernet.h)(0x5EE50125)
+I (..\CycloneTCP\ipv4/ipv4.h)(0x5EE50126)
+I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (..\CycloneTCP\ipv4/ipv4_frag.h)(0x5EE50126)
+I (..\CycloneTCP\ipv4/auto_ip.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ipv6.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ipv6_frag.h)(0x5EE50126)
+I (..\CycloneTCP\ipv4/arp.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ndp.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ndp_router_adv.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/slaac.h)(0x5EE50126)
+I (..\CycloneTCP\ppp/ppp.h)(0x5EE50126)
+I (..\CycloneTCP\ppp/pap.h)(0x5EE50126)
+I (..\CycloneTCP\ppp/chap.h)(0x5EE50126)
+I (..\CycloneTCP\dhcp/dhcp_client.h)(0x5EE50125)
+I (..\CycloneTCP\core/socket.h)(0x5EE50125)
+I (..\CycloneTCP\core/ip.h)(0x5EE50125)
+I (..\CycloneTCP\core/tcp.h)(0x5EE50125)
+I (..\CycloneTCP\core/udp.h)(0x5EE50125)
+I (..\CycloneTCP\dhcp/dhcp_common.h)(0x5EE50125)
+I (..\CycloneTCP\dhcp/dhcp_server.h)(0x5EE50125)
+I (..\CycloneTCP\dhcpv6/dhcpv6_client.h)(0x5EE50125)
+I (..\CycloneTCP\dhcpv6/dhcpv6_common.h)(0x5EE50125)
+I (..\CycloneTCP\dns/dns_client.h)(0x5EE50125)
+I (..\CycloneTCP\dns/dns_cache.h)(0x5EE50125)
+I (..\CycloneTCP\mdns/mdns_responder.h)(0x5EE50126)
+I (..\CycloneTCP\dns/dns_common.h)(0x5EE50125)
+I (..\CycloneTCP\mdns/mdns_common.h)(0x5EE50126)
+I (..\CycloneTCP\dns_sd/dns_sd.h)(0x5EE50125)
+I (..\CycloneTCP\common\cpu_endian.h)(0x5EC8F8C8)
+I (..\CycloneTCP\drivers/mac/stm32f4xx_eth_driver.h)(0x5EE50126)
+I (..\CycloneTCP\drivers/phy/lan8720_driver.h)(0x5EE50126)
+I (..\CycloneSSL\cyclone_crypto\rng/yarrow.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\core/crypto.h)(0x5EC8F8C8)
+I (..\CycloneCFG\crypto_config.h)(0x5EC8F8C9)
+I (..\CycloneSSL\cyclone_crypto\core/crypto_legacy.h)(0x5EC8F8C8)
+I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
+I (E:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E53505C)
+I (..\CycloneSSL\cyclone_crypto\cipher/aes.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/sha256.h)(0x5EC8F8C8)
+I (..\CycloneTCP\common\debug.h)(0x5EE633DB)
+I (..\App\app_mqtt.h)(0x5EE73281)
+I (..\CycloneTCP\mqtt/mqtt_client.h)(0x5EE50126)
+I (..\CycloneTCP\mqtt/mqtt_common.h)(0x5EE50126)
+I (..\CycloneSSL\cyclone_ssl\tls.h)(0x5EC8F8C8)
+I (..\CycloneCFG\tls_config.h)(0x5EC8F8C9)
+I (..\CycloneSSL\cyclone_ssl\tls_legacy.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_ssl\tls13_misc.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_ssl\dtls_misc.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\mac/hmac.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/md5.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/sha1.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/sha224.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/sha384.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/sha512.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\pkc/rsa.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\mpi/mpi.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\pkc/dsa.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\ecc/ecdsa.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\ecc/ec.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\ecc/ec_curves.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\pkc/dh.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\ecc/ecdh.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\aead/gcm.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\pkix/x509_common.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\ecc/eddsa.h)(0x5EC8F8C8)
+I (..\CycloneTCP\common\date_time.h)(0x5EC8F8C8)
+I (E:\Keil_v5\ARM\ARMCC\include\time.h)(0x5E53505A)
+I (..\CycloneTCP\web_socket/web_socket.h)(0x5EE50126)
+F (..\App\app_mqtt.c)(0x5EE74EFF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\app_mqtt.o --omf_browse stm32f407-ucosii\app_mqtt.crf --depend stm32f407-ucosii\app_mqtt.d)
+I (..\App\app_mqtt.h)(0x5EE73281)
+I (..\CycloneTCP\mqtt/mqtt_client.h)(0x5EE50126)
+I (..\CycloneTCP\core/net.h)(0x5EE7065A)
+I (..\CycloneCFG\net_config.h)(0x5EE6D748)
+I (..\CycloneTCP\core/net_legacy.h)(0x5EE50125)
+I (..\CycloneTCP\core/net_mem.h)(0x5EE50125)
+I (..\CycloneTCP\common\os_port.h)(0x5EC8F8C8)
+I (..\CycloneCFG\os_port_config.h)(0x5EE60FB3)
+I (..\CycloneTCP\common\compiler_port.h)(0x5EC8F8C8)
+I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (E:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5E53505C)
+I (..\CycloneTCP\common\os_port_ucos2.h)(0x5EC8F8C8)
+I (..\ucosii_kernel\ucosii\Source\ucos_ii.h)(0x5EE37835)
+I (..\ucosii_kernel\ucos_cfg\app_cfg.h)(0x5EE62114)
+I (..\ucosii_kernel\ucos_debug\os_debug.h)(0x5EE6351D)
+I (..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView\cpu.h)(0x577640A7)
+I (..\ucosii_kernel\ucos_cpu\cpu_def.h)(0x577640A7)
+I (..\ucosii_kernel\ucos_cfg\cpu_cfg.h)(0x5EE2F48B)
+I (..\ucosii_kernel\ucos_cfg\os_cfg.h)(0x5EE6EAAC)
+I (..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h)(0x5EE2F699)
+I (..\CycloneTCP\common\error.h)(0x5EC8F8C8)
+I (..\CycloneTCP\core/nic.h)(0x5EE50125)
+I (..\CycloneTCP\core/ethernet.h)(0x5EE50125)
+I (..\CycloneTCP\ipv4/ipv4.h)(0x5EE50126)
+I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (..\CycloneTCP\ipv4/ipv4_frag.h)(0x5EE50126)
+I (..\CycloneTCP\ipv4/auto_ip.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ipv6.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ipv6_frag.h)(0x5EE50126)
+I (..\CycloneTCP\ipv4/arp.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ndp.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ndp_router_adv.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/slaac.h)(0x5EE50126)
+I (..\CycloneTCP\ppp/ppp.h)(0x5EE50126)
+I (..\CycloneTCP\ppp/pap.h)(0x5EE50126)
+I (..\CycloneTCP\ppp/chap.h)(0x5EE50126)
+I (..\CycloneTCP\dhcp/dhcp_client.h)(0x5EE50125)
+I (..\CycloneTCP\core/socket.h)(0x5EE50125)
+I (..\CycloneTCP\core/ip.h)(0x5EE50125)
+I (..\CycloneTCP\core/tcp.h)(0x5EE50125)
+I (..\CycloneTCP\core/udp.h)(0x5EE50125)
+I (..\CycloneTCP\dhcp/dhcp_common.h)(0x5EE50125)
+I (..\CycloneTCP\dhcp/dhcp_server.h)(0x5EE50125)
+I (..\CycloneTCP\dhcpv6/dhcpv6_client.h)(0x5EE50125)
+I (..\CycloneTCP\dhcpv6/dhcpv6_common.h)(0x5EE50125)
+I (..\CycloneTCP\dns/dns_client.h)(0x5EE50125)
+I (..\CycloneTCP\dns/dns_cache.h)(0x5EE50125)
+I (..\CycloneTCP\mdns/mdns_responder.h)(0x5EE50126)
+I (..\CycloneTCP\dns/dns_common.h)(0x5EE50125)
+I (..\CycloneTCP\mdns/mdns_common.h)(0x5EE50126)
+I (..\CycloneTCP\dns_sd/dns_sd.h)(0x5EE50125)
+I (..\CycloneTCP\common\cpu_endian.h)(0x5EC8F8C8)
+I (..\CycloneTCP\mqtt/mqtt_common.h)(0x5EE50126)
+I (..\CycloneSSL\cyclone_crypto\core/crypto.h)(0x5EC8F8C8)
+I (..\CycloneCFG\crypto_config.h)(0x5EC8F8C9)
+I (..\CycloneSSL\cyclone_crypto\core/crypto_legacy.h)(0x5EC8F8C8)
+I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
+I (E:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E53505C)
+I (..\CycloneSSL\cyclone_ssl\tls.h)(0x5EC8F8C8)
+I (..\CycloneCFG\tls_config.h)(0x5EC8F8C9)
+I (..\CycloneSSL\cyclone_ssl\tls_legacy.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_ssl\tls13_misc.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_ssl\dtls_misc.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\mac/hmac.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/md5.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/sha1.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/sha224.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/sha256.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/sha384.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\hash/sha512.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\pkc/rsa.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\mpi/mpi.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\pkc/dsa.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\ecc/ecdsa.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\ecc/ec.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\ecc/ec_curves.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\pkc/dh.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\ecc/ecdh.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\aead/gcm.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\pkix/x509_common.h)(0x5EC8F8C8)
+I (..\CycloneSSL\cyclone_crypto\ecc/eddsa.h)(0x5EC8F8C8)
+I (..\CycloneTCP\common\date_time.h)(0x5EC8F8C8)
+I (E:\Keil_v5\ARM\ARMCC\include\time.h)(0x5E53505A)
+I (..\CycloneTCP\web_socket/web_socket.h)(0x5EE50126)
+I (..\CycloneTCP\common\debug.h)(0x5EE633DB)
+I (..\App\infra_sha256.h)(0x5EC921A5)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
+F (..\App\app_ntp.c)(0x5EE72CCF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\app_ntp.o --omf_browse stm32f407-ucosii\app_ntp.crf --depend stm32f407-ucosii\app_ntp.d)
+I (..\App\app_ntp.h)(0x5EC921A5)
+I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\App\app_rtc.h)(0x5EC921A5)
+I (..\CycloneTCP\core/net.h)(0x5EE7065A)
+I (..\CycloneCFG\net_config.h)(0x5EE6D748)
+I (..\CycloneTCP\core/net_legacy.h)(0x5EE50125)
+I (..\CycloneTCP\core/net_mem.h)(0x5EE50125)
+I (..\CycloneTCP\common\os_port.h)(0x5EC8F8C8)
+I (..\CycloneCFG\os_port_config.h)(0x5EE60FB3)
+I (..\CycloneTCP\common\compiler_port.h)(0x5EC8F8C8)
+I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (E:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5E53505C)
+I (..\CycloneTCP\common\os_port_ucos2.h)(0x5EC8F8C8)
+I (..\ucosii_kernel\ucosii\Source\ucos_ii.h)(0x5EE37835)
+I (..\ucosii_kernel\ucos_cfg\app_cfg.h)(0x5EE62114)
+I (..\ucosii_kernel\ucos_debug\os_debug.h)(0x5EE6351D)
+I (..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView\cpu.h)(0x577640A7)
+I (..\ucosii_kernel\ucos_cpu\cpu_def.h)(0x577640A7)
+I (..\ucosii_kernel\ucos_cfg\cpu_cfg.h)(0x5EE2F48B)
+I (..\ucosii_kernel\ucos_cfg\os_cfg.h)(0x5EE6EAAC)
+I (..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h)(0x5EE2F699)
+I (..\CycloneTCP\common\error.h)(0x5EC8F8C8)
+I (..\CycloneTCP\core/nic.h)(0x5EE50125)
+I (..\CycloneTCP\core/ethernet.h)(0x5EE50125)
+I (..\CycloneTCP\ipv4/ipv4.h)(0x5EE50126)
+I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (..\CycloneTCP\ipv4/ipv4_frag.h)(0x5EE50126)
+I (..\CycloneTCP\ipv4/auto_ip.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ipv6.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ipv6_frag.h)(0x5EE50126)
+I (..\CycloneTCP\ipv4/arp.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ndp.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/ndp_router_adv.h)(0x5EE50126)
+I (..\CycloneTCP\ipv6/slaac.h)(0x5EE50126)
+I (..\CycloneTCP\ppp/ppp.h)(0x5EE50126)
+I (..\CycloneTCP\ppp/pap.h)(0x5EE50126)
+I (..\CycloneTCP\ppp/chap.h)(0x5EE50126)
+I (..\CycloneTCP\dhcp/dhcp_client.h)(0x5EE50125)
+I (..\CycloneTCP\core/socket.h)(0x5EE50125)
+I (..\CycloneTCP\core/ip.h)(0x5EE50125)
+I (..\CycloneTCP\core/tcp.h)(0x5EE50125)
+I (..\CycloneTCP\core/udp.h)(0x5EE50125)
+I (..\CycloneTCP\dhcp/dhcp_common.h)(0x5EE50125)
+I (..\CycloneTCP\dhcp/dhcp_server.h)(0x5EE50125)
+I (..\CycloneTCP\dhcpv6/dhcpv6_client.h)(0x5EE50125)
+I (..\CycloneTCP\dhcpv6/dhcpv6_common.h)(0x5EE50125)
+I (..\CycloneTCP\dns/dns_client.h)(0x5EE50125)
+I (..\CycloneTCP\dns/dns_cache.h)(0x5EE50125)
+I (..\CycloneTCP\mdns/mdns_responder.h)(0x5EE50126)
+I (..\CycloneTCP\dns/dns_common.h)(0x5EE50125)
+I (..\CycloneTCP\mdns/mdns_common.h)(0x5EE50126)
+I (..\CycloneTCP\dns_sd/dns_sd.h)(0x5EE50125)
+I (..\CycloneTCP\common\cpu_endian.h)(0x5EC8F8C8)
+I (..\CycloneTCP\common\debug.h)(0x5EE633DB)
+I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (E:\Keil_v5\ARM\ARMCC\include\time.h)(0x5E53505A)
+F (..\App\app_rtc.c)(0x5EE72EC7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\app_rtc.o --omf_browse stm32f407-ucosii\app_rtc.crf --depend stm32f407-ucosii\app_rtc.d)
+I (..\App\app_rtc.h)(0x5EC921A5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -114,13 +335,19 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
-F (../Src/rng.c)(0x5EE4FE2C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\rng.o --omf_browse stm32f407-ucosii\rng.crf --depend stm32f407-ucosii\rng.d)
-I (../Inc/rng.h)(0x5EE4FE2C)
-I (../Inc/main.h)(0x5EE4FE2D)
+F (..\App\infra_sha256.c)(0x5EC921A5)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\infra_sha256.o --omf_browse stm32f407-ucosii\infra_sha256.crf --depend stm32f407-ucosii\infra_sha256.d)
+I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
+I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (..\App\infra_sha256.h)(0x5EC921A5)
+I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+F (../Src/main.c)(0x5EE72D20)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\main.o --omf_browse stm32f407-ucosii\main.crf --depend stm32f407-ucosii\main.d)
+I (../Inc/main.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -148,13 +375,30 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
-F (../Src/spi.c)(0x5EE4FE2C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\spi.o --omf_browse stm32f407-ucosii\spi.crf --depend stm32f407-ucosii\spi.d)
-I (../Inc/spi.h)(0x5EE4FE2C)
-I (../Inc/main.h)(0x5EE4FE2D)
+I (../Inc/eth.h)(0x5EE72D1E)
+I (../Inc/rng.h)(0x5EE72D1E)
+I (../Inc/rtc.h)(0x5EE72D1F)
+I (../Inc/spi.h)(0x5EE72D1F)
+I (../Inc/usart.h)(0x5EE72D1F)
+I (../Inc/gpio.h)(0x5EE72D1D)
+I (..\App\app_main.h)(0x5EDC5D46)
+I (..\ucosii_kernel\ucosii\Source\ucos_ii.h)(0x5EE37835)
+I (..\ucosii_kernel\ucos_cfg\app_cfg.h)(0x5EE62114)
+I (..\ucosii_kernel\ucos_debug\os_debug.h)(0x5EE6351D)
+I (..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView\cpu.h)(0x577640A7)
+I (..\ucosii_kernel\ucos_cpu\cpu_def.h)(0x577640A7)
+I (..\ucosii_kernel\ucos_cfg\cpu_cfg.h)(0x5EE2F48B)
+I (..\ucosii_kernel\ucos_cfg\os_cfg.h)(0x5EE6EAAC)
+I (..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h)(0x5EE2F699)
+F (../Src/gpio.c)(0x5EE72D1D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\gpio.o --omf_browse stm32f407-ucosii\gpio.crf --depend stm32f407-ucosii\gpio.d)
+I (../Inc/gpio.h)(0x5EE72D1D)
+I (../Inc/main.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -182,13 +426,15 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
-F (../Src/sys.c)(0x5EE4FE2C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\sys.o --omf_browse stm32f407-ucosii\sys.crf --depend stm32f407-ucosii\sys.d)
-I (../Inc/sys.h)(0x5EE4FE2C)
-I (../Inc/main.h)(0x5EE4FE2D)
+F (../Src/eth.c)(0x5EE72D1E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\eth.o --omf_browse stm32f407-ucosii\eth.crf --depend stm32f407-ucosii\eth.d)
+I (../Inc/eth.h)(0x5EE72D1E)
+I (../Inc/main.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -216,13 +462,15 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
-F (../Src/usart.c)(0x5EE4FE2C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\usart.o --omf_browse stm32f407-ucosii\usart.crf --depend stm32f407-ucosii\usart.d)
-I (../Inc/usart.h)(0x5EE4FE2C)
-I (../Inc/main.h)(0x5EE4FE2D)
+F (../Src/rng.c)(0x5EE72D1E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\rng.o --omf_browse stm32f407-ucosii\rng.crf --depend stm32f407-ucosii\rng.d)
+I (../Inc/rng.h)(0x5EE72D1E)
+I (../Inc/main.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -250,12 +498,15 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
-F (../Src/stm32f4xx_it.c)(0x5EE4FE2D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_it.o --omf_browse stm32f407-ucosii\stm32f4xx_it.crf --depend stm32f407-ucosii\stm32f4xx_it.d)
-I (../Inc/main.h)(0x5EE4FE2D)
+F (../Src/rtc.c)(0x5EE72D1F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\rtc.o --omf_browse stm32f407-ucosii\rtc.crf --depend stm32f407-ucosii\rtc.d)
+I (../Inc/rtc.h)(0x5EE72D1F)
+I (../Inc/main.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -283,9 +534,154 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_it.h)(0x5EE4FE2D)
+F (../Src/spi.c)(0x5EE72D1F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\spi.o --omf_browse stm32f407-ucosii\spi.crf --depend stm32f407-ucosii\spi.d)
+I (../Inc/spi.h)(0x5EE72D1F)
+I (../Inc/main.h)(0x5EE72D20)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5EE2EF93)
+I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
+I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
+F (../Src/sys.c)(0x5EE72D1F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\sys.o --omf_browse stm32f407-ucosii\sys.crf --depend stm32f407-ucosii\sys.d)
+I (../Inc/sys.h)(0x5EE72D1F)
+I (../Inc/main.h)(0x5EE72D20)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5EE2EF93)
+I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
+I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
+F (../Src/usart.c)(0x5EE72D1F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\usart.o --omf_browse stm32f407-ucosii\usart.crf --depend stm32f407-ucosii\usart.d)
+I (../Inc/usart.h)(0x5EE72D1F)
+I (../Inc/main.h)(0x5EE72D20)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5EE2EF93)
+I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
+I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
+F (../Src/stm32f4xx_it.c)(0x5EE72D1F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_it.o --omf_browse stm32f407-ucosii\stm32f4xx_it.crf --depend stm32f407-ucosii\stm32f4xx_it.d)
+I (../Inc/main.h)(0x5EE72D20)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5EE2EF93)
+I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
+I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
+I (../Inc/stm32f4xx_it.h)(0x5EE72D1F)
 I (..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h)(0x5EE2F699)
 I (..\ucosii_kernel\ucosii\Source\ucos_ii.h)(0x5EE37835)
 I (..\ucosii_kernel\ucos_cfg\app_cfg.h)(0x5EE62114)
@@ -294,10 +690,10 @@ I (..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView\cpu.h)(0x577640A7)
 I (..\ucosii_kernel\ucos_cpu\cpu_def.h)(0x577640A7)
 I (..\ucosii_kernel\ucos_cfg\cpu_cfg.h)(0x5EE2F48B)
 I (..\ucosii_kernel\ucos_cfg\os_cfg.h)(0x5EE6EAAC)
-F (../Src/stm32f4xx_hal_msp.c)(0x5EE4FE2D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_msp.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_msp.crf --depend stm32f407-ucosii\stm32f4xx_hal_msp.d)
-I (../Inc/main.h)(0x5EE4FE2D)
+F (../Src/stm32f4xx_hal_msp.c)(0x5EE72D20)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_msp.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_msp.crf --depend stm32f407-ucosii\stm32f4xx_hal_msp.d)
+I (../Inc/main.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -325,11 +721,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_eth.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_eth.crf --depend stm32f407-ucosii\stm32f4xx_hal_eth.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -357,11 +755,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_rcc.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_rcc.crf --depend stm32f407-ucosii\stm32f4xx_hal_rcc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -389,11 +789,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_rcc_ex.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_rcc_ex.crf --depend stm32f407-ucosii\stm32f4xx_hal_rcc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -421,11 +823,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_flash.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_flash.crf --depend stm32f407-ucosii\stm32f4xx_hal_flash.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -453,11 +857,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_flash_ex.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_flash_ex.crf --depend stm32f407-ucosii\stm32f4xx_hal_flash_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -485,11 +891,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_flash_ramfunc.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_flash_ramfunc.crf --depend stm32f407-ucosii\stm32f4xx_hal_flash_ramfunc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -517,11 +925,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_gpio.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_gpio.crf --depend stm32f407-ucosii\stm32f4xx_hal_gpio.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -549,11 +959,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_dma_ex.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_dma_ex.crf --depend stm32f407-ucosii\stm32f4xx_hal_dma_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -581,11 +993,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_dma.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_dma.crf --depend stm32f407-ucosii\stm32f4xx_hal_dma.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -613,11 +1027,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_pwr.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_pwr.crf --depend stm32f407-ucosii\stm32f4xx_hal_pwr.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -645,11 +1061,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_pwr_ex.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_pwr_ex.crf --depend stm32f407-ucosii\stm32f4xx_hal_pwr_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -677,11 +1095,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_cortex.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_cortex.crf --depend stm32f407-ucosii\stm32f4xx_hal_cortex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -709,11 +1129,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal.o --omf_browse stm32f407-ucosii\stm32f4xx_hal.crf --depend stm32f407-ucosii\stm32f4xx_hal.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -741,11 +1163,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_exti.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_exti.crf --depend stm32f407-ucosii\stm32f4xx_hal_exti.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -773,11 +1197,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_rng.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_rng.crf --depend stm32f407-ucosii\stm32f4xx_hal_rng.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -805,11 +1231,81 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_rtc.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_rtc.crf --depend stm32f407-ucosii\stm32f4xx_hal_rtc.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5EE2EF93)
+I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
+I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_rtc_ex.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_rtc_ex.crf --depend stm32f407-ucosii\stm32f4xx_hal_rtc_ex.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5EE2F061)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5EE2EF93)
+I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
+I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_spi.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_spi.crf --depend stm32f407-ucosii\stm32f4xx_hal_spi.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -837,11 +1333,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_tim.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_tim.crf --depend stm32f407-ucosii\stm32f4xx_hal_tim.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -869,11 +1367,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_tim_ex.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_tim_ex.crf --depend stm32f407-ucosii\stm32f4xx_hal_tim_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -901,11 +1401,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c)(0x5EE2F062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\stm32f4xx_hal_uart.o --omf_browse stm32f407-ucosii\stm32f4xx_hal_uart.crf --depend stm32f407-ucosii\stm32f4xx_hal_uart.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -933,6 +1435,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (../Src/system_stm32f4xx.c)(0x5EE2F061)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\system_stm32f4xx.o --omf_browse stm32f407-ucosii\system_stm32f4xx.crf --depend stm32f407-ucosii\system_stm32f4xx.d)
@@ -946,7 +1450,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
@@ -965,6 +1469,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (..\ucosii_kernel\ucos_cpu\cpu_core.c)(0x577640A7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\cpu_core.o --omf_browse stm32f407-ucosii\cpu_core.crf --depend stm32f407-ucosii\cpu_core.d)
@@ -1013,7 +1519,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
@@ -1032,6 +1538,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 I (..\ucosii_kernel\ucos_lib\lib_def.h)(0x577640A6)
@@ -1139,10 +1647,10 @@ I (..\ucosii_kernel\ucos_debug\RTT\SEGGER_RTT_Conf.h)(0x5EDDA92C)
 I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (E:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E53505C)
 I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E53505C)
-I (../Inc/usart.h)(0x5EE4FE2C)
-I (../Inc/main.h)(0x5EE4FE2D)
+I (../Inc/usart.h)(0x5EE72D1F)
+I (../Inc/main.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -1170,6 +1678,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 I (..\ucosii_kernel\ucosii\Source\ucos_ii.h)(0x5EE37835)
@@ -1230,7 +1740,7 @@ I (..\ucosii_kernel\ucos_cfg\cpu_cfg.h)(0x5EE2F48B)
 I (..\ucosii_kernel\ucos_cfg\os_cfg.h)(0x5EE6EAAC)
 I (..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h)(0x5EE2F699)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
@@ -1258,133 +1768,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 F (..\ucosii_kernel\ucos_cfg\app_cfg.h)(0x5EE62114)()
-F (..\App\app_main.c)(0x5EE70241)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\app_main.o --omf_browse stm32f407-ucosii\app_main.crf --depend stm32f407-ucosii\app_main.d)
-I (..\App\app_main.h)(0x5EDC5D46)
-I (..\ucosii_kernel\ucosii\Source\ucos_ii.h)(0x5EE37835)
-I (..\ucosii_kernel\ucos_cfg\app_cfg.h)(0x5EE62114)
-I (..\ucosii_kernel\ucos_debug\os_debug.h)(0x5EE6351D)
-I (..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView\cpu.h)(0x577640A7)
-I (..\ucosii_kernel\ucos_cpu\cpu_def.h)(0x577640A7)
-I (..\ucosii_kernel\ucos_cfg\cpu_cfg.h)(0x5EE2F48B)
-I (..\ucosii_kernel\ucos_cfg\os_cfg.h)(0x5EE6EAAC)
-I (..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h)(0x5EE2F699)
-I (../Inc/gpio.h)(0x5EE4FE2B)
-I (../Inc/main.h)(0x5EE4FE2D)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5EE2F061)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5EE2F061)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x5EE2EF93)
-I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5EE2EF93)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5EE2EF93)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
-I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E53505C)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
-I (..\CycloneTCP\core/net.h)(0x5EE7065A)
-I (..\CycloneCFG\net_config.h)(0x5EE6D748)
-I (..\CycloneTCP\core/net_legacy.h)(0x5EE50125)
-I (..\CycloneTCP\core/net_mem.h)(0x5EE50125)
-I (..\CycloneTCP\common\os_port.h)(0x5EC8F8C8)
-I (..\CycloneCFG\os_port_config.h)(0x5EE60FB3)
-I (..\CycloneTCP\common\compiler_port.h)(0x5EC8F8C8)
-I (E:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5E53505C)
-I (..\CycloneTCP\common\os_port_ucos2.h)(0x5EC8F8C8)
-I (..\CycloneTCP\common\error.h)(0x5EC8F8C8)
-I (..\CycloneTCP\core/nic.h)(0x5EE50125)
-I (..\CycloneTCP\core/ethernet.h)(0x5EE50125)
-I (..\CycloneTCP\ipv4/ipv4.h)(0x5EE50126)
-I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E53505C)
-I (..\CycloneTCP\ipv4/ipv4_frag.h)(0x5EE50126)
-I (..\CycloneTCP\ipv4/auto_ip.h)(0x5EE50126)
-I (..\CycloneTCP\ipv6/ipv6.h)(0x5EE50126)
-I (..\CycloneTCP\ipv6/ipv6_frag.h)(0x5EE50126)
-I (..\CycloneTCP\ipv4/arp.h)(0x5EE50126)
-I (..\CycloneTCP\ipv6/ndp.h)(0x5EE50126)
-I (..\CycloneTCP\ipv6/ndp_router_adv.h)(0x5EE50126)
-I (..\CycloneTCP\ipv6/slaac.h)(0x5EE50126)
-I (..\CycloneTCP\ppp/ppp.h)(0x5EE50126)
-I (..\CycloneTCP\ppp/pap.h)(0x5EE50126)
-I (..\CycloneTCP\ppp/chap.h)(0x5EE50126)
-I (..\CycloneTCP\dhcp/dhcp_client.h)(0x5EE50125)
-I (..\CycloneTCP\core/socket.h)(0x5EE50125)
-I (..\CycloneTCP\core/ip.h)(0x5EE50125)
-I (..\CycloneTCP\core/tcp.h)(0x5EE50125)
-I (..\CycloneTCP\core/udp.h)(0x5EE50125)
-I (..\CycloneTCP\dhcp/dhcp_common.h)(0x5EE50125)
-I (..\CycloneTCP\dhcp/dhcp_server.h)(0x5EE50125)
-I (..\CycloneTCP\dhcpv6/dhcpv6_client.h)(0x5EE50125)
-I (..\CycloneTCP\dhcpv6/dhcpv6_common.h)(0x5EE50125)
-I (..\CycloneTCP\dns/dns_client.h)(0x5EE50125)
-I (..\CycloneTCP\dns/dns_cache.h)(0x5EE50125)
-I (..\CycloneTCP\mdns/mdns_responder.h)(0x5EE50126)
-I (..\CycloneTCP\dns/dns_common.h)(0x5EE50125)
-I (..\CycloneTCP\mdns/mdns_common.h)(0x5EE50126)
-I (..\CycloneTCP\dns_sd/dns_sd.h)(0x5EE50125)
-I (..\CycloneTCP\common\cpu_endian.h)(0x5EC8F8C8)
-I (..\CycloneTCP\drivers/mac/stm32f4xx_eth_driver.h)(0x5EE50126)
-I (..\CycloneTCP\drivers/phy/lan8720_driver.h)(0x5EE50126)
-I (..\CycloneTCP\mqtt/mqtt_client.h)(0x5EE50126)
-I (..\CycloneTCP\mqtt/mqtt_common.h)(0x5EE50126)
-I (..\CycloneSSL\cyclone_crypto\core/crypto.h)(0x5EC8F8C8)
-I (..\CycloneCFG\crypto_config.h)(0x5EC8F8C9)
-I (..\CycloneSSL\cyclone_crypto\core/crypto_legacy.h)(0x5EC8F8C8)
-I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
-I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
-I (E:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5E53505C)
-I (..\CycloneSSL\cyclone_ssl\tls.h)(0x5EC8F8C8)
-I (..\CycloneCFG\tls_config.h)(0x5EC8F8C9)
-I (..\CycloneSSL\cyclone_ssl\tls_legacy.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_ssl\tls13_misc.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_ssl\dtls_misc.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\mac/hmac.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\hash/md5.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\hash/sha1.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\hash/sha224.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\hash/sha256.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\hash/sha384.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\hash/sha512.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\pkc/rsa.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\mpi/mpi.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\pkc/dsa.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\ecc/ecdsa.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\ecc/ec.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\ecc/ec_curves.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\pkc/dh.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\ecc/ecdh.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\aead/gcm.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\pkix/x509_common.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\ecc/eddsa.h)(0x5EC8F8C8)
-I (..\CycloneTCP\common\date_time.h)(0x5EC8F8C8)
-I (E:\Keil_v5\ARM\ARMCC\include\time.h)(0x5E53505A)
-I (..\CycloneTCP\web_socket/web_socket.h)(0x5EE50126)
-I (..\CycloneSSL\cyclone_crypto\rng/yarrow.h)(0x5EC8F8C8)
-I (..\CycloneSSL\cyclone_crypto\cipher/aes.h)(0x5EC8F8C8)
-I (..\CycloneTCP\common\debug.h)(0x5EE633DB)
-F (..\bsp\ring_buffer.c)(0x5EE32E27)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\ring_buffer.o --omf_browse stm32f407-ucosii\ring_buffer.crf --depend stm32f407-ucosii\ring_buffer.d)
+F (..\bsp\ring_buffer.c)(0x5EE72C32)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\ucosii_kernel\ucos_cfg -I ..\ucosii_kernel\ucos_cpu -I ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucos_debug -I ..\ucosii_kernel\ucos_debug\RTT -I ..\ucosii_kernel\ucos_lib -I ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView -I ..\ucosii_kernel\ucosii\Source -I ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView -I ..\App -I ..\bsp -I ..\CycloneTCP\core -I ..\CycloneTCP\dhcp -I ..\CycloneTCP\dns -I ..\CycloneTCP\drivers\phy -I ..\CycloneTCP\ipv4 -I ..\CycloneTCP\ipv6 -I ..\CycloneTCP\mqtt -I ..\CycloneTCP\icecast -I ..\CycloneTCP -I ..\CycloneCFG -I ..\CycloneTCP\common -I ..\CycloneSSL\cyclone_ssl -I ..\CycloneSSL\cyclone_crypto -I ..\CycloneSSL\cyclone_crypto\core -I ..\CycloneSSL\cyclone_crypto\hash -I ..\CycloneTCP\netbios -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\aead -I ..\CycloneSSL\cyclone_crypto\cipher -I ..\CycloneSSL\cyclone_crypto\cipher_mode -I ..\CycloneSSL\cyclone_crypto\ecc -I ..\CycloneSSL\cyclone_crypto\encoding -I ..\CycloneSSL\cyclone_crypto\hardware -I ..\CycloneSSL\cyclone_crypto\kdf -I ..\CycloneSSL\cyclone_crypto\mac -I ..\CycloneSSL\cyclone_crypto\mpi -I ..\CycloneSSL\cyclone_crypto\pkc -I ..\CycloneSSL\cyclone_crypto\pkix -I ..\CycloneSSL\cyclone_crypto\rng -I ..\CycloneSSL\cyclone_crypto\xof-I.\RTE\_stm32f407-ucosii-IE:\Keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\Keil_v5\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DGPL_LICENSE_TERMS_ACCEPTED-o stm32f407-ucosii\ring_buffer.o --omf_browse stm32f407-ucosii\ring_buffer.crf --depend stm32f407-ucosii\ring_buffer.d)
 I (..\bsp\ring_buffer.h)(0x5EE32CD3)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
 I (..\ucosii_kernel\ucosii\Source\ucos_ii.h)(0x5EE37835)
@@ -8662,7 +9051,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5EE2EF93)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5EE2EF93)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EE2F061)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5EE4FE2D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5EE72D20)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5EE2F061)
@@ -8681,6 +9070,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5EE2F061
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x5EE2F061)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5EE2F061)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5EE2F061)
 I (..\CycloneTCP\core/net.h)(0x5EE7065A)

@@ -30,10 +30,13 @@ stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash
 stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h
+stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
+stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
 stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 stm32f407-ucosii\main.o: ../Inc/eth.h
 stm32f407-ucosii\main.o: ../Inc/rng.h
+stm32f407-ucosii\main.o: ../Inc/rtc.h
 stm32f407-ucosii\main.o: ../Inc/spi.h
 stm32f407-ucosii\main.o: ../Inc/usart.h
 stm32f407-ucosii\main.o: ../Inc/gpio.h

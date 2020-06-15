@@ -27,7 +27,7 @@ ring_buffer_s *__ring_buffer_init(uint8_t *buffer, uint32_t size)
     {
         return rb;
     }
-    //rb = (ring_buffer_s *)pvPortMalloc(sizeof(ring_buffer_s));
+    rb = (ring_buffer_s *)malloc(sizeof(ring_buffer_s));
     if (!rb)
     {
         return rb;
@@ -44,7 +44,7 @@ ring_buffer_s *__ring_buffer_init(uint8_t *buffer, uint32_t size)
 ring_buffer_s *ring_uint8_init(uint32_t size)
 {
     uint8_t *buffer;
-    //buffer = (uint8_t *)pvPortMalloc(size);
+    buffer = (uint8_t *)malloc(size);
     if (buffer == NULL)
     {
         return NULL;
@@ -60,7 +60,7 @@ void ring_buffer_free(ring_buffer_s *rb)
     {
         if (rb->buffer)
         {
-            //vPortFree(rb->buffer);
+            free(rb->buffer);
             rb->buffer = NULL;
         }
         free(rb);

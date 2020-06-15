@@ -14,9 +14,12 @@
 #include "drivers/phy/lan8720_driver.h"
 #include "dhcp/dhcp_client.h"
 #include "ipv6/slaac.h"
-#include "mqtt/mqtt_client.h"
 #include "rng/yarrow.h"
 #include "debug.h"
+#include "app_mqtt.h"
+
+extern RNG_HandleTypeDef RNG_Handle;
+extern MqttClientContext mqttClientContext;
 
 //Ethernet interface configuration
 #define APP_IF_NAME "eth0"
@@ -39,13 +42,6 @@
 #define APP_IPV6_PRIMARY_DNS "2001:4860:4860::8888"
 #define APP_IPV6_SECONDARY_DNS "2001:4860:4860::8844"
 
-//MQTT server name
-#define APP_SERVER_NAME "test.mosquitto.org"
-#define TEST_SERVER "iot-as-mqtt.cn-shanghai.aliyuncs.com"
-#define TEST_PORT 1883
-
-//MQTT server port
-#define APP_SERVER_PORT 1883   //MQTT over TCP
 //#define APP_SERVER_PORT TEST_PORT //MQTT over TLS
 //#define APP_SERVER_PORT 8884 //MQTT over TLS (mutual authentication)
 //#define APP_SERVER_PORT 8080 //MQTT over WebSocket
@@ -102,14 +98,10 @@ r9yenqwMukrfzHIEBb9AxSv9BDdxa0hvaRXXsdPjRTMF+Bz+\r\n\
 -----END CERTIFICATE-----\r\n\
 ";
 
-//Global variables
-RNG_HandleTypeDef RNG_Handle;
-
 DhcpClientSettings dhcpClientSettings;
 DhcpClientContext dhcpClientContext;
 SlaacSettings slaacSettings;
 SlaacContext slaacContext;
-//MqttClientContext mqttClientContext;
 YarrowContext yarrowContext;
 uint8_t seed[32];
 
@@ -211,6 +203,9 @@ void tcp_task(void *arg)
    uint32_t value;
    NetInterface *interface;
    MacAddr macAddr;
+   bool_t connectionState;
+   uint32_t test;
+    
 #if (APP_USE_DHCP_CLIENT == DISABLED)
    Ipv4Addr ipv4Addr;
 #endif
@@ -394,10 +389,61 @@ void tcp_task(void *arg)
    ipv6SetDnsServer(interface, 1, &ipv6Addr);
 #endif
 #endif
+   //Initialize variables
+   connectionState = FALSE;
+   //Initialize MQTT client context
+   mqttClientInit(&mqttClientContext);
    for (;;)
    {
-      ucos_kprintf("tcp task run:%d.\r\n", OSTimeGet());
-      OSTimeDlyHMSM(0, 0, 5, 500);
+      //Check connection state
+      if(!connectionState)
+      {
+         //Make sure the link is up
+         if(netGetLinkState(&netInterface[0]))
+         {
+            //Try to connect to the MQTT server
+            error = mqttConnect();
+
+            //Successful connection?
+            if(!error)
+            {
+               //The MQTT client is connected to the server
+               connectionState = TRUE;
+               TRACE_INFO("MQTT Connect Success.\r\n");
+            }
+            else
+            {
+               //Delay between subsequent connection attempts
+               osDelayTask(2000);
+            }
+         }
+      }
+      else
+      {
+         //Initialize status code
+        error = NO_ERROR;
+        test++;
+        if (0 == test % 50)
+        {
+            error = publish_info_to_aliyun(&mqttClientContext);
+            if (error != 0)
+            {
+                TRACE_INFO("MQTT Publish Error.\r\n");
+                goto __exit;
+            }
+        }
+        
+        error = mqttClientTask(&mqttClientContext, 100);
+__exit:
+         if(error)
+         {
+            //Close connection
+            mqttClientClose(&mqttClientContext);
+            //Update connection state
+            connectionState = FALSE;
+         }
+      }
+      osDelayTask(10u);
    }
 }
 
