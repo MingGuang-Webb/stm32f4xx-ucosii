@@ -6,10 +6,9 @@
 #include "stm32f4xx.h"
 #include "mqtt/mqtt_client.h"
 
-MqttClientContext mqttClientContext;
 //Global variables
-RNG_HandleTypeDef RNG_Handle;
-
+extern RNG_HandleTypeDef hrng;
+MqttClientContext mqttClientContext;
 mqtt_net_sta_t mqtt_net_sta = TBOX_MQTT_STATE_IDLE;
 
 uint32_t HexToChar(uint8_t Hex, char *c)
@@ -222,20 +221,10 @@ error_t mqttConnect(void)
    mqttClientSetUri(&mqttClientContext, APP_SERVER_URI);
 #endif
 
-   //Set client identifier
-   //mqttClientSetIdentifier(&mqttClientContext, "client12345678");
-
-   //Set user name and password
-   //mqttClientSetAuthInfo(&mqttClientContext, "username", "password");
-
-   //Set Will message
-//   mqttClientSetWillMessage(&mqttClientContext, "board/status",
-//      "offline", 7, MQTT_QOS_LEVEL_0, FALSE);
-
    //Debug message
    TRACE_INFO("Connecting to MQTT server %s...\r\n", ipAddrToString(&ipAddr, NULL));
    
-   HAL_RNG_GenerateRandomNumber(&RNG_Handle, &trng);
+   HAL_RNG_GenerateRandomNumber(&hrng, &trng);
    trng %= 10000;
    TRACE_INFO("ali mqtt RNG:%d\r\n",trng);
    connect_aliyun_data_init(&mqttClientContext,EXAMPLE_DEVICE_NAME,EXAMPLE_DEVICE_SECRET,EXAMPLE_PRODUCT_KEY,trng);

@@ -18,7 +18,7 @@
 #include "debug.h"
 #include "app_mqtt.h"
 
-extern RNG_HandleTypeDef RNG_Handle;
+extern RNG_HandleTypeDef hrng;
 extern MqttClientContext mqttClientContext;
 
 //Ethernet interface configuration
@@ -223,14 +223,11 @@ void tcp_task(void *arg)
    TRACE_INFO("Target: STM32F407ZG\r\n");
    TRACE_INFO("\r\n");
 
-   //Initialize RNG
-   RNG_Handle.Instance = RNG;
-
    //Generate a random seed
    for (i = 0; i < 32; i += 4)
    {
       //Get 32-bit random value
-      HAL_RNG_GenerateRandomNumber(&RNG_Handle, &value);
+      HAL_RNG_GenerateRandomNumber(&hrng, &value);
 
       //Copy random value
       seed[i] = value & 0xFF;
