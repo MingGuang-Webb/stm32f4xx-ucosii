@@ -1269,79 +1269,9 @@
           <GroupName>CycloneTCP-Crypto</GroupName>
           <Files>
             <File>
-              <FileName>blake2b.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\blake2b.c</FilePath>
-            </File>
-            <File>
-              <FileName>blake2b160.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\blake2b160.c</FilePath>
-            </File>
-            <File>
-              <FileName>blake2b256.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\blake2b256.c</FilePath>
-            </File>
-            <File>
-              <FileName>blake2b384.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\blake2b384.c</FilePath>
-            </File>
-            <File>
-              <FileName>blake2b512.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\blake2b512.c</FilePath>
-            </File>
-            <File>
-              <FileName>blake2s.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\blake2s.c</FilePath>
-            </File>
-            <File>
-              <FileName>blake2s128.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\blake2s128.c</FilePath>
-            </File>
-            <File>
-              <FileName>blake2s160.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\blake2s160.c</FilePath>
-            </File>
-            <File>
-              <FileName>blake2s224.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\blake2s224.c</FilePath>
-            </File>
-            <File>
-              <FileName>blake2s256.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\blake2s256.c</FilePath>
-            </File>
-            <File>
-              <FileName>md2.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\md2.c</FilePath>
-            </File>
-            <File>
-              <FileName>md4.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\md4.c</FilePath>
-            </File>
-            <File>
               <FileName>md5.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CycloneSSL\cyclone_crypto\hash\md5.c</FilePath>
-            </File>
-            <File>
-              <FileName>ripemd128.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\ripemd128.c</FilePath>
-            </File>
-            <File>
-              <FileName>ripemd160.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\ripemd160.c</FilePath>
             </File>
             <File>
               <FileName>sha1.c</FileName>
@@ -1374,11 +1304,6 @@
               <FilePath>..\CycloneSSL\cyclone_crypto\hash\tiger.c</FilePath>
             </File>
             <File>
-              <FileName>whirlpool.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\hash\whirlpool.c</FilePath>
-            </File>
-            <File>
               <FileName>asn1.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CycloneSSL\cyclone_crypto\encoding\asn1.c</FilePath>
@@ -1389,19 +1314,9 @@
               <FilePath>..\CycloneSSL\cyclone_crypto\encoding\base64.c</FilePath>
             </File>
             <File>
-              <FileName>base64url.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\encoding\base64url.c</FilePath>
-            </File>
-            <File>
               <FileName>oid.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CycloneSSL\cyclone_crypto\encoding\oid.c</FilePath>
-            </File>
-            <File>
-              <FileName>radix64.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\encoding\radix64.c</FilePath>
             </File>
             <File>
               <FileName>hmac.c</FileName>
@@ -1494,29 +1409,14 @@
               <FilePath>..\CycloneSSL\cyclone_crypto\pkc\rsa.c</FilePath>
             </File>
             <File>
-              <FileName>pem_export.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\pkix\pem_export.c</FilePath>
-            </File>
-            <File>
               <FileName>pem_import.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CycloneSSL\cyclone_crypto\pkix\pem_import.c</FilePath>
             </File>
             <File>
-              <FileName>pkcs8_key_format.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\pkix\pkcs8_key_format.c</FilePath>
-            </File>
-            <File>
               <FileName>pkcs8_key_parse.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CycloneSSL\cyclone_crypto\pkix\pkcs8_key_parse.c</FilePath>
-            </File>
-            <File>
-              <FileName>x509_cert_create.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\pkix\x509_cert_create.c</FilePath>
             </File>
             <File>
               <FileName>x509_cert_parse.c</FileName>
@@ -1544,26 +1444,6 @@
               <FilePath>..\CycloneSSL\cyclone_crypto\pkix\x509_crl_validate.c</FilePath>
             </File>
             <File>
-              <FileName>x509_csr_create.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\pkix\x509_csr_create.c</FilePath>
-            </File>
-            <File>
-              <FileName>x509_csr_parse.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\pkix\x509_csr_parse.c</FilePath>
-            </File>
-            <File>
-              <FileName>x509_csr_validate.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\pkix\x509_csr_validate.c</FilePath>
-            </File>
-            <File>
-              <FileName>x509_key_format.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\pkix\x509_key_format.c</FilePath>
-            </File>
-            <File>
               <FileName>x509_key_parse.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CycloneSSL\cyclone_crypto\pkix\x509_key_parse.c</FilePath>
@@ -1579,16 +1459,6 @@
               <FilePath>..\CycloneSSL\cyclone_crypto\xof\keccak.c</FilePath>
             </File>
             <File>
-              <FileName>shake128.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\xof\shake128.c</FilePath>
-            </File>
-            <File>
-              <FileName>shake256.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\xof\shake256.c</FilePath>
-            </File>
-            <File>
               <FileName>mpi.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CycloneSSL\cyclone_crypto\mpi\mpi.c</FilePath>
@@ -1597,11 +1467,6 @@
               <FileName>hkdf.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CycloneSSL\cyclone_crypto\kdf\hkdf.c</FilePath>
-            </File>
-            <File>
-              <FileName>pkcs5.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\CycloneSSL\cyclone_crypto\kdf\pkcs5.c</FilePath>
             </File>
             <File>
               <FileName>ec.c</FileName>

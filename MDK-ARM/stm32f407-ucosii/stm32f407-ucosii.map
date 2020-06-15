@@ -4150,8 +4150,6 @@ Section Cross References
     oid.o(i.oidToString) refers to printfa.o(i.__0sprintf) for __2sprintf
     oid.o(i.oidToString) refers to strcpy.o(.text) for strcpy
     oid.o(i.oidToString) refers to oid.o(.bss) for .bss
-    radix64.o(i.radix64Decode) refers to radix64.o(.constdata) for .constdata
-    radix64.o(i.radix64Encode) refers to radix64.o(.constdata) for .constdata
     hmac.o(i.hmacCompute) refers to os_port_ucos2.o(i.osAllocMem) for osAllocMem
     hmac.o(i.hmacCompute) refers to hmac.o(i.hmacInit) for hmacInit
     hmac.o(i.hmacCompute) refers to hmac.o(i.hmacUpdate) for hmacUpdate
@@ -4448,60 +4446,6 @@ Section Cross References
     rsa.o(i.rsassaPssVerify) refers to os_port_ucos2.o(i.osFreeMem) for osFreeMem
     rsa.o(i.rsassaPssVerify) refers to mpi.o(i.mpiFree) for mpiFree
     rsa.o(i.rsavp1) refers to rsa.o(i.rsaep) for rsaep
-    pem_export.o(i.pemEncodeFile) refers to strlen.o(.text) for strlen
-    pem_export.o(i.pemEncodeFile) refers to base64.o(i.base64Encode) for base64Encode
-    pem_export.o(i.pemEncodeFile) refers to memmovea.o(.text) for __aeabi_memmove
-    pem_export.o(i.pemEncodeFile) refers to strcpy.o(.text) for strcpy
-    pem_export.o(i.pemEncodeFile) refers to strncpy.o(.text) for strncpy
-    pem_export.o(i.pemExportCertificate) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportCrl) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportCsr) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportDsaPrivateKey) refers to memseta.o(.text) for __aeabi_memclr4
-    pem_export.o(i.pemExportDsaPrivateKey) refers to asn1.o(i.asn1WriteInt32) for asn1WriteInt32
-    pem_export.o(i.pemExportDsaPrivateKey) refers to x509_key_format.o(i.x509FormatAlgorithmIdentifier) for x509FormatAlgorithmIdentifier
-    pem_export.o(i.pemExportDsaPrivateKey) refers to pkcs8_key_format.o(i.pkcs8FormatDsaPrivateKey) for pkcs8FormatDsaPrivateKey
-    pem_export.o(i.pemExportDsaPrivateKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    pem_export.o(i.pemExportDsaPrivateKey) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportDsaPrivateKey) refers to dsa.o(.constdata) for DSA_OID
-    pem_export.o(i.pemExportDsaPublicKey) refers to memseta.o(.text) for __aeabi_memclr4
-    pem_export.o(i.pemExportDsaPublicKey) refers to x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) for x509FormatSubjectPublicKeyInfo
-    pem_export.o(i.pemExportDsaPublicKey) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportDsaPublicKey) refers to dsa.o(.constdata) for DSA_OID
-    pem_export.o(i.pemExportEcParameters) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    pem_export.o(i.pemExportEcParameters) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportEcPrivateKey) refers to memseta.o(.text) for __aeabi_memclr4
-    pem_export.o(i.pemExportEcPrivateKey) refers to asn1.o(i.asn1WriteInt32) for asn1WriteInt32
-    pem_export.o(i.pemExportEcPrivateKey) refers to x509_key_format.o(i.x509FormatAlgorithmIdentifier) for x509FormatAlgorithmIdentifier
-    pem_export.o(i.pemExportEcPrivateKey) refers to pkcs8_key_format.o(i.pkcs8FormatEcPrivateKey) for pkcs8FormatEcPrivateKey
-    pem_export.o(i.pemExportEcPrivateKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    pem_export.o(i.pemExportEcPrivateKey) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportEcPrivateKey) refers to ec.o(.constdata) for EC_PUBLIC_KEY_OID
-    pem_export.o(i.pemExportEcPublicKey) refers to memseta.o(.text) for __aeabi_memclr4
-    pem_export.o(i.pemExportEcPublicKey) refers to x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) for x509FormatSubjectPublicKeyInfo
-    pem_export.o(i.pemExportEcPublicKey) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportEcPublicKey) refers to ec.o(.constdata) for EC_PUBLIC_KEY_OID
-    pem_export.o(i.pemExportRsaPrivateKey) refers to memseta.o(.text) for __aeabi_memclr4
-    pem_export.o(i.pemExportRsaPrivateKey) refers to asn1.o(i.asn1WriteInt32) for asn1WriteInt32
-    pem_export.o(i.pemExportRsaPrivateKey) refers to x509_key_format.o(i.x509FormatAlgorithmIdentifier) for x509FormatAlgorithmIdentifier
-    pem_export.o(i.pemExportRsaPrivateKey) refers to pkcs8_key_format.o(i.pkcs8FormatRsaPrivateKey) for pkcs8FormatRsaPrivateKey
-    pem_export.o(i.pemExportRsaPrivateKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    pem_export.o(i.pemExportRsaPrivateKey) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportRsaPrivateKey) refers to rsa.o(.constdata) for RSA_ENCRYPTION_OID
-    pem_export.o(i.pemExportRsaPssPrivateKey) refers to memseta.o(.text) for __aeabi_memclr4
-    pem_export.o(i.pemExportRsaPssPrivateKey) refers to asn1.o(i.asn1WriteInt32) for asn1WriteInt32
-    pem_export.o(i.pemExportRsaPssPrivateKey) refers to x509_key_format.o(i.x509FormatAlgorithmIdentifier) for x509FormatAlgorithmIdentifier
-    pem_export.o(i.pemExportRsaPssPrivateKey) refers to pkcs8_key_format.o(i.pkcs8FormatRsaPrivateKey) for pkcs8FormatRsaPrivateKey
-    pem_export.o(i.pemExportRsaPssPrivateKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    pem_export.o(i.pemExportRsaPssPrivateKey) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportRsaPssPrivateKey) refers to rsa.o(.constdata) for RSASSA_PSS_OID
-    pem_export.o(i.pemExportRsaPssPublicKey) refers to memseta.o(.text) for __aeabi_memclr4
-    pem_export.o(i.pemExportRsaPssPublicKey) refers to x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) for x509FormatSubjectPublicKeyInfo
-    pem_export.o(i.pemExportRsaPssPublicKey) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportRsaPssPublicKey) refers to rsa.o(.constdata) for RSASSA_PSS_OID
-    pem_export.o(i.pemExportRsaPublicKey) refers to memseta.o(.text) for __aeabi_memclr4
-    pem_export.o(i.pemExportRsaPublicKey) refers to x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) for x509FormatSubjectPublicKeyInfo
-    pem_export.o(i.pemExportRsaPublicKey) refers to pem_export.o(i.pemEncodeFile) for pemEncodeFile
-    pem_export.o(i.pemExportRsaPublicKey) refers to rsa.o(.constdata) for RSA_ENCRYPTION_OID
     pem_import.o(i.pemDecodeFile) refers to pem_import.o(i.pemFindTag) for pemFindTag
     pem_import.o(i.pemDecodeFile) refers to strlen.o(.text) for strlen
     pem_import.o(i.pemDecodeFile) refers to base64.o(i.base64Decode) for base64Decode
@@ -4583,19 +4527,6 @@ Section Cross References
     pem_import.o(i.pemImportRsaPublicKey) refers to x509_key_parse.o(i.x509ImportRsaPublicKey) for x509ImportRsaPublicKey
     pem_import.o(i.pemImportRsaPublicKey) refers to os_port_ucos2.o(i.osFreeMem) for osFreeMem
     pem_import.o(i.pemImportRsaPublicKey) refers to rsa.o(.constdata) for RSA_ENCRYPTION_OID
-    pkcs8_key_format.o(i.pkcs8FormatDsaPrivateKey) refers to x509_key_format.o(i.x509ExportDsaPrivateKey) for x509ExportDsaPrivateKey
-    pkcs8_key_format.o(i.pkcs8FormatDsaPrivateKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    pkcs8_key_format.o(i.pkcs8FormatEcPrivateKey) refers to asn1.o(i.asn1WriteInt32) for asn1WriteInt32
-    pkcs8_key_format.o(i.pkcs8FormatEcPrivateKey) refers to mpi.o(i.mpiExport) for mpiExport
-    pkcs8_key_format.o(i.pkcs8FormatEcPrivateKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    pkcs8_key_format.o(i.pkcs8FormatEcPrivateKey) refers to pkcs8_key_format.o(i.pkcs8FormatEcPublicKey) for pkcs8FormatEcPublicKey
-    pkcs8_key_format.o(i.pkcs8FormatEcPublicKey) refers to ec.o(i.ecInitDomainParameters) for ecInitDomainParameters
-    pkcs8_key_format.o(i.pkcs8FormatEcPublicKey) refers to ec.o(i.ecLoadDomainParameters) for ecLoadDomainParameters
-    pkcs8_key_format.o(i.pkcs8FormatEcPublicKey) refers to ec.o(i.ecExport) for ecExport
-    pkcs8_key_format.o(i.pkcs8FormatEcPublicKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    pkcs8_key_format.o(i.pkcs8FormatEcPublicKey) refers to ec.o(i.ecFreeDomainParameters) for ecFreeDomainParameters
-    pkcs8_key_format.o(i.pkcs8FormatRsaPrivateKey) refers to x509_key_format.o(i.x509ExportRsaPrivateKey) for x509ExportRsaPrivateKey
-    pkcs8_key_format.o(i.pkcs8FormatRsaPrivateKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
     pkcs8_key_parse.o(i.pkcs8ImportDsaPrivateKey) refers to oid.o(i.oidComp) for oidComp
     pkcs8_key_parse.o(i.pkcs8ImportDsaPrivateKey) refers to mpi.o(i.mpiImport) for mpiImport
     pkcs8_key_parse.o(i.pkcs8ImportDsaPrivateKey) refers to dsa.o(.constdata) for DSA_OID
@@ -4642,72 +4573,6 @@ Section Cross References
     pkcs8_key_parse.o(i.pkcs8ParseRsaPrivateKey) refers to asn1.o(i.asn1ReadInt32) for asn1ReadInt32
     pkcs8_key_parse.o(i.pkcs8ParseRsaPrivateKey) refers to asn1.o(i.asn1ReadTag) for asn1ReadTag
     pkcs8_key_parse.o(i.pkcs8ParseRsaPrivateKey) refers to asn1.o(i.asn1CheckTag) for asn1CheckTag
-    x509_cert_create.o(i.x509CreateCertificate) refers to x509_cert_create.o(i.x509FormatTbsCertificate) for x509FormatTbsCertificate
-    x509_cert_create.o(i.x509CreateCertificate) refers to x509_cert_create.o(i.x509FormatSignatureAlgo) for x509FormatSignatureAlgo
-    x509_cert_create.o(i.x509CreateCertificate) refers to x509_cert_create.o(i.x509FormatSignatureValue) for x509FormatSignatureValue
-    x509_cert_create.o(i.x509CreateCertificate) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatAuthorityKeyId) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatAuthorityKeyId) refers to x509_common.o(.constdata) for X509_AUTHORITY_KEY_ID_OID
-    x509_cert_create.o(i.x509FormatBasicConstraints) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatBasicConstraints) refers to asn1.o(i.asn1WriteInt32) for asn1WriteInt32
-    x509_cert_create.o(i.x509FormatBasicConstraints) refers to x509_common.o(.constdata) for X509_BASIC_CONSTRAINTS_OID
-    x509_cert_create.o(i.x509FormatExtensions) refers to x509_cert_create.o(i.x509FormatNsCertType) for x509FormatNsCertType
-    x509_cert_create.o(i.x509FormatExtensions) refers to x509_cert_create.o(i.x509FormatBasicConstraints) for x509FormatBasicConstraints
-    x509_cert_create.o(i.x509FormatExtensions) refers to x509_cert_create.o(i.x509FormatKeyUsage) for x509FormatKeyUsage
-    x509_cert_create.o(i.x509FormatExtensions) refers to x509_cert_create.o(i.x509FormatSubjectKeyId) for x509FormatSubjectKeyId
-    x509_cert_create.o(i.x509FormatExtensions) refers to x509_cert_create.o(i.x509FormatAuthorityKeyId) for x509FormatAuthorityKeyId
-    x509_cert_create.o(i.x509FormatExtensions) refers to x509_cert_create.o(i.x509FormatSubjectAltName) for x509FormatSubjectAltName
-    x509_cert_create.o(i.x509FormatExtensions) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatKeyUsage) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatKeyUsage) refers to cpu_endian.o(i.reverseInt8) for reverseInt8
-    x509_cert_create.o(i.x509FormatKeyUsage) refers to x509_common.o(.constdata) for X509_KEY_USAGE_OID
-    x509_cert_create.o(i.x509FormatName) refers to memmovea.o(.text) for __aeabi_memcpy
-    x509_cert_create.o(i.x509FormatName) refers to x509_cert_create.o(i.x509FormatNameAttribute) for x509FormatNameAttribute
-    x509_cert_create.o(i.x509FormatName) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatName) refers to x509_common.o(.constdata) for X509_COUNTRY_NAME_OID
-    x509_cert_create.o(i.x509FormatName) refers to x509_common.o(.constdata) for X509_STATE_OR_PROVINCE_NAME_OID
-    x509_cert_create.o(i.x509FormatName) refers to x509_common.o(.constdata) for X509_LOCALITY_NAME_OID
-    x509_cert_create.o(i.x509FormatName) refers to x509_common.o(.constdata) for X509_ORGANIZATION_NAME_OID
-    x509_cert_create.o(i.x509FormatName) refers to x509_common.o(.constdata) for X509_ORGANIZATIONAL_UNIT_NAME_OID
-    x509_cert_create.o(i.x509FormatName) refers to x509_common.o(.constdata) for X509_COMMON_NAME_OID
-    x509_cert_create.o(i.x509FormatNameAttribute) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatNsCertType) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatNsCertType) refers to cpu_endian.o(i.reverseInt8) for reverseInt8
-    x509_cert_create.o(i.x509FormatNsCertType) refers to x509_common.o(.constdata) for X509_NS_CERT_TYPE_OID
-    x509_cert_create.o(i.x509FormatSerialNumber) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatSignatureAlgo) refers to x509_common.o(i.x509GetSignHashAlgo) for x509GetSignHashAlgo
-    x509_cert_create.o(i.x509FormatSignatureAlgo) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatSignatureValue) refers to x509_cert_create.o(i.x509GenerateSignature) for x509GenerateSignature
-    x509_cert_create.o(i.x509FormatSignatureValue) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatSubjectAltName) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatSubjectAltName) refers to x509_common.o(.constdata) for X509_SUBJECT_ALT_NAME_OID
-    x509_cert_create.o(i.x509FormatSubjectKeyId) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatSubjectKeyId) refers to x509_common.o(.constdata) for X509_SUBJECT_KEY_ID_OID
-    x509_cert_create.o(i.x509FormatTbsCertificate) refers to x509_cert_create.o(i.x509FormatVersion) for x509FormatVersion
-    x509_cert_create.o(i.x509FormatTbsCertificate) refers to x509_cert_create.o(i.x509FormatSerialNumber) for x509FormatSerialNumber
-    x509_cert_create.o(i.x509FormatTbsCertificate) refers to x509_cert_create.o(i.x509FormatSignatureAlgo) for x509FormatSignatureAlgo
-    x509_cert_create.o(i.x509FormatTbsCertificate) refers to x509_cert_create.o(i.x509FormatName) for x509FormatName
-    x509_cert_create.o(i.x509FormatTbsCertificate) refers to x509_cert_create.o(i.x509FormatValidity) for x509FormatValidity
-    x509_cert_create.o(i.x509FormatTbsCertificate) refers to x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) for x509FormatSubjectPublicKeyInfo
-    x509_cert_create.o(i.x509FormatTbsCertificate) refers to x509_cert_create.o(i.x509FormatExtensions) for x509FormatExtensions
-    x509_cert_create.o(i.x509FormatTbsCertificate) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatTime) refers to printfa.o(i.__0sprintf) for __2sprintf
-    x509_cert_create.o(i.x509FormatTime) refers to strlen.o(.text) for strlen
-    x509_cert_create.o(i.x509FormatTime) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatValidity) refers to x509_cert_create.o(i.x509FormatTime) for x509FormatTime
-    x509_cert_create.o(i.x509FormatValidity) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509FormatVersion) refers to asn1.o(i.asn1WriteInt32) for asn1WriteInt32
-    x509_cert_create.o(i.x509FormatVersion) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_cert_create.o(i.x509GenerateSignature) refers to x509_common.o(i.x509GetSignHashAlgo) for x509GetSignHashAlgo
-    x509_cert_create.o(i.x509GenerateSignature) refers to rsa.o(i.rsassaPkcs1v15Sign) for rsassaPkcs1v15Sign
-    x509_cert_create.o(i.x509GenerateSignature) refers to ec.o(i.ecInitDomainParameters) for ecInitDomainParameters
-    x509_cert_create.o(i.x509GenerateSignature) refers to ecdsa.o(i.ecdsaInitSignature) for ecdsaInitSignature
-    x509_cert_create.o(i.x509GenerateSignature) refers to x509_common.o(i.x509GetCurveInfo) for x509GetCurveInfo
-    x509_cert_create.o(i.x509GenerateSignature) refers to ec.o(i.ecLoadDomainParameters) for ecLoadDomainParameters
-    x509_cert_create.o(i.x509GenerateSignature) refers to ecdsa.o(i.ecdsaGenerateSignature) for ecdsaGenerateSignature
-    x509_cert_create.o(i.x509GenerateSignature) refers to ecdsa.o(i.ecdsaWriteSignature) for ecdsaWriteSignature
-    x509_cert_create.o(i.x509GenerateSignature) refers to ec.o(i.ecFreeDomainParameters) for ecFreeDomainParameters
-    x509_cert_create.o(i.x509GenerateSignature) refers to ecdsa.o(i.ecdsaFreeSignature) for ecdsaFreeSignature
     x509_cert_parse.o(i.x509ParseAuthorityKeyId) refers to asn1.o(i.asn1ReadSequence) for asn1ReadSequence
     x509_cert_parse.o(i.x509ParseAuthorityKeyId) refers to asn1.o(i.asn1ReadTag) for asn1ReadTag
     x509_cert_parse.o(i.x509ParseBasicConstraints) refers to asn1.o(i.asn1ReadSequence) for asn1ReadSequence
@@ -4948,126 +4813,6 @@ Section Cross References
     x509_crl_validate.o(i.x509ValidateCrl) refers to date_time.o(i.compareDateTime) for compareDateTime
     x509_crl_validate.o(i.x509ValidateCrl) refers to x509_cert_validate.o(i.x509CompareName) for x509CompareName
     x509_crl_validate.o(i.x509ValidateCrl) refers to x509_cert_validate.o(i.x509VerifySignature) for x509VerifySignature
-    x509_csr_create.o(i.x509CreateCsr) refers to x509_csr_create.o(i.x509FormatCertRequestInfo) for x509FormatCertRequestInfo
-    x509_csr_create.o(i.x509CreateCsr) refers to x509_cert_create.o(i.x509FormatSignatureAlgo) for x509FormatSignatureAlgo
-    x509_csr_create.o(i.x509CreateCsr) refers to x509_cert_create.o(i.x509FormatSignatureValue) for x509FormatSignatureValue
-    x509_csr_create.o(i.x509CreateCsr) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_csr_create.o(i.x509FormatAttributes) refers to x509_csr_create.o(i.x509FormatChallengePassword) for x509FormatChallengePassword
-    x509_csr_create.o(i.x509FormatAttributes) refers to x509_csr_create.o(i.x509FormatExtensionRequest) for x509FormatExtensionRequest
-    x509_csr_create.o(i.x509FormatAttributes) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_csr_create.o(i.x509FormatCertRequestInfo) refers to asn1.o(i.asn1WriteInt32) for asn1WriteInt32
-    x509_csr_create.o(i.x509FormatCertRequestInfo) refers to x509_cert_create.o(i.x509FormatName) for x509FormatName
-    x509_csr_create.o(i.x509FormatCertRequestInfo) refers to x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) for x509FormatSubjectPublicKeyInfo
-    x509_csr_create.o(i.x509FormatCertRequestInfo) refers to x509_csr_create.o(i.x509FormatAttributes) for x509FormatAttributes
-    x509_csr_create.o(i.x509FormatCertRequestInfo) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_csr_create.o(i.x509FormatChallengePassword) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_csr_create.o(i.x509FormatChallengePassword) refers to x509_common.o(.constdata) for X509_CHALLENGE_PASSWORD_OID
-    x509_csr_create.o(i.x509FormatExtensionRequest) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_csr_create.o(i.x509FormatExtensionRequest) refers to x509_cert_create.o(i.x509FormatNsCertType) for x509FormatNsCertType
-    x509_csr_create.o(i.x509FormatExtensionRequest) refers to x509_cert_create.o(i.x509FormatBasicConstraints) for x509FormatBasicConstraints
-    x509_csr_create.o(i.x509FormatExtensionRequest) refers to x509_cert_create.o(i.x509FormatKeyUsage) for x509FormatKeyUsage
-    x509_csr_create.o(i.x509FormatExtensionRequest) refers to x509_cert_create.o(i.x509FormatSubjectAltName) for x509FormatSubjectAltName
-    x509_csr_create.o(i.x509FormatExtensionRequest) refers to x509_cert_create.o(i.x509FormatSubjectKeyId) for x509FormatSubjectKeyId
-    x509_csr_create.o(i.x509FormatExtensionRequest) refers to x509_cert_create.o(i.x509FormatAuthorityKeyId) for x509FormatAuthorityKeyId
-    x509_csr_create.o(i.x509FormatExtensionRequest) refers to x509_common.o(.constdata) for X509_EXTENSION_REQUEST_OID
-    x509_csr_parse.o(i.x509ParseAttribute) refers to asn1.o(i.asn1ReadSequence) for asn1ReadSequence
-    x509_csr_parse.o(i.x509ParseAttribute) refers to asn1.o(i.asn1ReadOid) for asn1ReadOid
-    x509_csr_parse.o(i.x509ParseAttribute) refers to asn1.o(i.asn1ReadTag) for asn1ReadTag
-    x509_csr_parse.o(i.x509ParseAttribute) refers to asn1.o(i.asn1CheckTag) for asn1CheckTag
-    x509_csr_parse.o(i.x509ParseAttributes) refers to asn1.o(i.asn1ReadTag) for asn1ReadTag
-    x509_csr_parse.o(i.x509ParseAttributes) refers to asn1.o(i.asn1CheckTag) for asn1CheckTag
-    x509_csr_parse.o(i.x509ParseAttributes) refers to x509_csr_parse.o(i.x509ParseAttribute) for x509ParseAttribute
-    x509_csr_parse.o(i.x509ParseAttributes) refers to oid.o(i.oidComp) for oidComp
-    x509_csr_parse.o(i.x509ParseAttributes) refers to x509_csr_parse.o(i.x509ParseChallengePassword) for x509ParseChallengePassword
-    x509_csr_parse.o(i.x509ParseAttributes) refers to x509_csr_parse.o(i.x509ParseExtensionRequest) for x509ParseExtensionRequest
-    x509_csr_parse.o(i.x509ParseAttributes) refers to x509_common.o(.constdata) for X509_CHALLENGE_PASSWORD_OID
-    x509_csr_parse.o(i.x509ParseAttributes) refers to x509_common.o(.constdata) for X509_EXTENSION_REQUEST_OID
-    x509_csr_parse.o(i.x509ParseCertRequestInfo) refers to asn1.o(i.asn1ReadTag) for asn1ReadTag
-    x509_csr_parse.o(i.x509ParseCertRequestInfo) refers to asn1.o(i.asn1ReadInt32) for asn1ReadInt32
-    x509_csr_parse.o(i.x509ParseCertRequestInfo) refers to x509_cert_parse.o(i.x509ParseName) for x509ParseName
-    x509_csr_parse.o(i.x509ParseCertRequestInfo) refers to x509_key_parse.o(i.x509ParseSubjectPublicKeyInfo) for x509ParseSubjectPublicKeyInfo
-    x509_csr_parse.o(i.x509ParseCertRequestInfo) refers to x509_csr_parse.o(i.x509ParseAttributes) for x509ParseAttributes
-    x509_csr_parse.o(i.x509ParseChallengePassword) refers to asn1.o(i.asn1ReadTag) for asn1ReadTag
-    x509_csr_parse.o(i.x509ParseCsr) refers to memseta.o(.text) for __aeabi_memclr4
-    x509_csr_parse.o(i.x509ParseCsr) refers to asn1.o(i.asn1ReadTag) for asn1ReadTag
-    x509_csr_parse.o(i.x509ParseCsr) refers to x509_csr_parse.o(i.x509ParseCertRequestInfo) for x509ParseCertRequestInfo
-    x509_csr_parse.o(i.x509ParseCsr) refers to x509_cert_parse.o(i.x509ParseSignatureAlgo) for x509ParseSignatureAlgo
-    x509_csr_parse.o(i.x509ParseCsr) refers to x509_cert_parse.o(i.x509ParseSignatureValue) for x509ParseSignatureValue
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to asn1.o(i.asn1ReadSequence) for asn1ReadSequence
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_cert_parse.o(i.x509ParseExtension) for x509ParseExtension
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to oid.o(i.oidComp) for oidComp
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_cert_parse.o(i.x509ParseBasicConstraints) for x509ParseBasicConstraints
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_cert_parse.o(i.x509ParseNameConstraints) for x509ParseNameConstraints
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_cert_parse.o(i.x509ParseKeyUsage) for x509ParseKeyUsage
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_cert_parse.o(i.x509ParseExtendedKeyUsage) for x509ParseExtendedKeyUsage
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_cert_parse.o(i.x509ParseSubjectAltName) for x509ParseSubjectAltName
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_cert_parse.o(i.x509ParseSubjectKeyId) for x509ParseSubjectKeyId
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_cert_parse.o(i.x509ParseAuthorityKeyId) for x509ParseAuthorityKeyId
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_cert_parse.o(i.x509ParseNsCertType) for x509ParseNsCertType
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_common.o(.constdata) for X509_BASIC_CONSTRAINTS_OID
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_common.o(.constdata) for X509_NAME_CONSTRAINTS_OID
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_common.o(.constdata) for X509_KEY_USAGE_OID
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_common.o(.constdata) for X509_EXTENDED_KEY_USAGE_OID
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_common.o(.constdata) for X509_SUBJECT_ALT_NAME_OID
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_common.o(.constdata) for X509_SUBJECT_KEY_ID_OID
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_common.o(.constdata) for X509_AUTHORITY_KEY_ID_OID
-    x509_csr_parse.o(i.x509ParseExtensionRequest) refers to x509_common.o(.constdata) for X509_NS_CERT_TYPE_OID
-    x509_csr_validate.o(i.x509ValidateCsr) refers to x509_cert_validate.o(i.x509VerifySignature) for x509VerifySignature
-    x509_key_format.o(i.x509ExportDsaParameters) refers to asn1.o(i.asn1WriteMpi) for asn1WriteMpi
-    x509_key_format.o(i.x509ExportDsaParameters) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509ExportDsaPrivateKey) refers to asn1.o(i.asn1WriteMpi) for asn1WriteMpi
-    x509_key_format.o(i.x509ExportDsaPublicKey) refers to asn1.o(i.asn1WriteMpi) for asn1WriteMpi
-    x509_key_format.o(i.x509ExportEcPublicKey) refers to ec.o(i.ecInitDomainParameters) for ecInitDomainParameters
-    x509_key_format.o(i.x509ExportEcPublicKey) refers to x509_common.o(i.x509GetCurveInfo) for x509GetCurveInfo
-    x509_key_format.o(i.x509ExportEcPublicKey) refers to ec.o(i.ecLoadDomainParameters) for ecLoadDomainParameters
-    x509_key_format.o(i.x509ExportEcPublicKey) refers to ec.o(i.ecExport) for ecExport
-    x509_key_format.o(i.x509ExportEcPublicKey) refers to ec.o(i.ecFreeDomainParameters) for ecFreeDomainParameters
-    x509_key_format.o(i.x509ExportEddsaPrivateKey) refers to mpi.o(i.mpiExport) for mpiExport
-    x509_key_format.o(i.x509ExportEddsaPrivateKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509ExportEddsaPublicKey) refers to mpi.o(i.mpiExport) for mpiExport
-    x509_key_format.o(i.x509ExportRsaPrivateKey) refers to asn1.o(i.asn1WriteInt32) for asn1WriteInt32
-    x509_key_format.o(i.x509ExportRsaPrivateKey) refers to asn1.o(i.asn1WriteMpi) for asn1WriteMpi
-    x509_key_format.o(i.x509ExportRsaPrivateKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509ExportRsaPublicKey) refers to asn1.o(i.asn1WriteMpi) for asn1WriteMpi
-    x509_key_format.o(i.x509ExportRsaPublicKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatAlgorithmIdentifier) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatAlgorithmIdentifier) refers to oid.o(i.oidComp) for oidComp
-    x509_key_format.o(i.x509FormatAlgorithmIdentifier) refers to x509_key_format.o(i.x509ExportDsaParameters) for x509ExportDsaParameters
-    x509_key_format.o(i.x509FormatAlgorithmIdentifier) refers to x509_key_format.o(i.x509FormatDsaParameters) for x509FormatDsaParameters
-    x509_key_format.o(i.x509FormatAlgorithmIdentifier) refers to x509_key_format.o(i.x509FormatEcParameters) for x509FormatEcParameters
-    x509_key_format.o(i.x509FormatAlgorithmIdentifier) refers to rsa.o(.constdata) for RSA_ENCRYPTION_OID
-    x509_key_format.o(i.x509FormatAlgorithmIdentifier) refers to rsa.o(.constdata) for RSASSA_PSS_OID
-    x509_key_format.o(i.x509FormatAlgorithmIdentifier) refers to dsa.o(.constdata) for DSA_OID
-    x509_key_format.o(i.x509FormatAlgorithmIdentifier) refers to ec.o(.constdata) for EC_PUBLIC_KEY_OID
-    x509_key_format.o(i.x509FormatDsaParameters) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatDsaPublicKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatEcParameters) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatEcPublicKey) refers to memmovea.o(.text) for __aeabi_memcpy
-    x509_key_format.o(i.x509FormatRsaPssHashAlgo) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatRsaPssMaskGenAlgo) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatRsaPssMaskGenAlgo) refers to x509_key_format.o(i.x509FormatRsaPssMaskGenHashAlgo) for x509FormatRsaPssMaskGenHashAlgo
-    x509_key_format.o(i.x509FormatRsaPssMaskGenHashAlgo) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatRsaPssParameters) refers to x509_key_format.o(i.x509FormatRsaPssHashAlgo) for x509FormatRsaPssHashAlgo
-    x509_key_format.o(i.x509FormatRsaPssParameters) refers to x509_key_format.o(i.x509FormatRsaPssMaskGenAlgo) for x509FormatRsaPssMaskGenAlgo
-    x509_key_format.o(i.x509FormatRsaPssParameters) refers to x509_key_format.o(i.x509FormatRsaPssSaltLength) for x509FormatRsaPssSaltLength
-    x509_key_format.o(i.x509FormatRsaPssParameters) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatRsaPssSaltLength) refers to asn1.o(i.asn1WriteInt32) for asn1WriteInt32
-    x509_key_format.o(i.x509FormatRsaPssSaltLength) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatRsaPublicKey) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to oid.o(i.oidComp) for oidComp
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to x509_key_format.o(i.x509FormatAlgorithmIdentifier) for x509FormatAlgorithmIdentifier
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to x509_key_format.o(i.x509ExportRsaPublicKey) for x509ExportRsaPublicKey
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to x509_key_format.o(i.x509FormatRsaPublicKey) for x509FormatRsaPublicKey
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to x509_key_format.o(i.x509ExportDsaPublicKey) for x509ExportDsaPublicKey
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to x509_key_format.o(i.x509FormatDsaPublicKey) for x509FormatDsaPublicKey
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to x509_key_format.o(i.x509ExportEcPublicKey) for x509ExportEcPublicKey
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to x509_key_format.o(i.x509FormatEcPublicKey) for x509FormatEcPublicKey
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to sha1.o(i.sha1Compute) for sha1Compute
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to asn1.o(i.asn1WriteTag) for asn1WriteTag
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to dsa.o(.constdata) for DSA_OID
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to rsa.o(.constdata) for RSA_ENCRYPTION_OID
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to rsa.o(.constdata) for RSASSA_PSS_OID
-    x509_key_format.o(i.x509FormatSubjectPublicKeyInfo) refers to ec.o(.constdata) for EC_PUBLIC_KEY_OID
     x509_key_parse.o(i.x509ImportDsaPublicKey) refers to oid.o(i.oidComp) for oidComp
     x509_key_parse.o(i.x509ImportDsaPublicKey) refers to mpi.o(i.mpiImport) for mpiImport
     x509_key_parse.o(i.x509ImportDsaPublicKey) refers to dsa.o(.constdata) for DSA_OID
@@ -7173,9 +6918,6 @@ Removing Unused input sections from the image.
     Removing oid.o(i.oidMatch), (212 bytes).
     Removing oid.o(i.oidToString), (156 bytes).
     Removing oid.o(.bss), (128 bytes).
-    Removing radix64.o(i.radix64Decode), (160 bytes).
-    Removing radix64.o(i.radix64Encode), (228 bytes).
-    Removing radix64.o(.constdata), (192 bytes).
     Removing hmac.o(i.hmacCompute), (72 bytes).
     Removing hmac.o(i.hmacFinal), (104 bytes).
     Removing hmac.o(i.hmacFinalRaw), (96 bytes).
@@ -7329,21 +7071,6 @@ Removing Unused input sections from the image.
     Removing rsa.o(.constdata), (9 bytes).
     Removing rsa.o(.constdata), (9 bytes).
     Removing rsa.o(.constdata), (8 bytes).
-    Removing pem_export.o(i.pemEncodeFile), (184 bytes).
-    Removing pem_export.o(i.pemExportCertificate), (48 bytes).
-    Removing pem_export.o(i.pemExportCrl), (48 bytes).
-    Removing pem_export.o(i.pemExportCsr), (56 bytes).
-    Removing pem_export.o(i.pemExportDsaPrivateKey), (216 bytes).
-    Removing pem_export.o(i.pemExportDsaPublicKey), (100 bytes).
-    Removing pem_export.o(i.pemExportEcParameters), (96 bytes).
-    Removing pem_export.o(i.pemExportEcPrivateKey), (216 bytes).
-    Removing pem_export.o(i.pemExportEcPublicKey), (112 bytes).
-    Removing pem_export.o(i.pemExportEddsaPrivateKey), (4 bytes).
-    Removing pem_export.o(i.pemExportEddsaPublicKey), (4 bytes).
-    Removing pem_export.o(i.pemExportRsaPrivateKey), (188 bytes).
-    Removing pem_export.o(i.pemExportRsaPssPrivateKey), (188 bytes).
-    Removing pem_export.o(i.pemExportRsaPssPublicKey), (100 bytes).
-    Removing pem_export.o(i.pemExportRsaPublicKey), (100 bytes).
     Removing pem_import.o(i.pemDecodeFile), (168 bytes).
     Removing pem_import.o(i.pemFindTag), (134 bytes).
     Removing pem_import.o(i.pemGetPrivateKeyType), (256 bytes).
@@ -7361,11 +7088,6 @@ Removing Unused input sections from the image.
     Removing pem_import.o(i.pemImportEddsaPublicKey), (4 bytes).
     Removing pem_import.o(i.pemImportRsaPrivateKey), (240 bytes).
     Removing pem_import.o(i.pemImportRsaPublicKey), (240 bytes).
-    Removing pkcs8_key_format.o(i.pkcs8FormatDsaPrivateKey), (58 bytes).
-    Removing pkcs8_key_format.o(i.pkcs8FormatEcPrivateKey), (206 bytes).
-    Removing pkcs8_key_format.o(i.pkcs8FormatEcPublicKey), (128 bytes).
-    Removing pkcs8_key_format.o(i.pkcs8FormatEddsaPrivateKey), (4 bytes).
-    Removing pkcs8_key_format.o(i.pkcs8FormatRsaPrivateKey), (58 bytes).
     Removing pkcs8_key_parse.o(i.pkcs8ImportDsaPrivateKey), (116 bytes).
     Removing pkcs8_key_parse.o(i.pkcs8ImportEcPrivateKey), (52 bytes).
     Removing pkcs8_key_parse.o(i.pkcs8ImportEddsaPrivateKey), (4 bytes).
@@ -7376,24 +7098,6 @@ Removing Unused input sections from the image.
     Removing pkcs8_key_parse.o(i.pkcs8ParsePrivateKeyAlgo), (156 bytes).
     Removing pkcs8_key_parse.o(i.pkcs8ParsePrivateKeyInfo), (228 bytes).
     Removing pkcs8_key_parse.o(i.pkcs8ParseRsaPrivateKey), (396 bytes).
-    Removing x509_cert_create.o(i.x509CreateCertificate), (286 bytes).
-    Removing x509_cert_create.o(i.x509FormatAuthorityKeyId), (224 bytes).
-    Removing x509_cert_create.o(i.x509FormatBasicConstraints), (332 bytes).
-    Removing x509_cert_create.o(i.x509FormatExtensions), (246 bytes).
-    Removing x509_cert_create.o(i.x509FormatKeyUsage), (336 bytes).
-    Removing x509_cert_create.o(i.x509FormatName), (296 bytes).
-    Removing x509_cert_create.o(i.x509FormatNameAttribute), (156 bytes).
-    Removing x509_cert_create.o(i.x509FormatNsCertType), (224 bytes).
-    Removing x509_cert_create.o(i.x509FormatSerialNumber), (96 bytes).
-    Removing x509_cert_create.o(i.x509FormatSignatureAlgo), (164 bytes).
-    Removing x509_cert_create.o(i.x509FormatSignatureValue), (96 bytes).
-    Removing x509_cert_create.o(i.x509FormatSubjectAltName), (260 bytes).
-    Removing x509_cert_create.o(i.x509FormatSubjectKeyId), (188 bytes).
-    Removing x509_cert_create.o(i.x509FormatTbsCertificate), (238 bytes).
-    Removing x509_cert_create.o(i.x509FormatTime), (180 bytes).
-    Removing x509_cert_create.o(i.x509FormatValidity), (84 bytes).
-    Removing x509_cert_create.o(i.x509FormatVersion), (66 bytes).
-    Removing x509_cert_create.o(i.x509GenerateSignature), (192 bytes).
     Removing x509_cert_parse.o(i.x509ParseAuthorityKeyId), (84 bytes).
     Removing x509_cert_parse.o(i.x509ParseBasicConstraints), (126 bytes).
     Removing x509_cert_parse.o(i.x509ParseCertificate), (138 bytes).
@@ -7496,38 +7200,6 @@ Removing Unused input sections from the image.
     Removing x509_crl_parse.o(i.x509ParseTbsCertList), (208 bytes).
     Removing x509_crl_validate.o(i.x509CheckRevokedCertificate), (186 bytes).
     Removing x509_crl_validate.o(i.x509ValidateCrl), (120 bytes).
-    Removing x509_csr_create.o(i.x509CreateCsr), (170 bytes).
-    Removing x509_csr_create.o(i.x509FormatAttributes), (98 bytes).
-    Removing x509_csr_create.o(i.x509FormatCertRequestInfo), (144 bytes).
-    Removing x509_csr_create.o(i.x509FormatChallengePassword), (188 bytes).
-    Removing x509_csr_create.o(i.x509FormatExtensionRequest), (332 bytes).
-    Removing x509_csr_parse.o(i.x509ParseAttribute), (96 bytes).
-    Removing x509_csr_parse.o(i.x509ParseAttributes), (148 bytes).
-    Removing x509_csr_parse.o(i.x509ParseCertRequestInfo), (122 bytes).
-    Removing x509_csr_parse.o(i.x509ParseChallengePassword), (30 bytes).
-    Removing x509_csr_parse.o(i.x509ParseCsr), (116 bytes).
-    Removing x509_csr_parse.o(i.x509ParseExtensionRequest), (376 bytes).
-    Removing x509_csr_validate.o(i.x509ValidateCsr), (34 bytes).
-    Removing x509_key_format.o(i.x509ExportDsaParameters), (118 bytes).
-    Removing x509_key_format.o(i.x509ExportDsaPrivateKey), (28 bytes).
-    Removing x509_key_format.o(i.x509ExportDsaPublicKey), (28 bytes).
-    Removing x509_key_format.o(i.x509ExportEcPublicKey), (72 bytes).
-    Removing x509_key_format.o(i.x509ExportEddsaPrivateKey), (62 bytes).
-    Removing x509_key_format.o(i.x509ExportEddsaPublicKey), (26 bytes).
-    Removing x509_key_format.o(i.x509ExportRsaPrivateKey), (282 bytes).
-    Removing x509_key_format.o(i.x509ExportRsaPublicKey), (90 bytes).
-    Removing x509_key_format.o(i.x509FormatAlgorithmIdentifier), (248 bytes).
-    Removing x509_key_format.o(i.x509FormatDsaParameters), (172 bytes).
-    Removing x509_key_format.o(i.x509FormatDsaPublicKey), (50 bytes).
-    Removing x509_key_format.o(i.x509FormatEcParameters), (50 bytes).
-    Removing x509_key_format.o(i.x509FormatEcPublicKey), (24 bytes).
-    Removing x509_key_format.o(i.x509FormatRsaPssHashAlgo), (124 bytes).
-    Removing x509_key_format.o(i.x509FormatRsaPssMaskGenAlgo), (158 bytes).
-    Removing x509_key_format.o(i.x509FormatRsaPssMaskGenHashAlgo), (94 bytes).
-    Removing x509_key_format.o(i.x509FormatRsaPssParameters), (106 bytes).
-    Removing x509_key_format.o(i.x509FormatRsaPssSaltLength), (74 bytes).
-    Removing x509_key_format.o(i.x509FormatRsaPublicKey), (126 bytes).
-    Removing x509_key_format.o(i.x509FormatSubjectPublicKeyInfo), (368 bytes).
     Removing x509_key_parse.o(i.x509ImportDsaPublicKey), (116 bytes).
     Removing x509_key_parse.o(i.x509ImportEcParameters), (28 bytes).
     Removing x509_key_parse.o(i.x509ImportEcPublicKey), (104 bytes).
@@ -7690,7 +7362,7 @@ Removing Unused input sections from the image.
     Removing stm32f4xx_eth_driver.o(.revsh_text), (4 bytes).
     Removing stm32f4xx_eth_driver.o(.rrx_text), (6 bytes).
 
-1774 unused section(s) (total 308083 bytes) removed from the image.
+1701 unused section(s) (total 297571 bytes) removed from the image.
 
 ==============================================================================
 
@@ -7729,62 +7401,62 @@ Image Symbol Table
     ../Src/sys.c                             0x00000000   Number         0  sys.o ABSOLUTE
     ../Src/system_stm32f4xx.c                0x00000000   Number         0  system_stm32f4xx.o ABSOLUTE
     ../Src/usart.c                           0x00000000   Number         0  usart.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  islower_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isprint_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isgraph_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ispunct_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isdigit_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  iscntrl_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isblank_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isxdigit_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isalpha_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isalnum_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isxdigit_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isprint_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ispunct_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  iscntrl_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isspace_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isupper_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  islower_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isgraph_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isdigit_o.o ABSOLUTE
     ../clib/microlib/ctype/tolower.c         0x00000000   Number         0  tolower.o ABSOLUTE
     ../clib/microlib/ctype/toupper.c         0x00000000   Number         0  toupper.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/errno.c                 0x00000000   Number         0  errno.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
-    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocr.o ABSOLUTE
-    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloca.o ABSOLUTE
-    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocra.o ABSOLUTE
     ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloc.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloca.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocr.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocra.o ABSOLUTE
     ../clib/microlib/malloc/mvars.c          0x00000000   Number         0  mvars.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stderr.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
     ../clib/microlib/string/memcmp.c         0x00000000   Number         0  memcmp.o ABSOLUTE
-    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memmoveb.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memmoveb.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memmovea.o ABSOLUTE
     ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
@@ -7799,8 +7471,8 @@ Image Symbol Table
     ../clib/microlib/string/strtok.c         0x00000000   Number         0  strtok_r.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  _strtoul.o ABSOLUTE
-    ../clib/scanf.c                          0x00000000   Number         0  strtoul.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  _chval.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  strtoul.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
@@ -7828,58 +7500,31 @@ Image Symbol Table
     ..\CycloneSSL\cyclone_crypto\ecc\x25519.c 0x00000000   Number         0  x25519.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\encoding\asn1.c 0x00000000   Number         0  asn1.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\encoding\base64.c 0x00000000   Number         0  base64.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\encoding\base64url.c 0x00000000   Number         0  base64url.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\encoding\oid.c 0x00000000   Number         0  oid.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\encoding\radix64.c 0x00000000   Number         0  radix64.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\blake2b.c 0x00000000   Number         0  blake2b.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\blake2b160.c 0x00000000   Number         0  blake2b160.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\blake2b256.c 0x00000000   Number         0  blake2b256.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\blake2b384.c 0x00000000   Number         0  blake2b384.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\blake2b512.c 0x00000000   Number         0  blake2b512.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\blake2s.c 0x00000000   Number         0  blake2s.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\blake2s128.c 0x00000000   Number         0  blake2s128.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\blake2s160.c 0x00000000   Number         0  blake2s160.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\blake2s224.c 0x00000000   Number         0  blake2s224.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\blake2s256.c 0x00000000   Number         0  blake2s256.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\md2.c  0x00000000   Number         0  md2.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\md4.c  0x00000000   Number         0  md4.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\hash\md5.c  0x00000000   Number         0  md5.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\ripemd128.c 0x00000000   Number         0  ripemd128.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\ripemd160.c 0x00000000   Number         0  ripemd160.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\hash\sha1.c 0x00000000   Number         0  sha1.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\hash\sha224.c 0x00000000   Number         0  sha224.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\hash\sha256.c 0x00000000   Number         0  sha256.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\hash\sha384.c 0x00000000   Number         0  sha384.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\hash\sha512.c 0x00000000   Number         0  sha512.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\hash\tiger.c 0x00000000   Number         0  tiger.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\hash\whirlpool.c 0x00000000   Number         0  whirlpool.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\kdf\hkdf.c  0x00000000   Number         0  hkdf.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\kdf\pkcs5.c 0x00000000   Number         0  pkcs5.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\mac\hmac.c  0x00000000   Number         0  hmac.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\mac\poly1305.c 0x00000000   Number         0  poly1305.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\mpi\mpi.c   0x00000000   Number         0  mpi.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\pkc\dh.c    0x00000000   Number         0  dh.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\pkc\dsa.c   0x00000000   Number         0  dsa.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\pkc\rsa.c   0x00000000   Number         0  rsa.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\pkix\pem_export.c 0x00000000   Number         0  pem_export.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\pkix\pem_import.c 0x00000000   Number         0  pem_import.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\pkix\pkcs8_key_format.c 0x00000000   Number         0  pkcs8_key_format.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\pkix\pkcs8_key_parse.c 0x00000000   Number         0  pkcs8_key_parse.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\pkix\x509_cert_create.c 0x00000000   Number         0  x509_cert_create.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\pkix\x509_cert_parse.c 0x00000000   Number         0  x509_cert_parse.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\pkix\x509_cert_validate.c 0x00000000   Number         0  x509_cert_validate.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\pkix\x509_common.c 0x00000000   Number         0  x509_common.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\pkix\x509_crl_parse.c 0x00000000   Number         0  x509_crl_parse.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\pkix\x509_crl_validate.c 0x00000000   Number         0  x509_crl_validate.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\pkix\x509_csr_create.c 0x00000000   Number         0  x509_csr_create.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\pkix\x509_csr_parse.c 0x00000000   Number         0  x509_csr_parse.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\pkix\x509_csr_validate.c 0x00000000   Number         0  x509_csr_validate.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\pkix\x509_key_format.c 0x00000000   Number         0  x509_key_format.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\pkix\x509_key_parse.c 0x00000000   Number         0  x509_key_parse.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\rng\yarrow.c 0x00000000   Number         0  yarrow.o ABSOLUTE
     ..\CycloneSSL\cyclone_crypto\xof\keccak.c 0x00000000   Number         0  keccak.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\xof\shake128.c 0x00000000   Number         0  shake128.o ABSOLUTE
-    ..\CycloneSSL\cyclone_crypto\xof\shake256.c 0x00000000   Number         0  shake256.o ABSOLUTE
     ..\CycloneSSL\cyclone_ssl\dtls_misc.c    0x00000000   Number         0  dtls_misc.o ABSOLUTE
     ..\CycloneSSL\cyclone_ssl\dtls_record.c  0x00000000   Number         0  dtls_record.o ABSOLUTE
     ..\CycloneSSL\cyclone_ssl\ssl_misc.c     0x00000000   Number         0  ssl_misc.o ABSOLUTE
@@ -8072,8 +7717,8 @@ Image Symbol Table
     .text                                    0x08000408   Section        0  uidiv.o(.text)
     .text                                    0x08000434   Section        0  llshl.o(.text)
     .text                                    0x08000452   Section        0  llushr.o(.text)
-    .text                                    0x08000472   Section        0  dadd.o(.text)
     .text                                    0x08000472   Section        0  iusefp.o(.text)
+    .text                                    0x08000472   Section        0  dadd.o(.text)
     .text                                    0x080005c0   Section        0  dmul.o(.text)
     .text                                    0x080006a4   Section        0  ddiv.o(.text)
     .text                                    0x08000782   Section        0  dfixul.o(.text)
@@ -9587,42 +9232,42 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000188   Data   RO            3    RESET               startup_stm32f407xx.o
-    0x08000188   0x08000188   0x00000000   Code   RO        16181  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000188   0x08000188   0x00000004   Code   RO        16542    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x0800018c   0x0800018c   0x00000004   Code   RO        16545    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000190   0x08000190   0x00000000   Code   RO        16547    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000190   0x08000190   0x00000000   Code   RO        16549    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000190   0x08000190   0x00000008   Code   RO        16550    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000198   0x08000198   0x00000000   Code   RO        16552    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000198   0x08000198   0x00000000   Code   RO        16554    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000198   0x08000198   0x00000004   Code   RO        16543    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000188   0x08000188   0x00000000   Code   RO        15493  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000188   0x08000188   0x00000004   Code   RO        15854    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0800018c   0x0800018c   0x00000004   Code   RO        15857    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000190   0x08000190   0x00000000   Code   RO        15859    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000190   0x08000190   0x00000000   Code   RO        15861    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000190   0x08000190   0x00000008   Code   RO        15862    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000198   0x08000198   0x00000000   Code   RO        15864    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000198   0x08000198   0x00000000   Code   RO        15866    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000198   0x08000198   0x00000004   Code   RO        15855    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x0800019c   0x0800019c   0x00000024   Code   RO            4    .text               startup_stm32f407xx.o
     0x080001c0   0x080001c0   0x000000dc   Code   RO         2933    .text               os_cpu_a.o
-    0x0800029c   0x0800029c   0x00000062   Code   RO        16186    .text               mc_w.l(uldiv.o)
+    0x0800029c   0x0800029c   0x00000062   Code   RO        15498    .text               mc_w.l(uldiv.o)
     0x080002fe   0x080002fe   0x00000002   PAD
-    0x08000300   0x08000300   0x00000008   Code   RO        16188    .text               mc_w.l(ctype_o.o)
-    0x08000308   0x08000308   0x0000000c   Code   RO        16216    .text               mc_w.l(toupper.o)
-    0x08000314   0x08000314   0x0000000c   Code   RO        16218    .text               mc_w.l(tolower.o)
-    0x08000320   0x08000320   0x00000040   Code   RO        16222    .text               mc_w.l(memmovea.o)
-    0x08000360   0x08000360   0x00000024   Code   RO        16224    .text               mc_w.l(memseta.o)
-    0x08000384   0x08000384   0x00000018   Code   RO        16226    .text               mc_w.l(strncpy.o)
-    0x0800039c   0x0800039c   0x0000000e   Code   RO        16230    .text               mc_w.l(strlen.o)
-    0x080003aa   0x080003aa   0x0000001a   Code   RO        16234    .text               mc_w.l(memcmp.o)
-    0x080003c4   0x080003c4   0x00000012   Code   RO        16236    .text               mc_w.l(strcpy.o)
-    0x080003d6   0x080003d6   0x00000032   Code   RO        16249    .text               mc_w.l(strncasecmp.o)
-    0x08000408   0x08000408   0x0000002c   Code   RO        16556    .text               mc_w.l(uidiv.o)
-    0x08000434   0x08000434   0x0000001e   Code   RO        16558    .text               mc_w.l(llshl.o)
-    0x08000452   0x08000452   0x00000020   Code   RO        16560    .text               mc_w.l(llushr.o)
-    0x08000472   0x08000472   0x00000000   Code   RO        16573    .text               mc_w.l(iusefp.o)
-    0x08000472   0x08000472   0x0000014e   Code   RO        16574    .text               mf_w.l(dadd.o)
-    0x080005c0   0x080005c0   0x000000e4   Code   RO        16576    .text               mf_w.l(dmul.o)
-    0x080006a4   0x080006a4   0x000000de   Code   RO        16578    .text               mf_w.l(ddiv.o)
-    0x08000782   0x08000782   0x00000030   Code   RO        16580    .text               mf_w.l(dfixul.o)
+    0x08000300   0x08000300   0x00000008   Code   RO        15500    .text               mc_w.l(ctype_o.o)
+    0x08000308   0x08000308   0x0000000c   Code   RO        15528    .text               mc_w.l(toupper.o)
+    0x08000314   0x08000314   0x0000000c   Code   RO        15530    .text               mc_w.l(tolower.o)
+    0x08000320   0x08000320   0x00000040   Code   RO        15534    .text               mc_w.l(memmovea.o)
+    0x08000360   0x08000360   0x00000024   Code   RO        15536    .text               mc_w.l(memseta.o)
+    0x08000384   0x08000384   0x00000018   Code   RO        15538    .text               mc_w.l(strncpy.o)
+    0x0800039c   0x0800039c   0x0000000e   Code   RO        15542    .text               mc_w.l(strlen.o)
+    0x080003aa   0x080003aa   0x0000001a   Code   RO        15546    .text               mc_w.l(memcmp.o)
+    0x080003c4   0x080003c4   0x00000012   Code   RO        15548    .text               mc_w.l(strcpy.o)
+    0x080003d6   0x080003d6   0x00000032   Code   RO        15561    .text               mc_w.l(strncasecmp.o)
+    0x08000408   0x08000408   0x0000002c   Code   RO        15868    .text               mc_w.l(uidiv.o)
+    0x08000434   0x08000434   0x0000001e   Code   RO        15870    .text               mc_w.l(llshl.o)
+    0x08000452   0x08000452   0x00000020   Code   RO        15872    .text               mc_w.l(llushr.o)
+    0x08000472   0x08000472   0x00000000   Code   RO        15885    .text               mc_w.l(iusefp.o)
+    0x08000472   0x08000472   0x0000014e   Code   RO        15886    .text               mf_w.l(dadd.o)
+    0x080005c0   0x080005c0   0x000000e4   Code   RO        15888    .text               mf_w.l(dmul.o)
+    0x080006a4   0x080006a4   0x000000de   Code   RO        15890    .text               mf_w.l(ddiv.o)
+    0x08000782   0x08000782   0x00000030   Code   RO        15892    .text               mf_w.l(dfixul.o)
     0x080007b2   0x080007b2   0x00000002   PAD
-    0x080007b4   0x080007b4   0x00000030   Code   RO        16582    .text               mf_w.l(cdrcmple.o)
-    0x080007e4   0x080007e4   0x00000024   Code   RO        16584    .text               mc_w.l(init.o)
-    0x08000808   0x08000808   0x00000024   Code   RO        16586    .text               mc_w.l(llsshr.o)
-    0x0800082c   0x0800082c   0x000000ba   Code   RO        16590    .text               mf_w.l(depilogue.o)
+    0x080007b4   0x080007b4   0x00000030   Code   RO        15894    .text               mf_w.l(cdrcmple.o)
+    0x080007e4   0x080007e4   0x00000024   Code   RO        15896    .text               mc_w.l(init.o)
+    0x08000808   0x08000808   0x00000024   Code   RO        15898    .text               mc_w.l(llsshr.o)
+    0x0800082c   0x0800082c   0x000000ba   Code   RO        15902    .text               mf_w.l(depilogue.o)
     0x080008e6   0x080008e6   0x00000002   Code   RO         4450    i.App_TCBInitHook   app_hooks.o
     0x080008e8   0x080008e8   0x00000002   Code   RO         4451    i.App_TaskCreateHook  app_hooks.o
     0x080008ea   0x080008ea   0x00000002   Code   RO         4452    i.App_TaskDelHook   app_hooks.o
@@ -9634,7 +9279,7 @@ Memory Map of the image
     0x080008f6   0x080008f6   0x00000002   Code   RO          416    i.BusFault_Handler  stm32f4xx_it.o
     0x080008f8   0x080008f8   0x00000002   Code   RO          417    i.DebugMon_Handler  stm32f4xx_it.o
     0x080008fa   0x080008fa   0x00000002   PAD
-    0x080008fc   0x080008fc   0x00000058   Code   RO        16006    i.ETH_IRQHandler    stm32f4xx_eth_driver.o
+    0x080008fc   0x080008fc   0x00000058   Code   RO        15318    i.ETH_IRQHandler    stm32f4xx_eth_driver.o
     0x08000954   0x08000954   0x00000124   Code   RO          518    i.ETH_MACDMAConfig  stm32f4xx_hal_eth.o
     0x08000a78   0x08000a78   0x00000002   Code   RO           13    i.Error_Handler     main.o
     0x08000a7a   0x08000a7a   0x00000024   Code   RO         1132    i.HAL_DMA_Abort_IT  stm32f4xx_hal_dma.o
@@ -9782,23 +9427,23 @@ Memory Map of the image
     0x080038e6   0x080038e6   0x0000005a   Code   RO         3749    i._WriteBlocking    segger_rtt.o
     0x08003940   0x08003940   0x00000042   Code   RO         3750    i._WriteNoCheck     segger_rtt.o
     0x08003982   0x08003982   0x00000002   PAD
-    0x08003984   0x08003984   0x0000001c   Code   RO        16483    i.__0fprintf        mc_w.l(printfa.o)
-    0x080039a0   0x080039a0   0x00000028   Code   RO        16486    i.__0sprintf        mc_w.l(printfa.o)
-    0x080039c8   0x080039c8   0x0000002c   Code   RO        16489    i.__0vsnprintf      mc_w.l(printfa.o)
+    0x08003984   0x08003984   0x0000001c   Code   RO        15795    i.__0fprintf        mc_w.l(printfa.o)
+    0x080039a0   0x080039a0   0x00000028   Code   RO        15798    i.__0sprintf        mc_w.l(printfa.o)
+    0x080039c8   0x080039c8   0x0000002c   Code   RO        15801    i.__0vsnprintf      mc_w.l(printfa.o)
     0x080039f4   0x080039f4   0x00000020   Code   RO         1426    i.__NVIC_SetPriority  stm32f4xx_hal_cortex.o
-    0x08003a14   0x08003a14   0x0000000e   Code   RO        16594    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08003a22   0x08003a22   0x00000002   Code   RO        16595    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08003a24   0x08003a24   0x0000000e   Code   RO        16596    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08003a14   0x08003a14   0x0000000e   Code   RO        15906    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08003a22   0x08003a22   0x00000002   Code   RO        15907    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08003a24   0x08003a24   0x0000000e   Code   RO        15908    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x08003a32   0x08003a32   0x00000002   PAD
-    0x08003a34   0x08003a34   0x00000184   Code   RO        16491    i._fp_digits        mc_w.l(printfa.o)
-    0x08003bb8   0x08003bb8   0x000006dc   Code   RO        16492    i._printf_core      mc_w.l(printfa.o)
-    0x08004294   0x08004294   0x00000024   Code   RO        16493    i._printf_post_padding  mc_w.l(printfa.o)
-    0x080042b8   0x080042b8   0x0000002e   Code   RO        16494    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x080042e6   0x080042e6   0x00000016   Code   RO        16495    i._snputc           mc_w.l(printfa.o)
-    0x080042fc   0x080042fc   0x0000000a   Code   RO        16496    i._sputc            mc_w.l(printfa.o)
+    0x08003a34   0x08003a34   0x00000184   Code   RO        15803    i._fp_digits        mc_w.l(printfa.o)
+    0x08003bb8   0x08003bb8   0x000006dc   Code   RO        15804    i._printf_core      mc_w.l(printfa.o)
+    0x08004294   0x08004294   0x00000024   Code   RO        15805    i._printf_post_padding  mc_w.l(printfa.o)
+    0x080042b8   0x080042b8   0x0000002e   Code   RO        15806    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x080042e6   0x080042e6   0x00000016   Code   RO        15807    i._snputc           mc_w.l(printfa.o)
+    0x080042fc   0x080042fc   0x0000000a   Code   RO        15808    i._sputc            mc_w.l(printfa.o)
     0x08004306   0x08004306   0x00000002   PAD
-    0x08004308   0x08004308   0x0000020c   Code   RO        13406    i.aesEncryptBlock   aes.o
-    0x08004514   0x08004514   0x00000188   Code   RO        13407    i.aesInit           aes.o
+    0x08004308   0x08004308   0x0000020c   Code   RO        13226    i.aesEncryptBlock   aes.o
+    0x08004514   0x08004514   0x00000188   Code   RO        13227    i.aesInit           aes.o
     0x0800469c   0x0800469c   0x00000056   Code   RO         5509    i.arpCreateEntry    arp.o
     0x080046f2   0x080046f2   0x0000007c   Code   RO         5511    i.arpEnqueuePacket  arp.o
     0x0800476e   0x0800476e   0x00000002   PAD
@@ -9876,7 +9521,7 @@ Memory Map of the image
     0x080064d0   0x080064d0   0x00000010   Code   RO         8205    i.ethUpdateOutStats  ethernet_misc.o
     0x080064e0   0x080064e0   0x000000c0   Code   RO        10452    i.formatSystemTime  date_time.o
     0x080065a0   0x080065a0   0x00000030   Code   RO        10562    i.fputc             debug.o
-    0x080065d0   0x080065d0   0x00000050   Code   RO        16512    i.free              mc_w.l(malloc.o)
+    0x080065d0   0x080065d0   0x00000050   Code   RO        15824    i.free              mc_w.l(malloc.o)
     0x08006620   0x08006620   0x000000de   Code   RO         5697    i.icmpProcessEchoRequest  icmp.o
     0x080066fe   0x080066fe   0x0000004c   Code   RO         5698    i.icmpProcessMessage  icmp.o
     0x0800674a   0x0800674a   0x000000f4   Code   RO         5699    i.icmpSendErrorMessage  icmp.o
@@ -9982,16 +9627,16 @@ Memory Map of the image
     0x08008ecc   0x08008ecc   0x00000002   Code   RO         6772    i.ipv6UpdateInStats  ipv6_misc.o
     0x08008ece   0x08008ece   0x00000002   Code   RO         6773    i.ipv6UpdateOutStats  ipv6_misc.o
     0x08008ed0   0x08008ed0   0x00000016   Code   RO         6920    i.ipv6UpdatePathMtu  ipv6_pmtu.o
-    0x08008ee6   0x08008ee6   0x0000000c   Code   RO        16123    i.lan8720DisableIrq  lan8720_driver.o
-    0x08008ef2   0x08008ef2   0x0000000c   Code   RO        16124    i.lan8720DumpPhyReg  lan8720_driver.o
-    0x08008efe   0x08008efe   0x0000000c   Code   RO        16125    i.lan8720EnableIrq  lan8720_driver.o
+    0x08008ee6   0x08008ee6   0x0000000c   Code   RO        15435    i.lan8720DisableIrq  lan8720_driver.o
+    0x08008ef2   0x08008ef2   0x0000000c   Code   RO        15436    i.lan8720DumpPhyReg  lan8720_driver.o
+    0x08008efe   0x08008efe   0x0000000c   Code   RO        15437    i.lan8720EnableIrq  lan8720_driver.o
     0x08008f0a   0x08008f0a   0x00000002   PAD
-    0x08008f0c   0x08008f0c   0x000000bc   Code   RO        16126    i.lan8720EventHandler  lan8720_driver.o
-    0x08008fc8   0x08008fc8   0x00000084   Code   RO        16127    i.lan8720Init       lan8720_driver.o
-    0x0800904c   0x0800904c   0x0000000e   Code   RO        16128    i.lan8720ReadPhyReg  lan8720_driver.o
+    0x08008f0c   0x08008f0c   0x000000bc   Code   RO        15438    i.lan8720EventHandler  lan8720_driver.o
+    0x08008fc8   0x08008fc8   0x00000084   Code   RO        15439    i.lan8720Init       lan8720_driver.o
+    0x0800904c   0x0800904c   0x0000000e   Code   RO        15440    i.lan8720ReadPhyReg  lan8720_driver.o
     0x0800905a   0x0800905a   0x00000002   PAD
-    0x0800905c   0x0800905c   0x00000038   Code   RO        16129    i.lan8720Tick       lan8720_driver.o
-    0x08009094   0x08009094   0x00000018   Code   RO        16130    i.lan8720WritePhyReg  lan8720_driver.o
+    0x0800905c   0x0800905c   0x00000038   Code   RO        15441    i.lan8720Tick       lan8720_driver.o
+    0x08009094   0x08009094   0x00000018   Code   RO        15442    i.lan8720WritePhyReg  lan8720_driver.o
     0x080090ac   0x080090ac   0x00000054   Code   RO         4517    i.led_blink_task    app_main.o
     0x08009100   0x08009100   0x00000108   Code   RO        10222    i.llmnrProcessQuery  llmnr_responder.o
     0x08009208   0x08009208   0x0000003c   Code   RO        10223    i.llmnrResponderInit  llmnr_responder.o
@@ -10000,7 +9645,7 @@ Memory Map of the image
     0x080093b0   0x080093b0   0x00000084   Code   RO         8024    i.macStringToAddr   ethernet.o
     0x08009434   0x08009434   0x00000032   Code   RO           15    i.main              main.o
     0x08009466   0x08009466   0x00000002   PAD
-    0x08009468   0x08009468   0x0000006c   Code   RO        16513    i.malloc            mc_w.l(malloc.o)
+    0x08009468   0x08009468   0x0000006c   Code   RO        15825    i.malloc            mc_w.l(malloc.o)
     0x080094d4   0x080094d4   0x00000040   Code   RO         8769    i.memPoolAlloc      net_mem.o
     0x08009514   0x08009514   0x00000004   Code   RO         8770    i.memPoolFree       net_mem.o
     0x08009518   0x08009518   0x00000004   Code   RO         8772    i.memPoolInit       net_mem.o
@@ -10118,10 +9763,10 @@ Memory Map of the image
     0x0800be0c   0x0800be0c   0x00000020   Code   RO         3928    i.remove_none_printable_char  os_debug.o
     0x0800be2c   0x0800be2c   0x00000022   Code   RO         3929    i.rt_hw_console_output  os_debug.o
     0x0800be4e   0x0800be4e   0x00000002   PAD
-    0x0800be50   0x0800be50   0x00000070   Code   RO        12865    i.sha256Final       sha256.o
-    0x0800bec0   0x0800bec0   0x0000004c   Code   RO        12867    i.sha256Init        sha256.o
-    0x0800bf0c   0x0800bf0c   0x00000144   Code   RO        12868    i.sha256ProcessBlock  sha256.o
-    0x0800c050   0x0800c050   0x00000058   Code   RO        12869    i.sha256Update      sha256.o
+    0x0800be50   0x0800be50   0x00000070   Code   RO        12727    i.sha256Final       sha256.o
+    0x0800bec0   0x0800bec0   0x0000004c   Code   RO        12729    i.sha256Init        sha256.o
+    0x0800bf0c   0x0800bf0c   0x00000144   Code   RO        12730    i.sha256ProcessBlock  sha256.o
+    0x0800c050   0x0800c050   0x00000058   Code   RO        12731    i.sha256Update      sha256.o
     0x0800c0a8   0x0800c0a8   0x000001dc   Code   RO         7343    i.slaacDumpConfig   slaac.o
     0x0800c284   0x0800c284   0x00000048   Code   RO         7344    i.slaacGenerateLinkLocalAddr  slaac.o
     0x0800c2cc   0x0800c2cc   0x00000014   Code   RO         7345    i.slaacGetDefaultSettings  slaac.o
@@ -10132,21 +9777,21 @@ Memory Map of the image
     0x0800c5ce   0x0800c5ce   0x00000002   PAD
     0x0800c5d0   0x0800c5d0   0x00000068   Code   RO         7350    i.slaacStart        slaac.o
     0x0800c638   0x0800c638   0x00000074   Code   RO         9071    i.socketInit        socket.o
-    0x0800c6ac   0x0800c6ac   0x00000038   Code   RO        16007    i.stm32f4xxEthCalcCrc  stm32f4xx_eth_driver.o
-    0x0800c6e4   0x0800c6e4   0x0000001c   Code   RO        16008    i.stm32f4xxEthDisableIrq  stm32f4xx_eth_driver.o
-    0x0800c700   0x0800c700   0x00000014   Code   RO        16009    i.stm32f4xxEthEnableIrq  stm32f4xx_eth_driver.o
-    0x0800c714   0x0800c714   0x0000002c   Code   RO        16010    i.stm32f4xxEthEventHandler  stm32f4xx_eth_driver.o
-    0x0800c740   0x0800c740   0x00000168   Code   RO        16011    i.stm32f4xxEthInit  stm32f4xx_eth_driver.o
-    0x0800c8a8   0x0800c8a8   0x000000a4   Code   RO        16012    i.stm32f4xxEthInitDmaDesc  stm32f4xx_eth_driver.o
-    0x0800c94c   0x0800c94c   0x000000f8   Code   RO        16013    i.stm32f4xxEthInitGpio  stm32f4xx_eth_driver.o
-    0x0800ca44   0x0800ca44   0x0000003c   Code   RO        16014    i.stm32f4xxEthReadPhyReg  stm32f4xx_eth_driver.o
-    0x0800ca80   0x0800ca80   0x0000005c   Code   RO        16015    i.stm32f4xxEthReceivePacket  stm32f4xx_eth_driver.o
-    0x0800cadc   0x0800cadc   0x00000078   Code   RO        16016    i.stm32f4xxEthSendPacket  stm32f4xx_eth_driver.o
-    0x0800cb54   0x0800cb54   0x00000006   Code   RO        16017    i.stm32f4xxEthTick  stm32f4xx_eth_driver.o
+    0x0800c6ac   0x0800c6ac   0x00000038   Code   RO        15319    i.stm32f4xxEthCalcCrc  stm32f4xx_eth_driver.o
+    0x0800c6e4   0x0800c6e4   0x0000001c   Code   RO        15320    i.stm32f4xxEthDisableIrq  stm32f4xx_eth_driver.o
+    0x0800c700   0x0800c700   0x00000014   Code   RO        15321    i.stm32f4xxEthEnableIrq  stm32f4xx_eth_driver.o
+    0x0800c714   0x0800c714   0x0000002c   Code   RO        15322    i.stm32f4xxEthEventHandler  stm32f4xx_eth_driver.o
+    0x0800c740   0x0800c740   0x00000168   Code   RO        15323    i.stm32f4xxEthInit  stm32f4xx_eth_driver.o
+    0x0800c8a8   0x0800c8a8   0x000000a4   Code   RO        15324    i.stm32f4xxEthInitDmaDesc  stm32f4xx_eth_driver.o
+    0x0800c94c   0x0800c94c   0x000000f8   Code   RO        15325    i.stm32f4xxEthInitGpio  stm32f4xx_eth_driver.o
+    0x0800ca44   0x0800ca44   0x0000003c   Code   RO        15326    i.stm32f4xxEthReadPhyReg  stm32f4xx_eth_driver.o
+    0x0800ca80   0x0800ca80   0x0000005c   Code   RO        15327    i.stm32f4xxEthReceivePacket  stm32f4xx_eth_driver.o
+    0x0800cadc   0x0800cadc   0x00000078   Code   RO        15328    i.stm32f4xxEthSendPacket  stm32f4xx_eth_driver.o
+    0x0800cb54   0x0800cb54   0x00000006   Code   RO        15329    i.stm32f4xxEthTick  stm32f4xx_eth_driver.o
     0x0800cb5a   0x0800cb5a   0x00000002   PAD
-    0x0800cb5c   0x0800cb5c   0x00000104   Code   RO        16018    i.stm32f4xxEthUpdateMacAddrFilter  stm32f4xx_eth_driver.o
-    0x0800cc60   0x0800cc60   0x0000003c   Code   RO        16019    i.stm32f4xxEthUpdateMacConfig  stm32f4xx_eth_driver.o
-    0x0800cc9c   0x0800cc9c   0x00000038   Code   RO        16020    i.stm32f4xxEthWritePhyReg  stm32f4xx_eth_driver.o
+    0x0800cb5c   0x0800cb5c   0x00000104   Code   RO        15330    i.stm32f4xxEthUpdateMacAddrFilter  stm32f4xx_eth_driver.o
+    0x0800cc60   0x0800cc60   0x0000003c   Code   RO        15331    i.stm32f4xxEthUpdateMacConfig  stm32f4xx_eth_driver.o
+    0x0800cc9c   0x0800cc9c   0x00000038   Code   RO        15332    i.stm32f4xxEthWritePhyReg  stm32f4xx_eth_driver.o
     0x0800ccd4   0x0800ccd4   0x00000034   Code   RO        10411    i.strSafeCopy       str.o
     0x0800cd08   0x0800cd08   0x00000004   Code   RO        10512    i.swapInt16         cpu_endian.o
     0x0800cd0c   0x0800cd0c   0x00000004   Code   RO        10513    i.swapInt32         cpu_endian.o
@@ -10216,9 +9861,9 @@ Memory Map of the image
     0x0800ef9a   0x0800ef9a   0x0000004c   Code   RO         9649    i.udpUpdateEvents   udp.o
     0x0800efe6   0x0800efe6   0x00000002   PAD
     0x0800efe8   0x0800efe8   0x00000014   Code   RO         9741    i.webSocketInit     web_socket.o
-    0x0800effc   0x0800effc   0x0000006a   Code   RO        15212    i.yarrowFastReseed  yarrow.o
-    0x0800f066   0x0800f066   0x0000002e   Code   RO        15214    i.yarrowInit        yarrow.o
-    0x0800f094   0x0800f094   0x0000001e   Code   RO        15217    i.yarrowSeed        yarrow.o
+    0x0800effc   0x0800effc   0x0000006a   Code   RO        14550    i.yarrowFastReseed  yarrow.o
+    0x0800f066   0x0800f066   0x0000002e   Code   RO        14552    i.yarrowInit        yarrow.o
+    0x0800f094   0x0800f094   0x0000001e   Code   RO        14555    i.yarrowSeed        yarrow.o
     0x0800f0b2   0x0800f0b2   0x00000010   Data   RO         2589    .constdata          system_stm32f4xx.o
     0x0800f0c2   0x0800f0c2   0x00000008   Data   RO         2590    .constdata          system_stm32f4xx.o
     0x0800f0ca   0x0800f0ca   0x00000100   Data   RO         2974    .constdata          os_core.o
@@ -10234,15 +9879,15 @@ Memory Map of the image
     0x0800f23d   0x0800f23d   0x00000040   Data   RO         8206    .constdata          ethernet_misc.o
     0x0800f27d   0x0800f27d   0x00000010   Data   RO        10210    .constdata          llmnr_common.o
     0x0800f28d   0x0800f28d   0x00000003   PAD
-    0x0800f290   0x0800f290   0x00000140   Data   RO        12870    .constdata          sha256.o
-    0x0800f3d0   0x0800f3d0   0x00000a2c   Data   RO        13408    .constdata          aes.o
-    0x0800fdfc   0x0800fdfc   0x00000040   Data   RO        16022    .constdata          stm32f4xx_eth_driver.o
-    0x0800fe3c   0x0800fe3c   0x0000001c   Data   RO        16131    .constdata          lan8720_driver.o
-    0x0800fe58   0x0800fe58   0x00000081   Data   RO        16189    .constdata          mc_w.l(ctype_o.o)
+    0x0800f290   0x0800f290   0x00000140   Data   RO        12732    .constdata          sha256.o
+    0x0800f3d0   0x0800f3d0   0x00000a2c   Data   RO        13228    .constdata          aes.o
+    0x0800fdfc   0x0800fdfc   0x00000040   Data   RO        15334    .constdata          stm32f4xx_eth_driver.o
+    0x0800fe3c   0x0800fe3c   0x0000001c   Data   RO        15443    .constdata          lan8720_driver.o
+    0x0800fe58   0x0800fe58   0x00000081   Data   RO        15501    .constdata          mc_w.l(ctype_o.o)
     0x0800fed9   0x0800fed9   0x00000003   PAD
-    0x0800fedc   0x0800fedc   0x00000004   Data   RO        16190    .constdata          mc_w.l(ctype_o.o)
+    0x0800fedc   0x0800fedc   0x00000004   Data   RO        15502    .constdata          mc_w.l(ctype_o.o)
     0x0800fee0   0x0800fee0   0x00000060   Data   RO         4921    .conststring        dhcp_client.o
-    0x0800ff40   0x0800ff40   0x00000020   Data   RO        16592    Region$$Table       anon$$obj.o
+    0x0800ff40   0x0800ff40   0x00000020   Data   RO        15904    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x0800ff60, Size: 0x000101e0, Max: 0x00020000, ABSOLUTE)
@@ -10278,11 +9923,11 @@ Memory Map of the image
     0x200000e4   0x08010044   0x00000002   Data   RW         9249    .data               tcp.o
     0x200000e6   0x08010046   0x00000002   PAD
     0x200000e8   0x08010048   0x00000008   Data   RW         9651    .data               udp.o
-    0x200000f0   0x08010050   0x0000000c   Data   RW        16023    .data               stm32f4xx_eth_driver.o
-    0x200000fc   0x0801005c   0x00000004   Data   RW        16184    .data               mc_w.l(stdout.o)
-    0x20000100   0x08010060   0x00000004   Data   RW        16185    .data               mc_w.l(stderr.o)
-    0x20000104   0x08010064   0x00000004   Data   RW        16562    .data               mc_w.l(mvars.o)
-    0x20000108   0x08010068   0x00000004   Data   RW        16563    .data               mc_w.l(mvars.o)
+    0x200000f0   0x08010050   0x0000000c   Data   RW        15335    .data               stm32f4xx_eth_driver.o
+    0x200000fc   0x0801005c   0x00000004   Data   RW        15496    .data               mc_w.l(stdout.o)
+    0x20000100   0x08010060   0x00000004   Data   RW        15497    .data               mc_w.l(stderr.o)
+    0x20000104   0x08010064   0x00000004   Data   RW        15874    .data               mc_w.l(mvars.o)
+    0x20000108   0x08010068   0x00000004   Data   RW        15875    .data               mc_w.l(mvars.o)
     0x2000010c        -       0x00000048   Zero   RW          224    .bss                eth.o
     0x20000154        -       0x00000010   Zero   RW          266    .bss                rng.o
     0x20000164        -       0x00000058   Zero   RW          308    .bss                spi.o
@@ -10307,7 +9952,7 @@ Memory Map of the image
     0x20007ec0        -       0x000000a0   Zero   RW         9650    .bss                udp.o
     0x20007f60        -       0x00002720   Zero   RW         9762    .bss                web_socket.o
     0x2000a680        -       0x00000040   Zero   RW        10455    .bss                date_time.o
-    0x2000a6c0        -       0x00003720   Zero   RW        16021    .bss                stm32f4xx_eth_driver.o
+    0x2000a6c0        -       0x00003720   Zero   RW        15333    .bss                stm32f4xx_eth_driver.o
     0x2000dde0        -       0x00002000   Zero   RW            2    HEAP                startup_stm32f407xx.o
     0x2000fde0        -       0x00000400   Zero   RW            1    STACK               startup_stm32f407xx.o
 
