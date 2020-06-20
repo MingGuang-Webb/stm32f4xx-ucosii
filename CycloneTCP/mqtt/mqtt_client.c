@@ -69,7 +69,7 @@ error_t mqttClientInit(MqttClientContext *context)
    if(error)
       return error;
 #endif
-
+ 
    //Default protocol version
    context->settings.version = MQTT_VERSION_3_1_1;
    //Default transport protocol

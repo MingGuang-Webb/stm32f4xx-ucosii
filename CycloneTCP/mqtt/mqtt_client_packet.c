@@ -87,7 +87,7 @@ error_t mqttClientReceivePacket(MqttClientContext *context)
       {
          //Read a single byte
          error = mqttClientReceiveData(context, &value, sizeof(uint8_t), &n, 0);
-
+         ucos_kprintf("mqtt rece packet:%d\r\n",error);
          //Any data received?
          if(!error)
          {
@@ -298,7 +298,10 @@ error_t mqttClientProcessConnAck(MqttClientContext *context,
 
    //Make sure the connection is accepted
    if(connectReturnCode != MQTT_CONNECT_RET_CODE_ACCEPTED)
+   {
+      ucos_kprintf("connectReturnCode : %d\r\n",connectReturnCode);
       return ERROR_CONNECTION_REFUSED;
+   }
 
    //Notify the application that a CONNACK packet has been received
    if(context->packetType == MQTT_PACKET_TYPE_CONNECT)
@@ -795,7 +798,7 @@ error_t mqttClientFormatConnect(MqttClientContext *context,
    //used by the client
    error = mqttSerializeByte(context->buffer, MQTT_CLIENT_BUFFER_SIZE,
       &n, context->settings.version);
-
+   
    //Failed to serialize data?
    if(error)
       return error;
@@ -846,7 +849,7 @@ error_t mqttClientFormatConnect(MqttClientContext *context,
    //Write the Connect Flags to the output buffer
    error = mqttSerializeByte(context->buffer, MQTT_CLIENT_BUFFER_SIZE,
       &n, connectFlags);
-
+    
    //Failed to serialize data?
    if(error)
       return error;
@@ -857,7 +860,6 @@ error_t mqttClientFormatConnect(MqttClientContext *context,
    //sending the next
    error = mqttSerializeShort(context->buffer, MQTT_CLIENT_BUFFER_SIZE,
       &n, context->settings.keepAlive);
-
    //Failed to serialize data?
    if(error)
       return error;
@@ -867,7 +869,6 @@ error_t mqttClientFormatConnect(MqttClientContext *context,
    //packet payload
    error = mqttSerializeString(context->buffer, MQTT_CLIENT_BUFFER_SIZE,
       &n, context->settings.clientId, strlen(context->settings.clientId));
-
    //Failed to serialize data?
    if(error)
       return error;
@@ -879,27 +880,22 @@ error_t mqttClientFormatConnect(MqttClientContext *context,
       //Write the Will Topic to the output buffer
       error = mqttSerializeString(context->buffer, MQTT_CLIENT_BUFFER_SIZE,
          &n, willMessage->topic, strlen(willMessage->topic));
-
       //Failed to serialize data?
       if(error)
          return error;
-
       //Write the Will message to the output buffer
       error = mqttSerializeString(context->buffer, MQTT_CLIENT_BUFFER_SIZE,
          &n, willMessage->payload, willMessage->length);
-
       //Failed to serialize data?
       if(error)
          return error;
    }
-
    //If the User Name Flag is set to 1, this is the next field in the payload
    if(context->settings.username[0] != '\0')
    {
       //Write the User Name to the output buffer
       error = mqttSerializeString(context->buffer, MQTT_CLIENT_BUFFER_SIZE,
          &n, context->settings.username, strlen(context->settings.username));
-
       //Failed to serialize data?
       if(error)
          return error;
@@ -911,7 +907,6 @@ error_t mqttClientFormatConnect(MqttClientContext *context,
       //Write the Password to the output buffer
       error = mqttSerializeString(context->buffer, MQTT_CLIENT_BUFFER_SIZE,
          &n, context->settings.password, strlen(context->settings.password));
-
       //Failed to serialize data?
       if(error)
          return error;
@@ -926,7 +921,6 @@ error_t mqttClientFormatConnect(MqttClientContext *context,
    //Prepend the variable header and the payload with the fixed header
    error = mqttSerializeHeader(context->buffer, &n, MQTT_PACKET_TYPE_CONNECT,
       FALSE, MQTT_QOS_LEVEL_0, FALSE, context->packetLen);
-
    //Failed to serialize fixed header?
    if(error)
       return error;

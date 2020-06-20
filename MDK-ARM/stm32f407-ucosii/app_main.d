@@ -104,6 +104,7 @@ stm32f407-ucosii\app_main.o: ..\CycloneTCP\common\debug.h
 stm32f407-ucosii\app_main.o: ..\App\app_mqtt.h
 stm32f407-ucosii\app_main.o: ..\CycloneTCP\mqtt/mqtt_client.h
 stm32f407-ucosii\app_main.o: ..\CycloneTCP\mqtt/mqtt_common.h
+stm32f407-ucosii\app_main.o: ..\CycloneTCP\web_socket/web_socket.h
 stm32f407-ucosii\app_main.o: ..\CycloneSSL\cyclone_ssl\tls.h
 stm32f407-ucosii\app_main.o: ..\CycloneCFG\tls_config.h
 stm32f407-ucosii\app_main.o: ..\CycloneSSL\cyclone_ssl\tls_legacy.h
@@ -128,4 +129,3 @@ stm32f407-ucosii\app_main.o: ..\CycloneSSL\cyclone_crypto\pkix/x509_common.h
 stm32f407-ucosii\app_main.o: ..\CycloneSSL\cyclone_crypto\ecc/eddsa.h
 stm32f407-ucosii\app_main.o: ..\CycloneTCP\common\date_time.h
 stm32f407-ucosii\app_main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
-stm32f407-ucosii\app_main.o: ..\CycloneTCP\web_socket/web_socket.h

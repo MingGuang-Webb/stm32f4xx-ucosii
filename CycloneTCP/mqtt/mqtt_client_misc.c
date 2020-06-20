@@ -360,7 +360,6 @@ error_t mqttSerializeString(uint8_t *buffer, size_t bufferLen,
 
    //Point to the current position
    n = *pos;
-
    //Make sure the output buffer is large enough to hold the string
    if((n + sizeof(uint16_t) + stringLen) > bufferLen)
       return ERROR_BUFFER_OVERFLOW;

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-07 11:16:22
- * @LastEditTime: 2020-06-15 11:46:31
+ * @LastEditTime: 2020-06-18 13:28:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \stm32f767-uscoii\App\app_main.c
@@ -19,7 +19,6 @@
 #include "app_mqtt.h"
 
 extern RNG_HandleTypeDef hrng;
-extern MqttClientContext mqttClientContext;
 
 //Ethernet interface configuration
 #define APP_IF_NAME "eth0"
@@ -52,30 +51,30 @@ extern MqttClientContext mqttClientContext;
 
 //Client's certificate
 const char_t clientCert[] =
-   "-----BEGIN CERTIFICATE-----"
-   "MIICGjCCAYOgAwIBAgIBADANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UEBhMCR0Ix"
-   "FzAVBgNVBAgMDlVuaXRlZCBLaW5nZG9tMQ4wDAYDVQQHDAVEZXJieTESMBAGA1UE"
-   "CgwJTW9zcXVpdHRvMQswCQYDVQQLDAJDQTEWMBQGA1UEAwwNbW9zcXVpdHRvLm9y"
-   "ZzEfMB0GCSqGSIb3DQEJARYQcm9nZXJAYXRjaG9vLm9yZzAeFw0xOTEwMjIwOTIw"
-   "NDFaFw0yMDAxMjAwOTIwNDFaMEAxCzAJBgNVBAYTAkZSMRYwFAYDVQQKDA1Pcnl4"
-   "IEVtYmVkZGVkMRkwFwYDVQQDDBBtcXR0LWNsaWVudC1kZW1vMFkwEwYHKoZIzj0C"
-   "AQYIKoZIzj0DAQcDQgAEWT/enOkLuY+9NzUQPOuNVFARl5Y3bc4lLt3TyVwWG0Ez"
-   "IIk8Wll5Ljjrv+buPSKBVQtOwF9VgyW4QuQ1uYSAIaMaMBgwCQYDVR0TBAIwADAL"
-   "BgNVHQ8EBAMCBeAwDQYJKoZIhvcNAQELBQADgYEAWoiW35xauLH2mTzMtE6Pdavi"
-   "MyFgnBNeve9USawRLdrbgDJ0CwFw4ssduvrCe8wSfvkqEsJXsNMBP7cXEXbWz2nr"
-   "AN1UDxZGoF9kaQgYboDwzL83B9jo/F/JHJRDDUxYW1vNvvkc1mobkejW/3Zz4aYt"
-   "Hs4tpUyogRO/5N57X/w="
-   "-----END CERTIFICATE-----";
+    "-----BEGIN CERTIFICATE-----"
+    "MIICGjCCAYOgAwIBAgIBADANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UEBhMCR0Ix"
+    "FzAVBgNVBAgMDlVuaXRlZCBLaW5nZG9tMQ4wDAYDVQQHDAVEZXJieTESMBAGA1UE"
+    "CgwJTW9zcXVpdHRvMQswCQYDVQQLDAJDQTEWMBQGA1UEAwwNbW9zcXVpdHRvLm9y"
+    "ZzEfMB0GCSqGSIb3DQEJARYQcm9nZXJAYXRjaG9vLm9yZzAeFw0xOTEwMjIwOTIw"
+    "NDFaFw0yMDAxMjAwOTIwNDFaMEAxCzAJBgNVBAYTAkZSMRYwFAYDVQQKDA1Pcnl4"
+    "IEVtYmVkZGVkMRkwFwYDVQQDDBBtcXR0LWNsaWVudC1kZW1vMFkwEwYHKoZIzj0C"
+    "AQYIKoZIzj0DAQcDQgAEWT/enOkLuY+9NzUQPOuNVFARl5Y3bc4lLt3TyVwWG0Ez"
+    "IIk8Wll5Ljjrv+buPSKBVQtOwF9VgyW4QuQ1uYSAIaMaMBgwCQYDVR0TBAIwADAL"
+    "BgNVHQ8EBAMCBeAwDQYJKoZIhvcNAQELBQADgYEAWoiW35xauLH2mTzMtE6Pdavi"
+    "MyFgnBNeve9USawRLdrbgDJ0CwFw4ssduvrCe8wSfvkqEsJXsNMBP7cXEXbWz2nr"
+    "AN1UDxZGoF9kaQgYboDwzL83B9jo/F/JHJRDDUxYW1vNvvkc1mobkejW/3Zz4aYt"
+    "Hs4tpUyogRO/5N57X/w="
+    "-----END CERTIFICATE-----";
 
 //Client's private key
 const char_t clientKey[] =
-   "-----BEGIN EC PRIVATE KEY-----"
-   "MHcCAQEEICYULY0KQ6nDAXFl5tgK9ljqAZyb14JQmI3iT7tdScDloAoGCCqGSM49"
-   "AwEHoUQDQgAEWT/enOkLuY+9NzUQPOuNVFARl5Y3bc4lLt3TyVwWG0EzIIk8Wll5"
-   "Ljjrv+buPSKBVQtOwF9VgyW4QuQ1uYSAIQ=="
-   "-----END EC PRIVATE KEY-----";
+    "-----BEGIN EC PRIVATE KEY-----"
+    "MHcCAQEEICYULY0KQ6nDAXFl5tgK9ljqAZyb14JQmI3iT7tdScDloAoGCCqGSM49"
+    "AwEHoUQDQgAEWT/enOkLuY+9NzUQPOuNVFARl5Y3bc4lLt3TyVwWG0EzIIk8Wll5"
+    "Ljjrv+buPSKBVQtOwF9VgyW4QuQ1uYSAIQ=="
+    "-----END EC PRIVATE KEY-----";
 
-const char_t trustedCaList[]="\
+const char_t trustedCaList[] = "\
 -----BEGIN CERTIFICATE-----\r\n\
 MIIDUDCCAjgCCQD8SgoeHeWPKjANBgkqhkiG9w0BAQsFADBpMQswCQYDVQQGEwJD\r\n\
 TjEQMA4GA1UECAwHYmVpamluZzEQMA4GA1UEBwwHYmVpamluZzEXMBUGA1UECgwO\r\n\
@@ -105,26 +104,25 @@ SlaacContext slaacContext;
 YarrowContext yarrowContext;
 uint8_t seed[32];
 
-
 /**
  * @description: ucosii的优先级必须唯一，后面可以靠这个去删除任务和挂起任务操作
  * @param {type} 
  * @return: 
  */
-#define LED_STAKE_SIZE      128
+#define LED_STAKE_SIZE 128
 OS_STK led_blink_stake[LED_STAKE_SIZE];
-#define LED_TASK_PRO        3
+#define LED_TASK_PRO 3
 
-#define UART_STAKE_SIZE     128
+#define UART_STAKE_SIZE 128
 OS_STK uart_stake[UART_STAKE_SIZE];
-#define UART_TASK_PRO       2
+#define UART_TASK_PRO 2
 
-#define TCP_STAKE_SIZE      2048         /* IMU_STAKE_SIZE*2byte */
+#define TCP_STAKE_SIZE 2048 /* IMU_STAKE_SIZE*2byte */
 OS_STK tcp_stake[TCP_STAKE_SIZE];
-#define TCP_TASK_PRO        1
+#define TCP_TASK_PRO 1
 
-static OS_FLAG_GRP *event;              /* 创建事件标志组 */
-static void *pq_group[10];              /* ucosii的队列只能传输指针,不能想freeRTOS那种复制操作 */
+static OS_FLAG_GRP *event; /* 创建事件标志组 */
+static void *pq_group[10]; /* ucosii的队列只能传输指针,不能想freeRTOS那种复制操作 */
 OS_EVENT *pq_event;
 
 void led_blink_task(void *arg);
@@ -133,21 +131,21 @@ void tcp_task(void *arg);
 
 void ucos_show_version(void)
 {
-    ucos_kprintf("\n \\ |  /\n");
-    ucos_kprintf("- UCOS -     Ucosii Operating System\n");
-    ucos_kprintf(" / |  \\     Version:V%d.%d.%d build %s\n",
-               OS_VERSION/10000,OS_VERSION%10000/100,OS_VERSION%100, __DATE__);
-    ucos_kprintf(" i - n Copyright by Micrium RTOS.\n");
+   ucos_kprintf("\n \\ |  /\n");
+   ucos_kprintf("- UCOS -     Ucosii Operating System\n");
+   ucos_kprintf(" / |  \\     Version:V%d.%d.%d build %s\n",
+                OS_VERSION / 10000, OS_VERSION % 10000 / 100, OS_VERSION % 100, __DATE__);
+   ucos_kprintf(" i - n Copyright by Micrium RTOS.\n");
 }
 
 void create_app_task(void)
-{   
-    ucos_show_version();
+{
+   ucos_show_version();
 
-    ucos_kprintf ("create ucosii app task.\r\n");
-    OSTaskCreate(led_blink_task, (void *)0, (OS_STK *)&led_blink_stake[LED_STAKE_SIZE - 1], LED_TASK_PRO);
-    OSTaskCreate(uart_task, (void *)0, (OS_STK *)&uart_stake[UART_STAKE_SIZE - 1], UART_TASK_PRO);
-    OSTaskCreate(tcp_task, (void *)0, (OS_STK *)&tcp_stake[TCP_STAKE_SIZE - 1], TCP_TASK_PRO);
+   ucos_kprintf("create ucosii app task.\r\n");
+   OSTaskCreate(led_blink_task, (void *)0, (OS_STK *)&led_blink_stake[LED_STAKE_SIZE - 1], LED_TASK_PRO);
+   OSTaskCreate(uart_task, (void *)0, (OS_STK *)&uart_stake[UART_STAKE_SIZE - 1], UART_TASK_PRO);
+   OSTaskCreate(tcp_task, (void *)0, (OS_STK *)&tcp_stake[TCP_STAKE_SIZE - 1], TCP_TASK_PRO);
 }
 
 /**
@@ -157,18 +155,18 @@ void create_app_task(void)
  */
 void led_blink_task(void *arg)
 {
-    INT8U event_err;
-    event = OSFlagCreate(0,&event_err);
-    if (OS_ERR_NONE == event_err)
-    {
-        ucos_kprintf("create OS event success.\r\n");
-    }
-    for (;;)
-    {
-        /* code */
-        HAL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);
-        OSTimeDly(100);             /*正常的延时函数*/
-    }
+   INT8U event_err;
+   event = OSFlagCreate(0, &event_err);
+   if (OS_ERR_NONE == event_err)
+   {
+      ucos_kprintf("create OS event success.\r\n");
+   }
+   for (;;)
+   {
+      /* code */
+      HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+      OSTimeDly(100); /*正常的延时函数*/
+   }
 }
 
 /**
@@ -178,17 +176,17 @@ void led_blink_task(void *arg)
  */
 void uart_task(void *arg)
 {
-    pq_event = OSQCreate(pq_group,10);
-    if (OS_ASCII_NUL != pq_event)
-    {
-        ucos_kprintf("Queue Create Success.\r\n");
-    }
-    for (;;)
-    {
-        HAL_GPIO_TogglePin(LED2_GPIO_Port,LED2_Pin);
-        /* code */
-        OSTimeDlyHMSM(0,0,0,500);   /*按照时分秒的方式进行延时*/
-    }
+   pq_event = OSQCreate(pq_group, 10);
+   if (OS_ASCII_NUL != pq_event)
+   {
+      ucos_kprintf("Queue Create Success.\r\n");
+   }
+   for (;;)
+   {
+      HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
+      /* code */
+      OSTimeDlyHMSM(0, 0, 0, 500); /*按照时分秒的方式进行延时*/
+   }
 }
 
 /**
@@ -199,13 +197,11 @@ void uart_task(void *arg)
 void tcp_task(void *arg)
 {
    error_t error;
-   uint_t i;
-   uint32_t value;
+   uint32_t value = 0;
    NetInterface *interface;
    MacAddr macAddr;
-   bool_t connectionState;
-   uint32_t test;
-    
+   uint32_t test = 0;
+
 #if (APP_USE_DHCP_CLIENT == DISABLED)
    Ipv4Addr ipv4Addr;
 #endif
@@ -224,7 +220,7 @@ void tcp_task(void *arg)
    TRACE_INFO("\r\n");
 
    //Generate a random seed
-   for (i = 0; i < 32; i += 4)
+   for (int i = 0; i < 32; i += 4)
    {
       //Get 32-bit random value
       HAL_RNG_GenerateRandomNumber(&hrng, &value);
@@ -386,61 +382,10 @@ void tcp_task(void *arg)
    ipv6SetDnsServer(interface, 1, &ipv6Addr);
 #endif
 #endif
-   //Initialize variables
-   connectionState = FALSE;
-   //Initialize MQTT client context
-   mqttClientInit(&mqttClientContext);
+
    for (;;)
    {
-      //Check connection state
-      if(!connectionState)
-      {
-         //Make sure the link is up
-         if(netGetLinkState(&netInterface[0]))
-         {
-            //Try to connect to the MQTT server
-            error = mqttConnect();
-
-            //Successful connection?
-            if(!error)
-            {
-               //The MQTT client is connected to the server
-               connectionState = TRUE;
-               TRACE_INFO("MQTT Connect Success.\r\n");
-            }
-            else
-            {
-               //Delay between subsequent connection attempts
-               osDelayTask(2000);
-            }
-         }
-      }
-      else
-      {
-         //Initialize status code
-        error = NO_ERROR;
-        test++;
-        if (0 == test % 50)
-        {
-            error = publish_info_to_aliyun(&mqttClientContext);
-            if (error != 0)
-            {
-                TRACE_INFO("MQTT Publish Error.\r\n");
-                goto __exit;
-            }
-        }
-        
-        error = mqttClientTask(&mqttClientContext, 100);
-__exit:
-         if(error)
-         {
-            //Close connection
-            mqttClientClose(&mqttClientContext);
-            //Update connection state
-            connectionState = FALSE;
-         }
-      }
+      mqtt_net_fsm();
       osDelayTask(10u);
    }
 }
-
