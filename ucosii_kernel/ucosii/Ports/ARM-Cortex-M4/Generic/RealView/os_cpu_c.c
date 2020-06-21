@@ -52,7 +52,6 @@
 #include  <ucos_ii.h>
 #include "includes.h"
 #include  <lib_def.h>
-#include "os_debug.h"
 
 
 /*
@@ -495,9 +494,9 @@ void  OS_CPU_SysTickInitFreq (INT32U  cpu_freq)
 {
     INT32U  cnts;
 
-    ucos_kprintf("cpu_freq:%d\r\n",cpu_freq);
+
     cnts = (cpu_freq / (INT32U)OS_TICKS_PER_SEC);               /* Determine nbr SysTick cnts between two OS tick intr. */
-    
+
     OS_CPU_SysTickInit(cnts);
 }
 

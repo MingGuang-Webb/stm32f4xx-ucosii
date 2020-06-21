@@ -1,10 +1,5 @@
 stm32f407-ucosii\app_hooks.o: ..\ucosii_kernel\ucos_cfg\app_hooks.c
 stm32f407-ucosii\app_hooks.o: ..\ucosii_kernel\ucosii\Source\ucos_ii.h
-stm32f407-ucosii\app_hooks.o: ..\ucosii_kernel\ucos_cfg\app_cfg.h
-stm32f407-ucosii\app_hooks.o: ..\ucosii_kernel\ucos_debug\os_debug.h
-stm32f407-ucosii\app_hooks.o: ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView\cpu.h
-stm32f407-ucosii\app_hooks.o: ..\ucosii_kernel\ucos_cpu\cpu_def.h
-stm32f407-ucosii\app_hooks.o: ..\ucosii_kernel\ucos_cfg\cpu_cfg.h
 stm32f407-ucosii\app_hooks.o: ..\ucosii_kernel\ucos_cfg\os_cfg.h
 stm32f407-ucosii\app_hooks.o: ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h
 stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
@@ -30,14 +25,10 @@ stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_
 stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
-stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h
 stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
 stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
-stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h
-stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
-stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
 stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 stm32f407-ucosii\app_hooks.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
