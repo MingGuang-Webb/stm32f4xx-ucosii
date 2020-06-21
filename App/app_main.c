@@ -117,7 +117,7 @@ OS_STK led_blink_stake[LED_STAKE_SIZE];
 OS_STK uart_stake[UART_STAKE_SIZE];
 #define UART_TASK_PRO 2
 
-#define TCP_STAKE_SIZE 2048 /* IMU_STAKE_SIZE*2byte */
+#define TCP_STAKE_SIZE 1024 /* IMU_STAKE_SIZE*2byte */
 OS_STK tcp_stake[TCP_STAKE_SIZE];
 #define TCP_TASK_PRO 1
 
@@ -200,7 +200,6 @@ void tcp_task(void *arg)
    uint32_t value = 0;
    NetInterface *interface;
    MacAddr macAddr;
-   uint32_t test = 0;
 
 #if (APP_USE_DHCP_CLIENT == DISABLED)
    Ipv4Addr ipv4Addr;
@@ -239,7 +238,7 @@ void tcp_task(void *arg)
    {
       //Debug message
       TRACE_ERROR("Failed to initialize PRNG!\r\n");
-   }
+   }    
 
    //Properly seed the PRNG
    error = yarrowSeed(&yarrowContext, seed, sizeof(seed));

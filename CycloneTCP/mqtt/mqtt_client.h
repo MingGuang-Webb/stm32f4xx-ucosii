@@ -72,7 +72,7 @@
 
 //Maximum length of the hostname
 #ifndef MQTT_CLIENT_MAX_HOST_LEN
-   #define MQTT_CLIENT_MAX_HOST_LEN 32
+   #define MQTT_CLIENT_MAX_HOST_LEN 64
 #elif (MQTT_CLIENT_MAX_HOST_LEN < 1)
    #error MQTT_CLIENT_MAX_HOST_LEN parameter is not valid
 #endif
@@ -86,35 +86,35 @@
 
 //Maximum length of the client identifier
 #ifndef MQTT_CLIENT_MAX_ID_LEN
-   #define MQTT_CLIENT_MAX_ID_LEN 23
+   #define MQTT_CLIENT_MAX_ID_LEN 128
 #elif (MQTT_CLIENT_MAX_ID_LEN < 0)
    #error MQTT_CLIENT_MAX_ID_LEN parameter is not valid
 #endif
 
 //Maximum length of the user name
 #ifndef MQTT_CLIENT_MAX_USERNAME_LEN
-   #define MQTT_CLIENT_MAX_USERNAME_LEN 16
+   #define MQTT_CLIENT_MAX_USERNAME_LEN 128
 #elif (MQTT_CLIENT_MAX_USERNAME_LEN < 0)
    #error MQTT_CLIENT_MAX_USERNAME_LEN parameter is not valid
 #endif
 
 //Maximum length of the password
 #ifndef MQTT_CLIENT_MAX_PASSWORD_LEN
-   #define MQTT_CLIENT_MAX_PASSWORD_LEN 16
+   #define MQTT_CLIENT_MAX_PASSWORD_LEN 128
 #elif (MQTT_CLIENT_MAX_PASSWORD_LEN < 0)
    #error MQTT_CLIENT_MAX_PASSWORD_LEN parameter is not valid
 #endif
 
 //Maximum length of the will topic
 #ifndef MQTT_CLIENT_MAX_WILL_TOPIC_LEN
-   #define MQTT_CLIENT_MAX_WILL_TOPIC_LEN 128
+   #define MQTT_CLIENT_MAX_WILL_TOPIC_LEN 64
 #elif (MQTT_CLIENT_MAX_WILL_TOPIC_LEN < 0)
    #error MQTT_CLIENT_MAX_WILL_TOPIC_LEN parameter is not valid
 #endif
 
 //Maximum length of the will message payload
 #ifndef MQTT_CLIENT_MAX_WILL_PAYLOAD_LEN
-   #define MQTT_CLIENT_MAX_WILL_PAYLOAD_LEN 128
+   #define MQTT_CLIENT_MAX_WILL_PAYLOAD_LEN 64
 #elif (MQTT_CLIENT_MAX_WILL_PAYLOAD_LEN < 0)
    #error MQTT_CLIENT_MAX_WILL_PAYLOAD_LEN parameter is not valid
 #endif

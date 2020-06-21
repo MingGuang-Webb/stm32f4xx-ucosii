@@ -283,7 +283,11 @@ error_t mqttClientProcessConnAck(MqttClientContext *context,
    //The second byte of the variable header is the Connect Return Code
    error = mqttDeserializeByte(context->packet, context->packetLen,
       &context->packetPos, &connectReturnCode);
-
+   for (int i = 0; i < context->packetLen; i++)
+   {
+      ucos_kprintf("%02x ", context->packet[i]);
+   }
+   ucos_kprintf("\r\n");
    //Failed to deserialize the Connect Return Code?
    if(error)
       return error;

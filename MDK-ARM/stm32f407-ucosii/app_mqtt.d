@@ -57,7 +57,6 @@ stm32f407-ucosii\app_mqtt.o: ..\CycloneTCP\mdns/mdns_common.h
 stm32f407-ucosii\app_mqtt.o: ..\CycloneTCP\dns_sd/dns_sd.h
 stm32f407-ucosii\app_mqtt.o: ..\CycloneTCP\common\cpu_endian.h
 stm32f407-ucosii\app_mqtt.o: ..\CycloneTCP\mqtt/mqtt_common.h
-stm32f407-ucosii\app_mqtt.o: ..\CycloneTCP\web_socket/web_socket.h
 stm32f407-ucosii\app_mqtt.o: ..\CycloneSSL\cyclone_crypto\core/crypto.h
 stm32f407-ucosii\app_mqtt.o: ..\CycloneCFG\crypto_config.h
 stm32f407-ucosii\app_mqtt.o: ..\CycloneSSL\cyclone_crypto\core/crypto_legacy.h
@@ -89,6 +88,7 @@ stm32f407-ucosii\app_mqtt.o: ..\CycloneSSL\cyclone_crypto\pkix/x509_common.h
 stm32f407-ucosii\app_mqtt.o: ..\CycloneSSL\cyclone_crypto\ecc/eddsa.h
 stm32f407-ucosii\app_mqtt.o: ..\CycloneTCP\common\date_time.h
 stm32f407-ucosii\app_mqtt.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+stm32f407-ucosii\app_mqtt.o: ..\CycloneTCP\web_socket/web_socket.h
 stm32f407-ucosii\app_mqtt.o: ..\CycloneTCP\common\debug.h
 stm32f407-ucosii\app_mqtt.o: ..\App\infra_sha256.h
 stm32f407-ucosii\app_mqtt.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h

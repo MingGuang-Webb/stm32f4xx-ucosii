@@ -10,6 +10,7 @@
 extern RNG_HandleTypeDef hrng;
 static MqttClientContext mqttClientContext;
 static mqtt_net_sta_t mqtt_net_sta = TBOX_MQTT_STATE_IDLE;
+static char mqtt_publish_test[64 + 1] = "Ali Alink CycloneTCP MQTT Test Success.";
 
 uint32_t HexToChar(uint8_t Hex, char *c)
 {
@@ -79,24 +80,22 @@ void connect_aliyun_data_init(MqttClientContext *connect_data, char *device_name
    strcpy(connect_data->settings.password, pass_str);
 }
 
-error_t publish_info_to_aliyun(MqttClientContext *context)
+static error_t mqtt_publish(MqttClientContext *context,char *fmt ,uint8_t *pload,int pload_len,MqttQosLevel qos)
 {
    error_t error;
-   char buffer[128 + 1] = {0};
    char topic[64 + 1] = {0};
-   char *fmt = "/%s/%s/user/GPS";
-   char *pload = "{\"G\":{\"G1\":%f,\"G2\":%f,\"G3\":%f,\"G4\":%d},\"method\":\"user.GPS\"}";
-   sprintf(topic, fmt, EXAMPLE_PRODUCT_KEY, EXAMPLE_DEVICE_NAME);
-   sprintf(buffer, pload, 1.0f, 2.0f, 3.0f, 40);
 
+   sprintf(topic, fmt, EXAMPLE_PRODUCT_KEY, EXAMPLE_DEVICE_NAME);
    error = mqttClientPublish(context, topic,
-                             buffer, strlen(buffer), MQTT_QOS_LEVEL_0, TRUE, NULL);
+                             pload, pload_len, MQTT_QOS_LEVEL_0, TRUE, NULL);
    return error;
 }
 
 int mqtt_net_fsm(void)
 {
    error_t error;
+   error_t rc = NO_ERROR;
+   static int count = 0;
     
    switch (mqtt_net_sta)
    {
@@ -126,12 +125,19 @@ int mqtt_net_fsm(void)
       mqtt_net_sta = TBOX_MQTT_STATE_ALIVE;
       break;
    case TBOX_MQTT_STATE_ALIVE:
-      TRACE_INFO("Ali MQTT Connect Success.\r\n");
-      OSTimeDly(2000);
+      count++;
+      if (0 == count % 200)
+      {
+         rc = mqtt_publish(&mqttClientContext, "/%s/%s/user/update", (uint8_t *)mqtt_publish_test, strlen(mqtt_publish_test), MQTT_QOS_LEVEL_0);
+         if (rc != NO_ERROR)
+         {
+            mqtt_net_sta = TBOX_MQTT_STATE_CLOSE;
+         }
+      }
+
       break;
    case TBOX_MQTT_STATE_CLOSE:
       mqtt_net_sta = TBOX_MQTT_STATE_IDLE;
-      OSTimeDly(2000);
       break;
    default:
       break;
@@ -202,12 +208,28 @@ error_t mqttConnect(void)
    //Debug message
    TRACE_INFO("\r\n\r\nResolving server name...\r\n");
 
-   //Resolve MQTT server name
-   sprintf(server_url, "%s.%s", EXAMPLE_PRODUCT_KEY, TEST_SERVER);
-   error = getHostByName(NULL, server_url, &ipAddr, 0);
    //Any error to report?
-   if (error)
-      return error;
+   while (OS_TRUE)
+   {
+      static int rety = 0;
+
+      //Resolve MQTT server name
+      sprintf(server_url, "%s.%s", EXAMPLE_PRODUCT_KEY, TEST_SERVER);
+      error = getHostByName(NULL, server_url, &ipAddr, 0);
+      if (error == NO_ERROR)
+      {
+         break;
+      }
+      else
+      {
+         rety++;
+         if (rety > 3)
+         {
+            return error;
+         }
+         OSTimeDly(2000);
+      }
+   }
 
 #if (APP_SERVER_PORT == 8080 || APP_SERVER_PORT == 8081)
    //Register RNG callback
