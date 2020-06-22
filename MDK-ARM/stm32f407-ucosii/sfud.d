@@ -1,0 +1,10 @@
+stm32f407-ucosii\sfud.o: ..\sfud_spi_flash\sfud\src\sfud.c
+stm32f407-ucosii\sfud.o: ..\sfud_spi_flash\sfud\inc\sfud.h
+stm32f407-ucosii\sfud.o: ..\sfud_spi_flash\sfud\inc\sfud_def.h
+stm32f407-ucosii\sfud.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32f407-ucosii\sfud.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32f407-ucosii\sfud.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+stm32f407-ucosii\sfud.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+stm32f407-ucosii\sfud.o: ..\sfud_spi_flash\sfud\inc\sfud_cfg.h
+stm32f407-ucosii\sfud.o: ..\sfud_spi_flash\sfud\inc\sfud_flash_def.h
+stm32f407-ucosii\sfud.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

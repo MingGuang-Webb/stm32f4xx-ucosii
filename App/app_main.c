@@ -17,6 +17,7 @@
 #include "rng/yarrow.h"
 #include "debug.h"
 #include "app_mqtt.h"
+#include "sfud.h"
 
 extern RNG_HandleTypeDef hrng;
 
@@ -381,7 +382,7 @@ void tcp_task(void *arg)
    ipv6SetDnsServer(interface, 1, &ipv6Addr);
 #endif
 #endif
-
+   sfud_init();
    for (;;)
    {
       mqtt_net_fsm();
