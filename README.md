@@ -12,4 +12,5 @@
 3. CycloneTCP协议栈移植成功，电脑可以ping通开发板，需要优化malloc函数；
 4. 增加MQTT连接阿里云平台；
 5. 202错误由于username的缓冲区太小，根据平台参数设置mqtt_client.h文件；
-6. 测试使用test分支；
+6. 增加外部flash Sfud的驱动；
+7. 测试使用test分支；
