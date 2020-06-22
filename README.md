@@ -13,4 +13,5 @@
 4. 增加MQTT连接阿里云平台；
 5. 202错误由于username的缓冲区太小，根据平台参数设置mqtt_client.h文件；
 6. 增加外部flash Sfud的驱动；
-7. 测试使用test分支；
+7. 增加easyflash驱动；
+8. 测试使用test分支；
