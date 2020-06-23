@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-22 17:00:24
- * @LastEditTime: 2020-06-22 22:53:57
+ * @LastEditTime: 2020-06-23 11:15:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \stm32f4xx-ucosii\easy_flash\inc\ef_cfg.h
@@ -61,7 +61,7 @@
 /* #define EF_USING_LOG */
 
 /* The minimum size of flash erasure. May be a flash sector size. */
-#define EF_ERASE_MIN_SIZE         2048/* @note you must define it for a value */
+#define EF_ERASE_MIN_SIZE         4096/* @note you must define it for a value */
 
 /* the flash write granularity, unit: bit
  * only support 1(nor flash)/ 8(stm32f4)/ 32(stm32f1) */
@@ -92,12 +92,19 @@
 #define EF_START_ADDR             0x00000000/* @note you must define it for a value */
 
 /* ENV area size. It's at least one empty sector for GC. So it's definition must more then or equal 2 flash sector size. */
-#define ENV_AREA_SIZE             1024 * 256/* @note you must define it for a value if you used ENV */
+#define ENV_AREA_SIZE             1024 * 4096/* @note you must define it for a value if you used ENV */
 
 /* saved log area size */
-#define LOG_AREA_SIZE             1024 * 256/* @note you must define it for a value if you used log */
+#define LOG_AREA_SIZE             1024 * 4096/* @note you must define it for a value if you used log */
 
 /* print debug information of flash */
 #define PRINT_DEBUG
 
 #endif /* EF_CFG_H_ */
+
+
+
+
+
+
+

@@ -20,9 +20,12 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
 #include "eth.h"
+#include "fatfs.h"
 #include "rng.h"
 #include "rtc.h"
+#include "sdio.h"
 #include "spi.h"
 #include "usart.h"
 #include "gpio.h"
@@ -97,6 +100,9 @@ int main(void)
   MX_ETH_Init();
   MX_RNG_Init();
   MX_RTC_Init();
+  MX_SDIO_SD_Init();
+  MX_DMA_Init();
+  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
   OS_CPU_SysTickInitFreq(HAL_RCC_GetHCLKFreq());
   

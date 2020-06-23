@@ -33,5 +33,7 @@ stm32f407-ucosii\rng.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex
 stm32f407-ucosii\rng.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h
 stm32f407-ucosii\rng.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
 stm32f407-ucosii\rng.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
+stm32f407-ucosii\rng.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+stm32f407-ucosii\rng.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 stm32f407-ucosii\rng.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 stm32f407-ucosii\rng.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h

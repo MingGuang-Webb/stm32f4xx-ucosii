@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx,GPL_LICENSE_TERMS_ACCEPTED</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\ucosii_kernel\ucos_cfg;..\ucosii_kernel\ucos_cpu;..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView;..\ucosii_kernel\ucos_debug;..\ucosii_kernel\ucos_debug\RTT;..\ucosii_kernel\ucos_lib;..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView;..\ucosii_kernel\ucosii\Source;..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView;..\App;..\bsp;..\CycloneTCP\core;..\CycloneTCP\dhcp;..\CycloneTCP\dns;..\CycloneTCP\drivers\phy;..\CycloneTCP\ipv4;..\CycloneTCP\ipv6;..\CycloneTCP\mqtt;..\CycloneTCP\icecast;..\CycloneTCP;..\CycloneCFG;..\CycloneTCP\common;..\CycloneSSL\cyclone_ssl;..\CycloneSSL\cyclone_crypto;..\CycloneSSL\cyclone_crypto\core;..\CycloneSSL\cyclone_crypto\hash;..\CycloneTCP\netbios;..\CycloneSSL\cyclone_crypto\encoding;..\CycloneSSL\cyclone_crypto\aead;..\CycloneSSL\cyclone_crypto\cipher;..\CycloneSSL\cyclone_crypto\cipher_mode;..\CycloneSSL\cyclone_crypto\ecc;..\CycloneSSL\cyclone_crypto\encoding;..\CycloneSSL\cyclone_crypto\hardware;..\CycloneSSL\cyclone_crypto\kdf;..\CycloneSSL\cyclone_crypto\mac;..\CycloneSSL\cyclone_crypto\mpi;..\CycloneSSL\cyclone_crypto\pkc;..\CycloneSSL\cyclone_crypto\pkix;..\CycloneSSL\cyclone_crypto\rng;..\CycloneSSL\cyclone_crypto\xof;..\sfud_spi_flash\sfud\inc;..\easy_flash\inc</IncludePath>
+              <IncludePath>../Inc;   ../Drivers/STM32F4xx_HAL_Driver/Inc;   ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;   ../Drivers/CMSIS/Include;   ..\ucosii_kernel\ucos_cfg;   ..\ucosii_kernel\ucos_cpu;   ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView;   ..\ucosii_kernel\ucos_debug;   ..\ucosii_kernel\ucos_debug\RTT;   ..\ucosii_kernel\ucos_lib;   ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView;   ..\ucosii_kernel\ucosii\Source;   ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView;   ..\App;   ..\bsp;   ..\CycloneTCP\core;   ..\CycloneTCP\dhcp;   ..\CycloneTCP\dns;   ..\CycloneTCP\drivers\phy;   ..\CycloneTCP\ipv4;   ..\CycloneTCP\ipv6;   ..\CycloneTCP\mqtt;   ..\CycloneTCP\icecast;   ..\CycloneTCP;   ..\CycloneCFG;   ..\CycloneTCP\common;   ..\CycloneSSL\cyclone_ssl;   ..\CycloneSSL\cyclone_crypto;   ..\CycloneSSL\cyclone_crypto\core;   ..\CycloneSSL\cyclone_crypto\hash;   ..\CycloneTCP\netbios;   ..\CycloneSSL\cyclone_crypto\encoding;   ..\CycloneSSL\cyclone_crypto\aead;   ..\CycloneSSL\cyclone_crypto\cipher;   ..\CycloneSSL\cyclone_crypto\cipher_mode;   ..\CycloneSSL\cyclone_crypto\ecc;   ..\CycloneSSL\cyclone_crypto\encoding;   ..\CycloneSSL\cyclone_crypto\hardware;   ..\CycloneSSL\cyclone_crypto\kdf;   ..\CycloneSSL\cyclone_crypto\mac;   ..\CycloneSSL\cyclone_crypto\mpi;   ..\CycloneSSL\cyclone_crypto\pkc;   ..\CycloneSSL\cyclone_crypto\pkix;   ..\CycloneSSL\cyclone_crypto\rng;   ..\CycloneSSL\cyclone_crypto\xof;   ..\sfud_spi_flash\sfud\inc;   ..\easy_flash\inc;../Middlewares/Third_Party/FatFs/src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -434,9 +434,29 @@
               <FilePath>../Src/gpio.c</FilePath>
             </File>
             <File>
+              <FileName>dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/dma.c</FilePath>
+            </File>
+            <File>
               <FileName>eth.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/eth.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_driver_sd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/bsp_driver_sd.c</FilePath>
+            </File>
+            <File>
+              <FileName>sd_diskio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/sd_diskio.c</FilePath>
+            </File>
+            <File>
+              <FileName>fatfs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/fatfs.c</FilePath>
             </File>
             <File>
               <FileName>rng.c</FileName>
@@ -447,6 +467,11 @@
               <FileName>rtc.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>sdio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/sdio.c</FilePath>
             </File>
             <File>
               <FileName>spi.c</FileName>
@@ -562,6 +587,16 @@
               <FileName>stm32f4xx_hal_rtc_ex.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_ll_sdmmc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_sd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_hal_spi.c</FileName>
@@ -1622,6 +1657,31 @@
         </Group>
         <Group>
           <GroupName>easyflash/type</GroupName>
+        </Group>
+        <Group>
+          <GroupName>Middlewares/FatFs</GroupName>
+          <Files>
+            <File>
+              <FileName>diskio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/Third_Party/FatFs/src/diskio.c</FilePath>
+            </File>
+            <File>
+              <FileName>ff.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/Third_Party/FatFs/src/ff.c</FilePath>
+            </File>
+            <File>
+              <FileName>ff_gen_drv.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/Third_Party/FatFs/src/ff_gen_drv.c</FilePath>
+            </File>
+            <File>
+              <FileName>syscall.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/Third_Party/FatFs/src/option/syscall.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>

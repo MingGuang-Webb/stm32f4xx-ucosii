@@ -42,6 +42,8 @@ stm32f407-ucosii\app_main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_p
 stm32f407-ucosii\app_main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h
 stm32f407-ucosii\app_main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
 stm32f407-ucosii\app_main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
+stm32f407-ucosii\app_main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+stm32f407-ucosii\app_main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 stm32f407-ucosii\app_main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 stm32f407-ucosii\app_main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 stm32f407-ucosii\app_main.o: ..\CycloneTCP\core/net.h
@@ -133,3 +135,7 @@ stm32f407-ucosii\app_main.o: ..\easy_flash\inc\easyflash.h
 stm32f407-ucosii\app_main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 stm32f407-ucosii\app_main.o: ..\easy_flash\inc\ef_cfg.h
 stm32f407-ucosii\app_main.o: ..\easy_flash\inc\ef_def.h
+stm32f407-ucosii\app_main.o: ../Middlewares/Third_Party/FatFs/src/ff.h
+stm32f407-ucosii\app_main.o: ../Middlewares/Third_Party/FatFs/src/integer.h
+stm32f407-ucosii\app_main.o: ../Inc/ffconf.h
+stm32f407-ucosii\app_main.o: ../Inc/bsp_driver_sd.h

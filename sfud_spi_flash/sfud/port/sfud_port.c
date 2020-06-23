@@ -204,7 +204,8 @@ sfud_err sfud_spi_port_init(sfud_flash *flash)
 void sfud_log_debug(const char *file, const long line, const char *format, ...)
 {
     va_list args;
-
+    OS_CPU_SR  cpu_sr;
+    OS_ENTER_CRITICAL();    // Tell uC/OS-II that we are starting an ISR
     /* args point to the first variable parameter */
     va_start(args, format);
     ucos_kprintf("[SFUD](%s:%ld) ", file, line);
@@ -214,6 +215,7 @@ void sfud_log_debug(const char *file, const long line, const char *format, ...)
     SEGGER_RTT_WriteString(0, log_buf);
     SEGGER_RTT_WriteString(0,"\r\n");
     va_end(args);
+    OS_EXIT_CRITICAL();
 }
 
 /**
@@ -225,7 +227,8 @@ void sfud_log_debug(const char *file, const long line, const char *format, ...)
 void sfud_log_info(const char *format, ...)
 {
     va_list args;
-
+    OS_CPU_SR  cpu_sr;
+    OS_ENTER_CRITICAL();    // Tell uC/OS-II that we are starting an ISR
     /* args point to the first variable parameter */
     va_start(args, format);
     ucos_kprintf("[SFUD]");
@@ -235,4 +238,5 @@ void sfud_log_info(const char *format, ...)
     SEGGER_RTT_WriteString(0, log_buf);
     SEGGER_RTT_WriteString(0,"\r\n");
     va_end(args);
+    OS_EXIT_CRITICAL();
 }

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-07 11:16:22
- * @LastEditTime: 2020-06-23 09:54:30
+ * @LastEditTime: 2020-06-23 14:21:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \stm32f767-uscoii\App\app_main.c
@@ -18,6 +18,7 @@
 #include "debug.h"
 #include "app_mqtt.h"
 #include "easyflash.h"
+#include "ff.h"
 
 extern RNG_HandleTypeDef hrng;
 
@@ -110,6 +111,10 @@ uint8_t seed[32];
  * @param {type} 
  * @return: 
  */
+#define START_TASK_STAKE_SIZE 512
+OS_STK start_take_stake[START_TASK_STAKE_SIZE];
+#define START_TASK_PRO 4
+
 #define LED_STAKE_SIZE 128
 OS_STK led_blink_stake[LED_STAKE_SIZE];
 #define LED_TASK_PRO 3
@@ -129,6 +134,7 @@ OS_EVENT *pq_event;
 void led_blink_task(void *arg);
 void uart_task(void *arg);
 void tcp_task(void *arg);
+void start_task(void *arg);
 
 void ucos_show_version(void)
 {
@@ -144,9 +150,38 @@ void create_app_task(void)
    ucos_show_version();
 
    ucos_kprintf("create ucosii app task.\r\n");
+   OSTaskCreate(start_task, (void *)0, (OS_STK *)&start_take_stake[START_TASK_STAKE_SIZE - 1], START_TASK_PRO);
+}
+
+/**
+ * @description: 
+ * @param {type} 
+ * @return: 
+ */
+void start_task(void *arg)
+{
+   FRESULT fr;
+   FATFS fs;
+   
    OSTaskCreate(led_blink_task, (void *)0, (OS_STK *)&led_blink_stake[LED_STAKE_SIZE - 1], LED_TASK_PRO);
    OSTaskCreate(uart_task, (void *)0, (OS_STK *)&uart_stake[UART_STAKE_SIZE - 1], UART_TASK_PRO);
    OSTaskCreate(tcp_task, (void *)0, (OS_STK *)&tcp_stake[TCP_STAKE_SIZE - 1], TCP_TASK_PRO);
+   easyflash_init();
+   /* 挂载SD卡 */
+   fr = f_mount(&fs, "0:", 0);
+   if (fr == FR_OK)
+   {
+      ucos_kprintf("SD card mount ok!\r\n");
+   }
+   else
+   {
+      ucos_kprintf("SD card mount error, error code:%d.\r\n", fr);
+   }
+   for (;;)
+   {
+
+      OSTimeDly(100);
+   }
 }
 
 /**
@@ -383,7 +418,6 @@ void tcp_task(void *arg)
 #endif
 #endif
 
-   easyflash_init();
    for (;;)
    {
       mqtt_net_fsm();

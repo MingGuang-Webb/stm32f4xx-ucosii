@@ -163,7 +163,8 @@ void ef_log_debug(const char *file, const long line, const char *format, ...) {
 #ifdef PRINT_DEBUG
 
     va_list args;
-
+    OS_CPU_SR  cpu_sr;
+    OS_ENTER_CRITICAL();    // Tell uC/OS-II that we are starting an ISR
     /* args point to the first variable parameter */
     va_start(args, format);
 
@@ -175,7 +176,7 @@ void ef_log_debug(const char *file, const long line, const char *format, ...) {
     SEGGER_RTT_WriteString(0, log_buf);
     SEGGER_RTT_WriteString(0,"\r\n");   
     va_end(args);
-
+    OS_EXIT_CRITICAL();
 #endif
 
 }
@@ -188,15 +189,16 @@ void ef_log_debug(const char *file, const long line, const char *format, ...) {
  */
 void ef_log_info(const char *format, ...) {
     va_list args;
-
+    OS_CPU_SR  cpu_sr;
+    OS_ENTER_CRITICAL();    // Tell uC/OS-II that we are starting an ISR
     /* args point to the first variable parameter */
     va_start(args, format);
-
     /* You can add your code under here. */
     vsnprintf(log_buf, sizeof(log_buf), format, args);
     SEGGER_RTT_WriteString(0, log_buf);
     SEGGER_RTT_WriteString(0,"\r\n");    
     va_end(args);
+    OS_EXIT_CRITICAL();
 }
 /**
  * This function is print flash non-package info.
@@ -206,7 +208,8 @@ void ef_log_info(const char *format, ...) {
  */
 void ef_print(const char *format, ...) {
     va_list args;
-
+    OS_CPU_SR  cpu_sr;
+    OS_ENTER_CRITICAL();    // Tell uC/OS-II that we are starting an ISR
     /* args point to the first variable parameter */
     va_start(args, format);
 
@@ -215,4 +218,5 @@ void ef_print(const char *format, ...) {
     SEGGER_RTT_WriteString(0, log_buf);
     SEGGER_RTT_WriteString(0,"\r\n");    
     va_end(args);
+    OS_EXIT_CRITICAL();
 }
