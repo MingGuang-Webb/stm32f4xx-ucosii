@@ -109,6 +109,7 @@ int mqtt_net_fsm(void)
          mqttClientInit(&mqttClientContext);
          mqtt_net_sta = TBOX_MQTT_STATE_CONNECT;
       }
+      count = 0;
       break;
    case TBOX_MQTT_STATE_CONNECT:
       error = mqttConnect();
@@ -137,7 +138,9 @@ int mqtt_net_fsm(void)
 
       break;
    case TBOX_MQTT_STATE_CLOSE:
-      mqtt_net_sta = TBOX_MQTT_STATE_IDLE;
+      count++;
+      if (0 == count % 200)
+         mqtt_net_sta = TBOX_MQTT_STATE_IDLE;
       break;
    default:
       break;

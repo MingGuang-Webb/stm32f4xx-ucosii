@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-07 11:16:22
- * @LastEditTime: 2020-06-18 13:28:43
+ * @LastEditTime: 2020-06-23 09:54:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \stm32f767-uscoii\App\app_main.c
@@ -17,7 +17,7 @@
 #include "rng/yarrow.h"
 #include "debug.h"
 #include "app_mqtt.h"
-#include "sfud.h"
+#include "easyflash.h"
 
 extern RNG_HandleTypeDef hrng;
 
@@ -382,7 +382,8 @@ void tcp_task(void *arg)
    ipv6SetDnsServer(interface, 1, &ipv6Addr);
 #endif
 #endif
-   sfud_init();
+
+   easyflash_init();
    for (;;)
    {
       mqtt_net_fsm();

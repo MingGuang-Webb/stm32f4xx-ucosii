@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx,GPL_LICENSE_TERMS_ACCEPTED</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;  ../Drivers/STM32F4xx_HAL_Driver/Inc;  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;  ../Drivers/CMSIS/Include;  ..\ucosii_kernel\ucos_cfg;  ..\ucosii_kernel\ucos_cpu;  ..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView;  ..\ucosii_kernel\ucos_debug;  ..\ucosii_kernel\ucos_debug\RTT;  ..\ucosii_kernel\ucos_lib;  ..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView;  ..\ucosii_kernel\ucosii\Source;  ..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView;  ..\App;  ..\bsp;  ..\CycloneTCP\core;  ..\CycloneTCP\dhcp;  ..\CycloneTCP\dns;  ..\CycloneTCP\drivers\phy;  ..\CycloneTCP\ipv4;  ..\CycloneTCP\ipv6;  ..\CycloneTCP\mqtt;  ..\CycloneTCP\icecast;  ..\CycloneTCP;  ..\CycloneCFG;  ..\CycloneTCP\common;  ..\CycloneSSL\cyclone_ssl;  ..\CycloneSSL\cyclone_crypto;  ..\CycloneSSL\cyclone_crypto\core;  ..\CycloneSSL\cyclone_crypto\hash;  ..\CycloneTCP\netbios;  ..\CycloneSSL\cyclone_crypto\encoding;  ..\CycloneSSL\cyclone_crypto\aead;  ..\CycloneSSL\cyclone_crypto\cipher;  ..\CycloneSSL\cyclone_crypto\cipher_mode;  ..\CycloneSSL\cyclone_crypto\ecc;  ..\CycloneSSL\cyclone_crypto\encoding;  ..\CycloneSSL\cyclone_crypto\hardware;  ..\CycloneSSL\cyclone_crypto\kdf;  ..\CycloneSSL\cyclone_crypto\mac;  ..\CycloneSSL\cyclone_crypto\mpi;  ..\CycloneSSL\cyclone_crypto\pkc;  ..\CycloneSSL\cyclone_crypto\pkix;  ..\CycloneSSL\cyclone_crypto\rng;  ..\CycloneSSL\cyclone_crypto\xof;  ..\sfud_spi_flash\sfud\inc</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\ucosii_kernel\ucos_cfg;..\ucosii_kernel\ucos_cpu;..\ucosii_kernel\ucos_cpu\ARM-Cortex-M4\RealView;..\ucosii_kernel\ucos_debug;..\ucosii_kernel\ucos_debug\RTT;..\ucosii_kernel\ucos_lib;..\ucosii_kernel\ucos_lib\Ports\ARM-Cortex-M4\RealView;..\ucosii_kernel\ucosii\Source;..\ucosii_kernel\ucosii\Ports\ARM-Cortex-M4\Generic\RealView;..\App;..\bsp;..\CycloneTCP\core;..\CycloneTCP\dhcp;..\CycloneTCP\dns;..\CycloneTCP\drivers\phy;..\CycloneTCP\ipv4;..\CycloneTCP\ipv6;..\CycloneTCP\mqtt;..\CycloneTCP\icecast;..\CycloneTCP;..\CycloneCFG;..\CycloneTCP\common;..\CycloneSSL\cyclone_ssl;..\CycloneSSL\cyclone_crypto;..\CycloneSSL\cyclone_crypto\core;..\CycloneSSL\cyclone_crypto\hash;..\CycloneTCP\netbios;..\CycloneSSL\cyclone_crypto\encoding;..\CycloneSSL\cyclone_crypto\aead;..\CycloneSSL\cyclone_crypto\cipher;..\CycloneSSL\cyclone_crypto\cipher_mode;..\CycloneSSL\cyclone_crypto\ecc;..\CycloneSSL\cyclone_crypto\encoding;..\CycloneSSL\cyclone_crypto\hardware;..\CycloneSSL\cyclone_crypto\kdf;..\CycloneSSL\cyclone_crypto\mac;..\CycloneSSL\cyclone_crypto\mpi;..\CycloneSSL\cyclone_crypto\pkc;..\CycloneSSL\cyclone_crypto\pkix;..\CycloneSSL\cyclone_crypto\rng;..\CycloneSSL\cyclone_crypto\xof;..\sfud_spi_flash\sfud\inc;..\easy_flash\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1569,6 +1569,59 @@
               <FilePath>..\sfud_spi_flash\sfud\port\sfud_port.c</FilePath>
             </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>easyflash/port</GroupName>
+          <Files>
+            <File>
+              <FileName>ef_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\easy_flash\port\ef_port.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>easyflash/src</GroupName>
+          <Files>
+            <File>
+              <FileName>easyflash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\easy_flash\src\easyflash.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_env.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\easy_flash\src\ef_env.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_env_legacy.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\easy_flash\src\ef_env_legacy.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_env_legacy_wl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\easy_flash\src\ef_env_legacy_wl.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_iap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\easy_flash\src\ef_iap.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_log.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\easy_flash\src\ef_log.c</FilePath>
+            </File>
+            <File>
+              <FileName>ef_utils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\easy_flash\src\ef_utils.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>easyflash/type</GroupName>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>

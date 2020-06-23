@@ -210,6 +210,14 @@
 "stm32f407-ucosii\sfud.o"
 "stm32f407-ucosii\sfud_sfdp.o"
 "stm32f407-ucosii\sfud_port.o"
+"stm32f407-ucosii\ef_port.o"
+"stm32f407-ucosii\easyflash.o"
+"stm32f407-ucosii\ef_env.o"
+"stm32f407-ucosii\ef_env_legacy.o"
+"stm32f407-ucosii\ef_env_legacy_wl.o"
+"stm32f407-ucosii\ef_iap.o"
+"stm32f407-ucosii\ef_log.o"
+"stm32f407-ucosii\ef_utils.o"
 --library_type=microlib --strict --scatter "stm32f407-ucosii\stm32f407-ucosii.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

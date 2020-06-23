@@ -129,8 +129,7 @@ stm32f407-ucosii\app_main.o: ..\CycloneSSL\cyclone_crypto\ecc/eddsa.h
 stm32f407-ucosii\app_main.o: ..\CycloneTCP\common\date_time.h
 stm32f407-ucosii\app_main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
 stm32f407-ucosii\app_main.o: ..\CycloneTCP\web_socket/web_socket.h
-stm32f407-ucosii\app_main.o: ..\sfud_spi_flash\sfud\inc\sfud.h
-stm32f407-ucosii\app_main.o: ..\sfud_spi_flash\sfud\inc\sfud_def.h
+stm32f407-ucosii\app_main.o: ..\easy_flash\inc\easyflash.h
 stm32f407-ucosii\app_main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-stm32f407-ucosii\app_main.o: ..\sfud_spi_flash\sfud\inc\sfud_cfg.h
-stm32f407-ucosii\app_main.o: ..\sfud_spi_flash\sfud\inc\sfud_flash_def.h
+stm32f407-ucosii\app_main.o: ..\easy_flash\inc\ef_cfg.h
+stm32f407-ucosii\app_main.o: ..\easy_flash\inc\ef_def.h
