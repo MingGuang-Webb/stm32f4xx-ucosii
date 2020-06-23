@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-07 11:16:22
- * @LastEditTime: 2020-06-23 14:21:14
+ * @LastEditTime: 2020-06-23 14:35:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \stm32f767-uscoii\App\app_main.c
@@ -162,7 +162,11 @@ void start_task(void *arg)
 {
    FRESULT fr;
    FATFS fs;
-   
+   FIL   fd;
+   char *filename = "Webb";
+   char  write_dat[] = "SuMingGuang-GaoYuan";
+   int write_num = 0;
+    
    OSTaskCreate(led_blink_task, (void *)0, (OS_STK *)&led_blink_stake[LED_STAKE_SIZE - 1], LED_TASK_PRO);
    OSTaskCreate(uart_task, (void *)0, (OS_STK *)&uart_stake[UART_STAKE_SIZE - 1], UART_TASK_PRO);
    OSTaskCreate(tcp_task, (void *)0, (OS_STK *)&tcp_stake[TCP_STAKE_SIZE - 1], TCP_TASK_PRO);
@@ -179,8 +183,39 @@ void start_task(void *arg)
    }
    for (;;)
    {
+      /* 打开文件（若文件不存在则创建） */
+      fr = f_open(&fd, "Webb", FA_CREATE_ALWAYS | FA_WRITE);
+      if (fr == FR_OK)
+      {
+         ucos_kprintf("open file \"%s\" ok! \r\n", filename);
+      }
+      else
+      {
+         ucos_kprintf("open file \"%s\" error : %d\r\n", filename, fr);
+      }
 
-      OSTimeDly(100);
+      /* 向打开的文件中写入内容 */
+      fr = f_write(&fd, write_dat, strlen(write_dat), (void *)&write_num);
+      if (fr == FR_OK)
+      {
+         ucos_kprintf("write %d dat to file \"%s\" ok,dat is \"%s\".\r\n", write_num, filename, write_dat);
+      }
+      else
+      {
+         ucos_kprintf("write dat to file \"%s\" error,error code is:%d\r\n", filename, fr);
+      }
+
+      /* 操作完成，关闭文件 */
+      fr = f_close(&fd);
+      if (fr == FR_OK)
+      {
+         ucos_kprintf("close file \"%s\" ok!\r\n", filename);
+      }
+      else
+      {
+         ucos_kprintf("close file \"%s\" error, error code is:%d.\r\n", filename, fr);
+      }
+      OSTimeDly(5000);
    }
 }
 
