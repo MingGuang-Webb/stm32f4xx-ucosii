@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-06-07 11:16:14
- * @LastEditTime: 2020-06-07 11:21:41
- * @LastEditors: your name
+ * @LastEditTime: 2020-06-23 20:45:04
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \stm32f767-uscoii\App\app_main.h
  */ 
@@ -32,6 +32,7 @@
  extern "C" {
 #endif
 #include "ucos_ii.h"
+#define APP_FW_VERSION  0x0001    /*固件版本*/
 /* Includes ------------------------------------------------------------------*/
 void create_app_task(void);
 #ifdef __cplusplus

@@ -74,7 +74,6 @@ error_t socketInit(void)
          //Clean up side effects
          for(j = 0; j < i; j++)
             osDeleteEvent(&socketTable[j].event);
-         ucos_kprintf("Failed to create Event:1\r\n");
          //Report an error
          return ERROR_OUT_OF_RESOURCES;
       }

@@ -5,12 +5,15 @@
 #include "hash/sha256.h"
 #include "stm32f4xx.h"
 #include "mqtt/mqtt_client.h"
+#include "app_main.h"
 
 //Global variables
 extern RNG_HandleTypeDef hrng;
 static MqttClientContext mqttClientContext;
 static mqtt_net_sta_t mqtt_net_sta = TBOX_MQTT_STATE_IDLE;
 static char mqtt_publish_test[64 + 1] = "Ali Alink CycloneTCP MQTT Test Success.";
+static uint16_t subpacketId;
+static uint32_t pubpacketId;
 
 uint32_t HexToChar(uint8_t Hex, char *c)
 {
@@ -35,6 +38,11 @@ uint32_t HexToStr(uint8_t *Hex, char *Str, int Hexlen)
    }
    Str[i * 2] = '\0';
    return 0;
+}
+
+uint32_t get_packet_id(void)
+{
+   return pubpacketId = (uint32_t)((pubpacketId == MAX_PACKET_ID) ? (pubpacketId = 1) : (pubpacketId + 1));
 }
 
 void connect_data_init(MqttClientContext *connect_data, char *device_name, char *device_secret, char *product_key, uint32_t t)
@@ -91,6 +99,44 @@ static error_t mqtt_publish(MqttClientContext *context,char *fmt ,uint8_t *pload
    return error;
 }
 
+static int publish_fw_version(uint16_t ver)
+{
+   int rc = 0;
+   char *buffer = NULL;
+   char *topic = NULL;
+   uint32_t packetid = 0;
+
+   buffer = malloc(128);
+   if (buffer == NULL)
+   {
+      rc = -1;
+      goto __exit;
+   }
+   topic = malloc(64);
+      if (topic == NULL)
+   {
+      rc = -2;
+      goto __exit;
+   }
+   packetid = get_packet_id();
+   sprintf(buffer, "{\"id\":%d,\"params\":{\"version\":%d.%d.%d,\"mode\":%s}}", packetid, ver / 100, ver % 100 / 10, ver % 10, "ECU");
+   sprintf(topic, "/ota/device/inform/%s/%s", EXAMPLE_PRODUCT_KEY, EXAMPLE_DEVICE_NAME);
+   rc = mqtt_publish(&mqttClientContext, topic, (uint8_t *)buffer, strlen(buffer), MQTT_QOS_LEVEL_0);
+   if (buffer != NULL)
+   {
+       free(buffer);
+       buffer = NULL;
+   }
+   
+   if (topic != NULL)
+   {
+       free(topic);
+       topic = NULL;
+   }
+   __exit:
+   return rc;
+}
+
 int mqtt_net_fsm(void)
 {
    error_t error;
@@ -130,6 +176,7 @@ int mqtt_net_fsm(void)
       if (0 == count % 200)
       {
          rc = mqtt_publish(&mqttClientContext, "/%s/%s/user/update", (uint8_t *)mqtt_publish_test, strlen(mqtt_publish_test), MQTT_QOS_LEVEL_0);
+         rc = publish_fw_version(APP_FW_VERSION);
          if (rc != NO_ERROR)
          {
             mqtt_net_sta = TBOX_MQTT_STATE_CLOSE;
@@ -207,6 +254,7 @@ error_t mqttConnect(void)
    IpAddr ipAddr;
    uint32_t trng = 0;
    char server_url[128 + 1] = {0};
+   char *sub_topic = NULL;
 
    //Debug message
    TRACE_INFO("\r\n\r\nResolving server name...\r\n");
@@ -295,6 +343,19 @@ error_t mqttConnect(void)
       //Any error to report?
       if (error)
          break;
+      sub_topic = malloc(128);
+      sprintf(sub_topic, "/ota/device/upgrade/%s/%s", EXAMPLE_PRODUCT_KEY, EXAMPLE_DEVICE_NAME);   /*阿里平台下发升级通知，带有url*/
+      error = mqttClientSubscribe(&mqttClientContext, sub_topic, MQTT_QOS_LEVEL_0, &subpacketId);
+      if (!error)
+      {
+         ucos_kprintf("sub topic version success.\r\n");
+      }
+
+      if (sub_topic != NULL)
+      {
+         free(sub_topic);
+         sub_topic = NULL;
+      }
       //End of exception handling block
    } while (0);
 

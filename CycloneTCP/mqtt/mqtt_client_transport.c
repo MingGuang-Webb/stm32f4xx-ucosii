@@ -528,6 +528,7 @@ error_t mqttClientReceiveData(MqttClientContext *context,
       {
          //Receive data
          error = socketReceive(context->socket, data, size, received, flags);
+         ucos_kprintf("socket rec :%d\r\n",error);
       }
    }
 #if (MQTT_CLIENT_TLS_SUPPORT == ENABLED)

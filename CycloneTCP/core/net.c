@@ -159,7 +159,6 @@ error_t netInit(void)
    //Create a mutex to prevent simultaneous access to the callback table
    if(!osCreateMutex(&callbackTableMutex))
    {
-      ucos_kprintf("Failed to create mutex:3\r\n");
       //Failed to create mutex
       return ERROR_OUT_OF_RESOURCES;
    }

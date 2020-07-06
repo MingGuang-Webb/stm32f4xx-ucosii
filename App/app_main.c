@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-07 11:16:22
- * @LastEditTime: 2020-06-23 14:35:54
+ * @LastEditTime: 2020-07-06 20:45:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \stm32f767-uscoii\App\app_main.c
@@ -19,6 +19,7 @@
 #include "app_mqtt.h"
 #include "easyflash.h"
 #include "ff.h"
+#include "app_ntp.h"
 
 extern RNG_HandleTypeDef hrng;
 
@@ -105,6 +106,7 @@ SlaacSettings slaacSettings;
 SlaacContext slaacContext;
 YarrowContext yarrowContext;
 uint8_t seed[32];
+static void eth_net_init(void);
 
 /**
  * @description: ucosii的优先级必须唯一，后面可以靠这个去删除任务和挂起任务操作
@@ -113,7 +115,19 @@ uint8_t seed[32];
  */
 #define START_TASK_STAKE_SIZE 512
 OS_STK start_take_stake[START_TASK_STAKE_SIZE];
-#define START_TASK_PRO 4
+#define START_TASK_PRO 7
+
+#define IMU_STAKE_SIZE 512 /* IMU_STAKE_SIZE*2byte */
+OS_STK imu_stake[IMU_STAKE_SIZE];
+#define IMU_TASK_PRO 6
+
+#define NTP_STAKE_SIZE 256 /* IMU_STAKE_SIZE*2byte */
+OS_STK ntp_stake[NTP_STAKE_SIZE];
+#define NTP_TASK_PRO 5
+
+#define HTTP_STAKE_SIZE 1024 /* IMU_STAKE_SIZE*2byte */
+OS_STK http_stake[HTTP_STAKE_SIZE];
+#define HTTP_TASK_PRO 4
 
 #define LED_STAKE_SIZE 128
 OS_STK led_blink_stake[LED_STAKE_SIZE];
@@ -123,7 +137,7 @@ OS_STK led_blink_stake[LED_STAKE_SIZE];
 OS_STK uart_stake[UART_STAKE_SIZE];
 #define UART_TASK_PRO 2
 
-#define TCP_STAKE_SIZE 1024 /* IMU_STAKE_SIZE*2byte */
+#define TCP_STAKE_SIZE 2048 /* IMU_STAKE_SIZE*2byte */
 OS_STK tcp_stake[TCP_STAKE_SIZE];
 #define TCP_TASK_PRO 1
 
@@ -135,6 +149,9 @@ void led_blink_task(void *arg);
 void uart_task(void *arg);
 void tcp_task(void *arg);
 void start_task(void *arg);
+void ntp_task(void *arg);
+void http_task(void *arg);
+void imu_task(void *arg);
 
 void ucos_show_version(void)
 {
@@ -160,63 +177,69 @@ void create_app_task(void)
  */
 void start_task(void *arg)
 {
-   FRESULT fr;
-   FATFS fs;
-   FIL   fd;
-   char *filename = "Webb";
-   char  write_dat[] = "SuMingGuang-GaoYuan";
-   int write_num = 0;
-    
-   OSTaskCreate(led_blink_task, (void *)0, (OS_STK *)&led_blink_stake[LED_STAKE_SIZE - 1], LED_TASK_PRO);
-   OSTaskCreate(uart_task, (void *)0, (OS_STK *)&uart_stake[UART_STAKE_SIZE - 1], UART_TASK_PRO);
-   OSTaskCreate(tcp_task, (void *)0, (OS_STK *)&tcp_stake[TCP_STAKE_SIZE - 1], TCP_TASK_PRO);
-   easyflash_init();
-   /* 挂载SD卡 */
-   fr = f_mount(&fs, "0:", 0);
-   if (fr == FR_OK)
-   {
+    FRESULT fr;
+    FATFS fs;
+    FIL fd;
+    char *filename = "Webb.txt";
+    char write_dat[] = "SuMingGuang-GaoYuan";
+    int write_num = 0;
+    static FSIZE_t pos = 0;
+
+    OSTaskCreate(led_blink_task, (void *)0, (OS_STK *)&led_blink_stake[LED_STAKE_SIZE - 1], LED_TASK_PRO);
+    OSTaskCreate(uart_task, (void *)0, (OS_STK *)&uart_stake[UART_STAKE_SIZE - 1], UART_TASK_PRO);
+    OSTaskCreate(tcp_task, (void *)0, (OS_STK *)&tcp_stake[TCP_STAKE_SIZE - 1], TCP_TASK_PRO);
+    OSTaskCreate(ntp_task, (void *)0, (OS_STK *)&ntp_stake[NTP_STAKE_SIZE - 1], NTP_TASK_PRO);
+    //OSTaskCreate(http_task, (void *)0, (OS_STK *)&http_stake[HTTP_STAKE_SIZE - 1], HTTP_TASK_PRO);
+    OSTaskCreate(imu_task, (void *)0, (OS_STK *)&http_stake[IMU_STAKE_SIZE - 1], IMU_TASK_PRO);
+    easyflash_init();
+    eth_net_init();
+    /* 挂载SD卡 */
+    fr = f_mount(&fs, "0:", 0);
+    if (fr == FR_OK)
+    {
       ucos_kprintf("SD card mount ok!\r\n");
-   }
-   else
-   {
+    }
+    else
+    {
       ucos_kprintf("SD card mount error, error code:%d.\r\n", fr);
-   }
-   for (;;)
-   {
-      /* 打开文件（若文件不存在则创建） */
-      fr = f_open(&fd, "Webb", FA_CREATE_ALWAYS | FA_WRITE);
-      if (fr == FR_OK)
-      {
-         ucos_kprintf("open file \"%s\" ok! \r\n", filename);
-      }
-      else
-      {
-         ucos_kprintf("open file \"%s\" error : %d\r\n", filename, fr);
-      }
-
-      /* 向打开的文件中写入内容 */
-      fr = f_write(&fd, write_dat, strlen(write_dat), (void *)&write_num);
-      if (fr == FR_OK)
-      {
-         ucos_kprintf("write %d dat to file \"%s\" ok,dat is \"%s\".\r\n", write_num, filename, write_dat);
-      }
-      else
-      {
+    }
+    /* 打开文件（若文件不存在则创建） */
+    fr = f_open(&fd, filename, FA_CREATE_ALWAYS | FA_WRITE);
+    if (fr == FR_OK)
+    {
+     ucos_kprintf("open file \"%s\" ok! \r\n", filename);
+    }
+    else
+    {
+     ucos_kprintf("open file \"%s\" error : %d\r\n", filename, fr);
+    }
+    for (;;)
+    {
+        /* 向打开的文件中写入内容 */
+        fr = f_write(&fd, write_dat, strlen(write_dat), (void *)&write_num);
+        if (fr == FR_OK)
+        {
+         pos += write_num;
+         f_lseek(&fd, pos);
+         ucos_kprintf("write pos %d write %d dat to file \"%s\" ok,dat is \"%s\".\r\n", pos, write_num, filename, write_dat);
+        }
+        else
+        {
          ucos_kprintf("write dat to file \"%s\" error,error code is:%d\r\n", filename, fr);
-      }
+        }
 
-      /* 操作完成，关闭文件 */
-      fr = f_close(&fd);
-      if (fr == FR_OK)
-      {
+        /* 操作完成，关闭文件 */
+        fr = f_sync(&fd);
+        if (fr == FR_OK)
+        {
          ucos_kprintf("close file \"%s\" ok!\r\n", filename);
-      }
-      else
-      {
+        }
+        else
+        {
          ucos_kprintf("close file \"%s\" error, error code is:%d.\r\n", filename, fr);
-      }
-      OSTimeDly(5000);
-   }
+        }
+        OSTimeDly(5000);
+    }
 }
 
 /**
@@ -266,6 +289,15 @@ void uart_task(void *arg)
  * @return: 
  */
 void tcp_task(void *arg)
+{
+   for (;;)
+   {
+      mqtt_net_fsm();
+      osDelayTask(10u);
+   }
+}
+
+static void eth_net_init(void)
 {
    error_t error;
    uint32_t value = 0;
@@ -451,11 +483,5 @@ void tcp_task(void *arg)
    ipv6StringToAddr(APP_IPV6_SECONDARY_DNS, &ipv6Addr);
    ipv6SetDnsServer(interface, 1, &ipv6Addr);
 #endif
-#endif
-
-   for (;;)
-   {
-      mqtt_net_fsm();
-      osDelayTask(10u);
-   }
+#endif    
 }

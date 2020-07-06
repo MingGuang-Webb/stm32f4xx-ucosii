@@ -27,6 +27,8 @@ stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h
 stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 stm32f407-ucosii\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h
@@ -47,6 +49,7 @@ stm32f407-ucosii\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 stm32f407-ucosii\main.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
 stm32f407-ucosii\main.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
 stm32f407-ucosii\main.o: ../Inc/sd_diskio.h
+stm32f407-ucosii\main.o: ../Inc/i2c.h
 stm32f407-ucosii\main.o: ../Inc/rng.h
 stm32f407-ucosii\main.o: ../Inc/rtc.h
 stm32f407-ucosii\main.o: ../Inc/sdio.h

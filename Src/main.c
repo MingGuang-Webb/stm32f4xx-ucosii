@@ -23,6 +23,7 @@
 #include "dma.h"
 #include "eth.h"
 #include "fatfs.h"
+#include "i2c.h"
 #include "rng.h"
 #include "rtc.h"
 #include "sdio.h"
@@ -102,6 +103,7 @@ int main(void)
   MX_RTC_Init();
   MX_SDIO_SD_Init();
   MX_DMA_Init();
+  MX_I2C1_Init();
   MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
   OS_CPU_SysTickInitFreq(HAL_RCC_GetHCLKFreq());

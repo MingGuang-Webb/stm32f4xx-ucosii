@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-06-21 14:01:18
+ * @LastEditTime: 2020-06-24 20:35:11
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \stm32f4xx-ucosii\App\app_ntp.c
+ */ 
 #include "app_ntp.h"
 #include "app_rtc.h"
 #include "core/net.h"
@@ -44,15 +52,37 @@ int send_sync_ntp_packet(uint8_t version)
         }
         else
         {
+            TRACE_INFO("Socket Rec NTP Sync Fail.\r\n");
             goto __exit;
         }
     }
     else
     {
+        TRACE_INFO("Socket Send NTP Sync Fail.\r\n");
         goto __exit;
     }
-   
-    __exit:    
+    __exit:
+    //socketClose(ntp_socket);    
     return error;
+}
+
+/**
+ * @description: 
+ * @param {type} 
+ * @return: 
+ */
+void ntp_task(void *arg)
+{
+    while (!netGetLinkState(&netInterface[0]))
+    {
+        OSTimeDly(1000);
+    }
+    ntp_init();
+    for (;;)
+    {
+        send_sync_ntp_packet(NTP_VERSION_3);
+        ucos_kprintf("ntp task run.\r\n");
+        OSTimeDly(2000);
+    }
 }
 
